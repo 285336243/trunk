@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_6E"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/modify_user_header"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/feb_headset_choice"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_takephoto_choice"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/change_fengmian"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dip"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/name_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dip"
+                android:text="@string/edit_name"
+                android:textColor="@color/light_grey"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/modify_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@id/name_hint"
+                android:textColor="@color/light_grey"
+                android:background="@null"
+                android:textCursorDrawable="@color/blue"
+                android:minEms="1"
+                android:singleLine="true"
+                android:maxEms="8"
+                android:ellipsize="end"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="1dip"
+            android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/gender_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dip"
+                android:text="@string/edit_gender"
+                android:textColor="@color/light_grey"
+                android:textSize="16sp"/>
+
+            <ToggleButton
+                android:id="@+id/select_gender_togbtn"
+                android:layout_width="85dip"
+                android:layout_height="31dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="84dp"
+                android:layout_toRightOf="@id/gender_hint"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/toggle_selector"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textOff="@string/man"
+                android:textOn="@string/woman" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

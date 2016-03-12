@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/back_view"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kk_room_mem_menu_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/kk_room_mem_list_report"
+            android:textColor="@color/kk_text_pink"
+            android:textSize="@dimen/kk_title_text" />
+
+        <com.melot.meshow.widget.ToggleButtonGroupTableLayout
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:textColor="@color/kk_text_gray"
+            android:textSize="@dimen/kk_text_big_size" >
+
+            <TableRow >
+                 <RadioButton
+                     android:id="@+id/yhsq"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/kk_room_mem_report_bawdy"
+                     android:textColor="@color/kk_text_gray"
+                     android:textSize="@dimen/kk_text_big_size" >
+                 </RadioButton>
+
+                 <RadioButton
+                     android:id="@+id/rsgj"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="30dip"
+                     android:text="@string/kk_room_mem_report_attack"
+                     android:textColor="@color/kk_text_gray" >
+                 </RadioButton>
+             </TableRow>
+
+             <TableRow>
+
+                 <RadioButton
+                     android:id="@+id/ljgg"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/kk_room_mem_report_spam"
+                     android:textColor="@color/kk_text_gray"
+                     android:textSize="@dimen/kk_text_big_size" >
+                 </RadioButton>
+
+                 <RadioButton
+                     android:id="@+id/other"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="30dip"
+                     android:text="@string/kk_room_mem_report_other"
+                     android:textColor="@color/kk_text_gray" >
+                 </RadioButton>
+            </TableRow>
+        </com.melot.meshow.widget.ToggleButtonGroupTableLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kk_edittext_bg"
+                android:gravity="top"
+                android:hint="补充内容..."
+                android:imeOptions="actionDone"
+                android:minHeight="60dip"
+                android:maxHeight="80dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:visibility="visible"
+                android:maxLength="50"
+                android:textColorHint="@color/kk_app_color_edit_hint"
+                android:textColor="@color/kk_room_text_black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="39dip"
+                android:layout_weight="1"
+            	android:layout_margin="10dip"
+                android:enabled="false"
+                android:background="@drawable/kk_register_btn"
+                android:textColor="@color/kk_background_white"
+                android:textSize="@dimen/kk_text_big_size" 
+                android:text="@string/kk_submit"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="39dip"
+                android:layout_weight="2"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/kk_room_add_flag_cancel"
+                android:textColor="@color/kk_text_gray"
+                android:textSize="@dimen/kk_text_big_size"
+                android:text="@string/kk_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

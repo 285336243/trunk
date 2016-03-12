@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+       <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/kk_name_card"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:layout_centerInParent="true"
+                android:onClick="personalCard"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_room_name_card" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kk_name_card"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_personal_namecard"
+                android:textColor="@color/kk_app_color_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/choice_song"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:layout_centerInParent="true"
+                android:onClick="choiceSong"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_choice_song_icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choice_song"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_room_choice_song"
+                android:textColor="@color/kk_app_color_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/adventure_icon"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:layout_centerInParent="true"
+                android:onClick="adventureClick"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_crazy_adventure_icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adventure_icon"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_crazy_adventure"
+                android:textColor="@color/kk_app_color_black" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

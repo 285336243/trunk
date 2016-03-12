@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_room_seat_park_bg" >
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="64dip" >
+
+        <LinearLayout
+            android:id="@+id/park_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="19dip"
+            android:weightSum="4" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_room_park_free" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_room_park_free" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_room_park_free" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_room_park_free" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="12dip"
+        android:layout_below="@+id/content_layout"
+        android:layout_marginTop="14dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_below="@+id/name_layout"
+        android:paddingTop="4dip" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="22dip"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_room_grab_free_btn"
+            android:text="@string/kk_room_grab_park"
+            android:textColor="#301506"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="22dip"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_room_grab_free_btn"
+            android:text="@string/kk_room_grab_park"
+            android:textColor="#301506"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="22dip"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_room_grab_free_btn"
+            android:text="@string/kk_room_grab_park"
+            android:textColor="#301506"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="22dip"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_room_grab_free_btn"
+            android:text="@string/kk_room_grab_park"
+            android:textColor="#301506"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

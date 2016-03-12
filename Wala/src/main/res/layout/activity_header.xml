@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/header_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.socialtv.view.ExpandableTextView
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        expandableTextView:maxCollapsedLines="4"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#9D968D" />
+
+        <ImageButton
+            android:id="@+id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@android:color/transparent"/>
+    </com.socialtv.view.ExpandableTextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAE5E1"/>
+
+    <RadioGroup
+        android:id="@+id/new_hot_group"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/new_buuton">
+
+        <RadioButton
+            android:id="@+id/new_buuton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/header_tab_selector"
+            android:layout_weight="1"
+            android:text="@string/best_new"
+            android:textColor="@color/header_tab_selector_color"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EAE5E1"/>
+
+        <RadioButton
+            android:id="@+id/hot_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/header_tab_selector"
+            android:layout_weight="1"
+            android:text="@string/best_hot"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/header_tab_selector_color"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAE5E1"/>
+</LinearLayout>

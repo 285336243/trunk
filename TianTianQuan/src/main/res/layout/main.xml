@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bdg_botbar_tj"
+            android:checkedButton="@+id/main_tab_tv_circle"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/main_tab_tv_circle"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_quan_tj"
+                android:text="@string/tv_circle" />
+
+            <RadioButton
+                android:id="@+id/main_tab_topic"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_topic_tj"
+                android:text="@string/topic" />
+
+            <RadioButton
+                android:id="@+id/main_tab_shop"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_shop_tj"
+                android:text="@string/shop" />
+
+            <RadioButton
+                android:id="@+id/main_tab_my"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_personal_tj"
+                android:text="@string/my" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/main_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            android:background="@drawable/icon_msgnotice_tj"/>
+    </RelativeLayout>
+</LinearLayout>

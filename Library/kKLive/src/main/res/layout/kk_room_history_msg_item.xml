@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F2" >
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="82dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/kk_room_histort_msg_time_bg"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="2013-12-30"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+        android:visibility="gone" />
+
+    <com.melot.meshow.room.chat.ChatItemView
+        android:id="@+id/txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:visibility="visible" />
+
+</RelativeLayout>

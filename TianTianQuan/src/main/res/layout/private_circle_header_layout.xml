@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:id="@+id/private_circle_header_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dip" >
+
+            <ImageView
+                android:id="@+id/private_circle_header_image"
+                android:layout_width="150dip"
+                android:layout_height="96dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="96dip"
+                android:layout_toRightOf="@id/private_circle_header_image" >
+
+                <ImageView
+                    android:id="@+id/private_circle_arrow_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dip"
+                    android:background="@drawable/icon_nextarrow_tj" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/private_circle_arrow_image"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/private_circle_header_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/tvcircle_grid_item_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_qpopu_tj" />
+
+                        <TextView
+                            android:id="@+id/private_circle_header_members"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dip"
+                            android:textColor="@color/rvcircle_grid_item_number_text_color" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dip"
+                            android:background="@drawable/icon_qtopic_tj" />
+
+                        <TextView
+                            android:id="@+id/private_circle_header_topics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dip"
+                            android:textColor="@color/rvcircle_grid_item_number_text_color" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/private_circle_header_content"
+            android:orientation="horizontal"
+            android:padding="8dip" >
+
+            <Button
+                android:id="@+id/private_circle_header_circle_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_joinsqbtn_tj"
+                android:text="@string/circle_member"
+                android:textColor="@color/search_tab_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/private_circle_header_join_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_joinsqbtn_tj"
+                android:text="@string/join_circle"
+                android:textColor="@color/search_tab_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/private_circle_header_publish_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_addtopicbtn_tj"
+                android:text="@string/publish_topic"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dip"
+        android:background="@drawable/shadow_quanbot_tj" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_my_follow_item_bg"
+    android:paddingBottom="9dip"
+    android:paddingTop="9dip" >
+
+    <ImageView
+        android:id="@+id/gift_icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:src="@drawable/kk_gift_default"
+        android:scaleType="centerCrop"/>
+    
+    <ImageView
+        android:id="@+id/gift_week_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:src="@drawable/kk_gift_star_icon" />
+
+    <TextView
+        android:id="@+id/gift_name_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/gift_icon"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/kk_custom_black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gift_count_need"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gift_name_rank"
+        android:layout_below="@+id/gift_name_rank"
+        android:layout_marginTop="1dip"
+        android:focusable="false"
+        android:textColor="@color/kk_app_color_dark_gray" >
+    </TextView>
+
+</RelativeLayout>

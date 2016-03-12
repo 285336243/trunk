@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="32dip"
+        android:layout_marginRight="32dip"
+        android:background="@drawable/bdg_pop_tomato"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/upload_image_camera"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:gravity="center"
+            android:text="@string/choice_camera"
+            android:textColor="@color/hintcolor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/view_color" />
+
+        <TextView
+            android:id="@+id/upload_image_album"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:gravity="center"
+            android:text="@string/choice_aibum"
+            android:textColor="@color/hintcolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

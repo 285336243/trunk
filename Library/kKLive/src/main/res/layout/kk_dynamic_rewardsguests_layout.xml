@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp" >
+
+    <RelativeLayout
+        android:id="@+id/wholeitem" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    <RelativeLayout
+        android:id="@+id/rewardstitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp" >
+
+        <TextView
+            android:id="@+id/rewardsrank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="2dip"
+            android:text="@string/kk_news_dynamic_rewardsrank"
+            android:textColor="@color/kk_text_gray"
+            android:textSize="@dimen/kk_text_large_size" />
+
+        <RelativeLayout
+	        android:id="@+id/rewardsmore"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        >
+	        <ImageView
+	            android:id="@+id/rewardsmoreimagebtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="3dp"
+	            android:src="@drawable/kk_dynamic_more_btn" />
+	
+	        <TextView
+	            android:id="@+id/rewardsmoretext"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="3dp"
+	            android:layout_toLeftOf="@+id/rewardsmoreimagebtn"
+	            android:paddingBottom="2dip"
+	            android:text="@string/kk_news_dynamic_rewardsmore"
+	            android:textColor="@color/kk_text_gray"
+	            android:textSize="@dimen/kk_text_big_size" />
+	     </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rewardstop4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rewardstitle" >
+
+        <RelativeLayout
+            android:id="@+id/rewardsguest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_margin="3dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/rewardsguestimg1"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kk_default_avatar_small" />
+
+            <RelativeLayout
+                android:id="@+id/rewardsguestinfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rewardsguestimg1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/rewardsimg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/kk_dynamic_details_rewards_love" />
+
+                <TextView
+                    android:id="@+id/rewardsnum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rewardsimg1"
+                    android:paddingBottom="2dip"
+                    android:layout_marginLeft="3dip"
+                    android:text="x1800"
+                    android:textColor="@color/kk_room_text_pink"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rewardsguest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_margin="3dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/rewardsguestimg2"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kk_default_avatar_small" />
+
+            <RelativeLayout
+                android:id="@+id/rewardsguestinfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rewardsguestimg2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/rewardsimg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/kk_dynamic_details_rewards_love" />
+
+                <TextView
+                    android:id="@+id/rewardsnum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rewardsimg2"
+                    android:paddingBottom="2dip"
+                    android:layout_marginLeft="3dip"
+                    android:text="x1800"
+                    android:textColor="@color/kk_room_text_pink"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rewardsguest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_margin="3dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/rewardsguestimg3"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kk_default_avatar_small" />
+
+            <RelativeLayout
+                android:id="@+id/rewardsguestinfo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rewardsguestimg3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/rewardsimg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/kk_dynamic_details_rewards_love" />
+
+                <TextView
+                    android:id="@+id/rewardsnum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rewardsimg3"
+                    android:paddingBottom="2dip"
+                    android:layout_marginLeft="3dip"
+                    android:text="x1800"
+                    android:textColor="@color/kk_room_text_pink"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rewardsguest4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_margin="3dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/rewardsguestimg4"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kk_default_avatar_small" />
+
+            <RelativeLayout
+                android:id="@+id/rewardsguestinfo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rewardsguestimg4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/rewardsimg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/kk_dynamic_details_rewards_love" />
+
+                <TextView
+                    android:id="@+id/rewardsnum4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rewardsimg4"
+                    android:paddingBottom="2dip"
+                    android:layout_marginLeft="3dip"
+                    android:text="x1800"
+                    android:textColor="@color/kk_room_text_pink"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

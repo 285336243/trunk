@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="274dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="title"
+            android:textColor="@color/kk_text_gray"
+            android:textSize="@dimen/kk_title_text" />
+
+<!--         <TextView -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="0.3dip" -->
+<!--             android:background="@color/kk_app_color_dark_gray" /> -->
+		<View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="13dip"
+                android:layout_marginRight="13dip"
+                android:layout_below="@+id/title"
+                android:background="@drawable/kk_identity_registe_dialog_line" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:paddingTop="10dip"
+            android:orientation="vertical" >
+            
+	            <RelativeLayout
+	                	android:id="@+id/input_edt_layout" 
+	                    android:layout_width="fill_parent"
+   						android:layout_height="wrap_content"
+   		 				android:layout_margin="5dip"
+   		 				android:visibility="gone">
+				    <EditText android:layout_width="fill_parent"
+				        android:layout_height="40dip"
+				        android:paddingLeft="10dp"
+				        android:background="@drawable/kk_edittext_bg"
+				        android:textColorHint="@color/kk_app_color_edit_hint"
+			            android:textSize="14sp" 
+			            android:maxLength="16"
+				        android:paddingRight="30dp"
+				        android:id="@+id/edt_input"/>
+				    <ImageButton 
+				        android:layout_width="42dip"
+			            android:layout_height="32dip"
+				        android:src="@drawable/btndelete_selector"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:visibility="gone"
+				        android:background="@color/transparent"
+				        android:id="@+id/btn_delete"/>
+				</RelativeLayout>
+				<TextView
+		            android:id="@+id/msg"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="msg"
+		            android:lineSpacingExtra="2dip"
+		            android:textSize="@dimen/kk_body_text"
+		            android:textColor="@color/kk_text_black" />
+	            
+	            <RelativeLayout
+	             android:id="@+id/input_pwd_layout"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content" 
+		         android:layout_margin="5dip"
+		         android:visibility="gone">
+		
+			        <EditText
+			            android:id="@+id/edit_input_pwd"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40dip"
+			            android:background="@drawable/kk_edittext_bg"
+			            android:maxLength="16"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="30dp"
+			            android:textColorHint="@color/kk_app_color_edit_hint"
+			            android:textSize="14sp" />
+			
+			        <Button
+			            android:id="@+id/is_show_password"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginBottom="5dip"
+			            android:layout_marginRight="5dip"
+			            android:layout_marginTop="5dip"
+			            android:background="@drawable/kk_enroll_show_btn"
+			            android:gravity="center" />
+			
+			        <ImageButton
+			            android:id="@+id/btn_delete_pwd"
+			            android:layout_width="42dip"
+			            android:layout_height="32dip"
+			            android:layout_centerVertical="true"
+			            android:layout_toLeftOf="@+id/is_show_password"
+			            android:background="@color/transparent"
+			            android:src="@drawable/btndelete_selector"
+			            android:visibility="gone" />
+		   	 </RelativeLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" 
+            android:layout_marginTop="10dip"
+            android:background="#EDEDED">
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:layout_width="match_parent"
+                android:layout_height="39dip"
+                android:layout_weight="1"
+            	android:layout_margin="13dip"
+                android:background="@drawable/kk_identity_registe_dialog_use_account_btn"
+                android:textColor="@color/kk_text_white"
+                android:textSize="@dimen/kk_text_large_size"/>
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="39dip"
+                android:layout_weight="1"
+                android:layout_margin="13dip"
+                android:background="@drawable/kk_identity_registe_dialog_has_account_btn"
+                android:textColor="@color/kk_room_text_pink"
+                android:textSize="@dimen/kk_text_large_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

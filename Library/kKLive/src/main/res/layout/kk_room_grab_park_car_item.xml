@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="99dip"
+    android:background="#ffffff"
+    android:paddingLeft="10dip"
+    android:gravity="center_vertical"
+    android:paddingRight="10dip" >
+
+    <include
+        android:id="@+id/item1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/kk_room_grab_park_car" />
+
+    <include
+        android:id="@+id/item2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/kk_room_grab_park_car" />
+
+</LinearLayout>

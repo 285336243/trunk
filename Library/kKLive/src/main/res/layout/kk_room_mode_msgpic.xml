@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="3dip" >
+
+    <TextView
+        android:id="@+id/time_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/kk_chat_msg_time_tag_bg"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="38dip"
+        android:layout_height="38dip"
+        android:layout_below="@+id/time_tag"
+        android:layout_marginTop="7dip"
+        android:padding="2dip" />
+
+    <RelativeLayout
+        android:id="@+id/imglayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@+id/img"
+        android:background="@drawable/kk_room_chat_msg_bg"
+        android:clickable="true" >
+
+        <com.melot.meshow.room.mode.ProgressableImageView
+            android:id="@+id/thumb"
+            android:layout_width="75dip"
+            android:layout_height="57dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kk_default_img" />
+
+        <ProgressBar
+            android:id="@+id/load_progress"
+            android:layout_width="23dip"
+            android:layout_height="23dip"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/load_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imglayout"
+        android:layout_alignTop="@+id/imglayout"
+        android:layout_marginLeft="2dip"
+        android:clickable="true"
+        android:layout_toRightOf="@+id/imglayout"
+        android:src="@drawable/kk_room_chat_sending_icon" />
+
+     <TextView
+        android:id="@+id/last_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imglayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dip"
+        android:background="@drawable/kk_chat_msg_time_tag_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="2dip"
+        android:text="@string/kk_room_chat_last_view_tag"
+        android:textColor="#ffffff"
+        android:textSize="11sp" />
+     
+</RelativeLayout>

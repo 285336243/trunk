@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dip"
+            android:paddingTop="40dp"
+            android:background="@color/titile_color">
+
+<!--            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="20dip"
+                android:text="@string/photograph_hint"
+                android:textColor="@color/income_color"
+                android:textSize="15sp" />-->
+
+
+            <ImageView
+                android:id="@+id/person_photo"
+                android:layout_width="110dip"
+                android:layout_height="110dip"
+                android:layout_below="@+id/hint"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/personal_user_header_backgroud"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/person_header"
+                android:layout_width="110dip"
+                android:layout_height="110dip"
+                android:layout_below="@+id/hint"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/feb_topicuserhead_tomato"
+                android:scaleType="fitXY"
+                android:src="@drawable/userphoto" />
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:textColor="@color/person_name_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dip"
+                android:background="@color/black_6"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/my_total_income"
+                        android:textColor="@color/income_color"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/number"
+                        android:textColor="@color/number_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/my_month_income"
+                        android:textColor="@color/income_color"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/month_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/number"
+                        android:textColor="@color/number_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/yesterday_income"
+                        android:textColor="@color/income_color"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/yes_day_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/number"
+                        android:textColor="@color/number_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View style="@style/HaLineView" />
+
+            <RelativeLayout
+                android:id="@+id/my_order_page"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:text="@string/my_order" />
+
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    style="@style/ArrowView" />
+
+                <TextView
+                    android:id="@+id/dan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/right_arrow"
+                    android:text="@string/dan"
+                    android:textColor="@color/dan_clor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dan_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dan"
+                    android:text="@string/default_number"
+                    android:textColor="@color/number2_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/crash_account_page"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:text="@string/my_cash" />
+
+                <ImageView
+                    android:id="@+id/right_arrow1"
+                    style="@style/ArrowView" />
+
+                <TextView
+                    android:id="@+id/cash_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/right_arrow1"
+                    android:text="@string/cash_unit"
+                    android:textColor="@color/dan_clor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cash_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/cash_account"
+                    android:text="@string/default_number"
+                    android:textColor="@color/number2_color"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/transfer_list"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:text="@string/trans_list" />
+
+                <ImageView
+                    android:id="@+id/right_arrow3"
+                    style="@style/ArrowView" />
+
+                <TextView
+                    android:id="@+id/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/right_arrow3"
+                    android:text="@string/award_unit"
+                    android:textColor="@color/dan_clor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/trans_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/list"
+                    android:text="0"
+                    android:textColor="@color/number2_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/reward_page"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:text="@string/award_list" />
+
+                <ImageView
+                    android:id="@+id/right_arrow2"
+                    style="@style/ArrowView" />
+
+                <TextView
+                    android:id="@+id/award"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/right_arrow2"
+                    android:text="@string/award_unit"
+                    android:textColor="@color/dan_clor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/award_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/award"
+                    android:text="@string/default_number"
+                    android:textColor="@color/number2_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/divi_color" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

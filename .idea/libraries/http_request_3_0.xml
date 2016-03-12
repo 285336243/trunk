@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="http-request-3.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Feipai/libs/http-request-3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

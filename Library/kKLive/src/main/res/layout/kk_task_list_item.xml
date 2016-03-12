@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/namecard_root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_my_follow_item_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/content1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/task_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/kk_app_color_black"
+                android:textSize="@dimen/kk_text_big_size" />
+
+            <TextView
+                android:id="@+id/task_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/kk_text_pink" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_below="@+id/content1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="35dip">
+
+            <TextView
+                android:id="@+id/task_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:textColor="@color/kk_app_color_black" />
+
+            <Button
+                android:id="@+id/task_get_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/kk_task_get_money_bt"
+                android:textColor="@color/kk_background_white"
+                android:text="@string/task_get_money" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/task_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/kk_main_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/last_view"
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:background="@color/transparent" />
+
+</LinearLayout>

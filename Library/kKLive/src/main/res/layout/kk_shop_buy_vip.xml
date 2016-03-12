@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/kk_background_white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kk_task_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/normal_vip"
+                    android:layout_width="60dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:drawableRight="@drawable/kk_common_vip_icon"
+                    android:gravity="center"
+                    android:text="@string/kk_vip_normal"
+                    android:textColor="@color/kk_app_color_dark_gray"
+                    android:textSize="@dimen/kk_text_small_size" />
+
+                <TextView
+                    android:id="@+id/senior_vip"
+                    android:layout_width="60dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/normal_vip"
+                    android:drawableRight="@drawable/kk_senior_vip_icon"
+                    android:gravity="center"
+                    android:text="@string/kk_vip_super"
+                    android:textColor="@color/kk_app_color_dark_gray"
+                    android:textSize="@dimen/kk_text_small_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_siliao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_shangmai"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vip_layout_9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/kk_vip_common_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/escape_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="@string/kk_escape_clause"
+                android:textColor="@color/kk_app_color_dark_gray"
+                android:textSize="@dimen/kk_text_small_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:background="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/senior_vip_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_shop_buy_vip_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="seniorVipClick" >
+
+            <TextView
+                android:id="@+id/senior_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kk_senior_vip"
+                android:textColor="#BCBCBC" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/kk_senior_vip_icon" />
+
+            <ImageView
+                android:id="@+id/buy_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/kk_buy_vip_up" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/kk_shop_buy_btn_split_line" />
+
+        <LinearLayout
+            android:id="@+id/common_vip_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_shop_buy_vip_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="commonVipClick" >
+
+            <TextView
+                android:id="@+id/common_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kk_common_vip"
+                android:textColor="#BCBCBC" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/kk_common_vip_icon" />
+
+            <ImageView
+                android:id="@+id/buy_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/kk_buy_vip_up" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

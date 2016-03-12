@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="33dip"
+    android:paddingRight="33dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_room_mem_menu_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="28dip"
+        android:paddingLeft="22dip"
+        android:paddingRight="22dip"
+        android:paddingTop="40dip" >
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="这是QQ会员专属礼物"
+            android:textColor="@color/kk_text_gray"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="93dip"
+            android:layout_height="33dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/msg"
+            android:layout_gravity="left"
+            android:layout_marginTop="29dip"
+            android:background="@drawable/kk_room_add_flag_cancel"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/kk_text_gray"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="93dip"
+            android:layout_height="33dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/cancel_btn"
+            android:layout_gravity="right"
+            android:background="@drawable/kk_sign_in_sure_btn"
+            android:gravity="center"
+            android:text="马上升级"
+            android:textColor="@color/kk_text_white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

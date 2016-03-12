@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="38dip"
+        android:layout_height="38dip"
+        android:padding="2dip"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="10dip" />
+
+    <LinearLayout
+        android:id="@+id/msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:gravity="center"
+        android:background="@drawable/kk_room_mulitch_news_item_bg"
+        android:orientation="horizontal" >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kk_room_mulitchat_btn_xmlbg"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:textSize="@dimen/kk_text_big_size"
+            android:text="@string/kk_dynamic_news_submit"
+            android:textColor="@drawable/kk_room_mulitchat_news_txt_gb"/>
+    </LinearLayout>
+
+</RelativeLayout>

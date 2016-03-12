@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" 
+    android:id="@+id/modification_root_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding" >
+
+        <LinearLayout
+            android:id="@+id/modification_base_info_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_tj"
+                android:contentDescription="@string/create_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <LinearLayout
+            android:id="@+id/modification_base_info_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/save"
+                android:textColor="@color/tvcircle_title_text_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_sure_tj" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/bdg_tvq_small_tj"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/modification_avatar_layout"
+            style="@style/setting_relativelayout" >
+
+            <ImageView
+                android:id="@+id/modification_avatar_image"
+                android:layout_width="36dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip" 
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dip"
+                android:text="@string/modification_avatar"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <ImageView style="@style/setting_relativelayout_image" />
+        </RelativeLayout>
+
+        <View style="@style/setting_line" />
+
+        <RelativeLayout
+            android:id="@+id/modification_cover_layout"
+            style="@style/setting_relativelayout" >
+
+            <TextView
+                android:id="@+id/modification_cover_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:text="@string/cover"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dip"
+                android:text="@string/modification_cover"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <ImageView style="@style/setting_relativelayout_image" />
+        </RelativeLayout>
+
+        <View style="@style/setting_line" />
+
+        <RelativeLayout
+            android:id="@+id/modification_nickname_layout"
+            style="@style/setting_relativelayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:text="@string/nickname"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/modification_nickname_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dip"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:singleLine="true"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View style="@style/setting_line" />
+
+        <RelativeLayout
+            android:id="@+id/modification_sex_layout"
+            style="@style/setting_relativelayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:text="@string/sex"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/modification_sex_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dip"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View style="@style/setting_line" />
+
+        <RelativeLayout
+            android:id="@+id/modification_autograph_layout"
+            style="@style/setting_relativelayout" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:text="@string/autograph"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/modification_autograph_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dip"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Library/AndroidSDK/AndroidSDK.iml" filepath="$PROJECT_DIR$/Library/AndroidSDK/AndroidSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/AndroidSDKComponent/AndroidSDKComponent.iml" filepath="$PROJECT_DIR$/Library/AndroidSDKComponent/AndroidSDKComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Feipai/Feipai.iml" filepath="$PROJECT_DIR$/Feipai/Feipai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JiuJie/JiuJie.iml" filepath="$PROJECT_DIR$/JiuJie/JiuJie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/Library.iml" filepath="$PROJECT_DIR$/Library/Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/Library-ListViewAnimations/Library-ListViewAnimations.iml" filepath="$PROJECT_DIR$/Library/Library-ListViewAnimations/Library-ListViewAnimations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/PhotoView/PhotoView.iml" filepath="$PROJECT_DIR$/Library/PhotoView/PhotoView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/Library/PullToRefresh/PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShengDa/ShengDa.iml" filepath="$PROJECT_DIR$/ShengDa/ShengDa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/SinaWeiboSDK/SinaWeiboSDK.iml" filepath="$PROJECT_DIR$/Library/SinaWeiboSDK/SinaWeiboSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/SlidingMenu/SlidingMenu.iml" filepath="$PROJECT_DIR$/Library/SlidingMenu/SlidingMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/SlidingMenu/library/SlidingMenu-library.iml" filepath="$PROJECT_DIR$/Library/SlidingMenu/library/SlidingMenu-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TianTianQuan/TianTianQuan.iml" filepath="$PROJECT_DIR$/TianTianQuan/TianTianQuan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/UniversalImageLoader/UniversalImageLoader.iml" filepath="$PROJECT_DIR$/Library/UniversalImageLoader/UniversalImageLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/UniversalImageLoader/library/UniversalImageLoader-library.iml" filepath="$PROJECT_DIR$/Library/UniversalImageLoader/library/UniversalImageLoader-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/Volley/Volley.iml" filepath="$PROJECT_DIR$/Library/Volley/Volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wala/Wala.iml" filepath="$PROJECT_DIR$/Wala/Wala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/WeiboSDK/WeiboSDK.iml" filepath="$PROJECT_DIR$/Library/WeiboSDK/WeiboSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/android-ibeacon-service/android-ibeacon-service.iml" filepath="$PROJECT_DIR$/Library/android-ibeacon-service/android-ibeacon-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/PullToRefresh/library/library.iml" filepath="$PROJECT_DIR$/Library/PullToRefresh/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk.iml" filepath="$PROJECT_DIR$/trunk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/viewpagerindicator/viewpagerindicator.iml" filepath="$PROJECT_DIR$/Library/viewpagerindicator/viewpagerindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library/wishlist/wishlist.iml" filepath="$PROJECT_DIR$/Library/wishlist/wishlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xiadan/xiadan.iml" filepath="$PROJECT_DIR$/xiadan/xiadan.iml" />
+    </modules>
+  </component>
+</project>

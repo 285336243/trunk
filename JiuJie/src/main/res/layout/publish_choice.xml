@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/publish_choice_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="12dp">
+
+        <CheckBox
+            android:id="@+id/publish_choice_or_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_oractive_choice"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/publish_choice_text_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/btn_text_choice" />
+
+        <CheckBox
+            android:id="@+id/publish_choice_yn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/btn_pic_choice" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/publish_choice_close_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/publish_choice_close_bg"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/publish_choice_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_closesend_choice" />
+
+        <ImageButton
+            android:id="@+id/publish_choice_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_send_choice" />
+
+        <CheckBox
+            android:id="@+id/publish_choice_is_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/publish_choice_is_vote_bg"
+            android:button="@null"
+            android:checked="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/publish_choice_close_layout"
+        android:layout_below="@id/publish_choice_group"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/publish_choice_or" android:id="@+id/publish_choice_or_include" />
+
+            <include layout="@layout/publish_choice_text" android:id="@+id/publish_choice_text_include" android:visibility="gone"/>
+
+            <include layout="@layout/publish_choice_yn" android:id="@+id/publish_choice_yn_include" android:visibility="gone"/>
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>

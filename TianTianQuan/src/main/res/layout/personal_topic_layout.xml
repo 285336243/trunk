@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/personal_topic_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding" >
+
+        <LinearLayout
+            android:id="@+id/personal_topic_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_tj"
+                android:contentDescription="@string/create_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/attention_fans_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/personal_sub_topic"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/loading_layout" />
+
+    <ViewStub
+        android:id="@+id/loading_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/loading_failed_layout"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/personal_topic_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        ptr:ptrHeaderTextColor="@color/background"
+        ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrShowIndicator="false"
+        ptr:ptrMode="disabled"
+        ptr:ptrSubHeaderTextAppearance="@string/app_name"
+        ptr:ptrHeaderBackground="@color/background"
+        ptr:ptrDrawable="@drawable/transparent"/>
+
+</LinearLayout>

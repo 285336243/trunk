@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/car_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:numColumns="3"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="@dimen/kk_progress_size_fullscreen"
+            android:layout_height="30dip" />
+
+        <TextView
+            android:id="@+id/loading_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kk_loading"
+            android:textColor="#646F77" />
+    </LinearLayout>
+
+</LinearLayout>

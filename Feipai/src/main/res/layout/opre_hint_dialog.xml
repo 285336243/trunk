@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dip"
+        android:layout_marginRight="32dip"
+        android:background="@drawable/bdg_pop_tomato"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+        
+   <!--     <View android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/search_tab_selector_color"/>-->
+
+
+
+            <TextView
+                android:id="@+id/choice_boy"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:gravity="center"
+                android:text="@string/oprer_hint"
+                android:textColor="@color/hintcolor"
+                android:textSize="16sp" />
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dip"
+                 android:background="@color/view_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/is_acccept"
+                android:textColor="@color/hintcolor"
+                android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/view_color"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/no_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/hintcolor"
+        android:text="@string/no"
+        android:padding="5dp"
+        android:layout_margin="12dp"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:background="@drawable/corner_button_gray"/>
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/shi"
+        android:textSize="16sp"
+        android:background="@drawable/blue_button"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

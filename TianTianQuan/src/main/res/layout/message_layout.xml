@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/tvcircle_title_color">
+
+        <TextView
+            android:id="@+id/tv_message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/btn_back_tj"
+            android:text="@string/back"
+            android:textColor="@color/tvcircle_title_text_color"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_message"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_message_edit_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="@string/message_give_up"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tvcircle_title_text_color"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@+id/th_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerPadding="0dp"
+                android:showDividers="none"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:background="@color/tvcircle_title_color"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <com.mzs.guaji.core.ViewPager
+                android:id="@+id/vp_pages"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </TabHost>
+</LinearLayout>

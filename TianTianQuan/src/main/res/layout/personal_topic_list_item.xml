@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/personal_topic_list_item_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/bdg_tvq_small_tj"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_marginTop="8dip" >
+
+            <ImageView
+                android:id="@+id/personal_topic_list_item_user_avatar"
+                android:layout_width="36dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="8dip"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/personal_topic_list_item_usre_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/personal_topic_list_item_user_avatar"
+                android:textColor="#929191"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/personal_topic_list_item_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/personal_topic_list_item_usre_name"
+                android:layout_alignParentBottom="true"
+                android:maxEms="14"
+                android:singleLine="true"
+                android:layout_marginTop="2dip"
+                android:textColor="@color/search_tab_selector_color" />
+
+            <TextView
+                android:id="@+id/personal_topic_list_item_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:textColor="@color/search_tab_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="2dip"
+                android:layout_toLeftOf="@id/personal_topic_list_item_create_time"
+                android:background="@drawable/icon_clocktopic_tj" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/personal_topic_list_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:textColor="@color/tvcircle_grid_item_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/personal_topic_list_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="4dip"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dip"
+            android:maxLines="3"
+            android:textColor="#929191"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:id="@+id/personal_topic_list_item_content_img_layout"
+            android:layout_width="160dip"
+            android:layout_height="120dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/personal_topic_list_item_content_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="2dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_nullcomtop_tj" />
+
+            <TextView
+                android:id="@+id/personal_topic_list_item_post_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="4dip"
+                android:textColor="@color/rvcircle_grid_item_number_text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/icon_nullliketop_tj" />
+
+            <TextView
+                android:id="@+id/personal_topic_list_item_supports_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="4dip"
+                android:textColor="@color/rvcircle_grid_item_number_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="12dip"
+            android:background="#f3efef" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/search_topic_list_item_bottom_color"
+            android:paddingBottom="12dip"
+            android:paddingTop="12dip" >
+
+            <RelativeLayout
+                android:id="@+id/personal_topic_list_item_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/personal_topic_list_item_share_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_sharetopic_tj" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:text="@string/share"
+                        android:textColor="@color/rvcircle_grid_item_number_text_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/personal_topic_list_item_posts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/personal_topic_list_item_posts_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/icon_comtopic_tj" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:text="@string/comment"
+                        android:textColor="@color/rvcircle_grid_item_number_text_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/personal_topic_list_item_supports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/personal_topic_list_item_like_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_liketopic_tj" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:text="@string/like"
+                        android:textColor="@color/rvcircle_grid_item_number_text_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

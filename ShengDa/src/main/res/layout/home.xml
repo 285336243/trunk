@@ -1,0 +1,32 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/th_tabs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bdg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.shengzhish.xyj.view.BannerPager
+            android:id="@+id/vp_pages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_weight="0"
+            android:showDividers="none"
+            android:background="@drawable/bdg_bottombar_sd" />
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的吐槽，并提交"
+        android:layout_margin="7dp"/>
+    <EditText
+        android:id="@+id/opinion_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="220dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="5dip"
+        android:focusable="true"
+        android:gravity="left"
+        android:background="@color/white"/>
+    <Button
+       android:id="@+id/opinion_feedback_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button"
+        android:layout_marginTop="38dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="提 交"
+        android:textSize="25sp"
+        android:padding="8dip"/>
+
+</LinearLayout>

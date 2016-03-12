@@ -1,0 +1,380 @@
+/*
+ * Copyright (C) 2013 Chen Hui <calmer91@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.shengzhish.xyj.darrage.ui.widget;
+
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.SurfaceTexture;
+import android.os.Build;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.util.AttributeSet;
+import android.view.TextureView;
+import android.view.View;
+
+import com.shengzhish.xyj.darrage.controller.DanmakuFilters;
+import com.shengzhish.xyj.darrage.controller.DrawHandler;
+import com.shengzhish.xyj.darrage.controller.DrawHelper;
+import com.shengzhish.xyj.darrage.controller.IDanmakuView;
+import com.shengzhish.xyj.darrage.danmaku.model.BaseDanmaku;
+import com.shengzhish.xyj.darrage.danmaku.parser.BaseDanmakuParser;
+
+import java.util.Locale;
+
+/**
+ * DanmakuTextureView需要开启GPU加速才能显示弹幕
+ * 很遗憾...经过测试TextureView没有提升绘制速度,也许哪里用的不对
+ * @author ch
+ *
+ */
+@SuppressLint("NewApi")
+public class DanmakuTextureView extends TextureView implements IDanmakuView,
+        TextureView.SurfaceTextureListener, View.OnClickListener {
+
+    public static final String TAG = "DanmakuTextureView";
+
+    private DrawHandler.Callback mCallback;
+
+    private HandlerThread mDrawThread;
+
+    private DrawHandler handler;
+
+    private boolean isSurfaceCreated;
+
+    private boolean mEnableDanmakuDrwaingCache = true;
+
+    private OnClickListener mOnClickListener;
+
+    private boolean mShowFps;
+
+    private boolean mDanmakuVisibile = true;
+    
+    protected int mDrawingThreadType = THREAD_TYPE_NORMAL_PRIORITY;
+
+    public DanmakuTextureView(Context context) {
+        super(context);
+        init();
+    }
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    private void init() {
+        setOpaque(false);
+        setSurfaceTextureListener(this);
+        setOnClickListener(this);
+    }
+
+    @Override
+    public void setOnClickListener(OnClickListener l) {
+        if (l != this) {
+            mOnClickListener = l;
+        } else
+            super.setOnClickListener(l);
+    }
+
+    public DanmakuTextureView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public DanmakuTextureView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+        init();
+    }
+
+    public void addDanmaku(BaseDanmaku item) {
+        if (handler != null) {
+            handler.addDanmaku(item);
+        }
+    }
+
+    public void setCallback(DrawHandler.Callback callback) {
+        mCallback = callback;
+        if (handler != null) {
+            handler.setCallback(callback);
+        }
+    }
+
+    @Override
+    public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
+        isSurfaceCreated = true;
+    }
+
+    @Override
+    public synchronized boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
+        isSurfaceCreated = false;
+        return true;
+    }
+
+    @Override
+    public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int width, int height) {
+        isSurfaceCreated = true;
+    }
+
+    @Override
+    public void onSurfaceTextureUpdated(SurfaceTexture surface) {
+
+    }
+
+    @Override
+    public void release() {
+        stop();
+        DanmakuFilters.getDefault().clear();
+    }
+
+    @Override
+    public void stop() {
+        stopDraw();
+    }
+
+    private void stopDraw() {
+        if (handler != null) {
+            handler.quit();
+            handler = null;
+        }
+        if (mDrawThread != null) {
+            try {
+                mDrawThread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            mDrawThread.quit();
+            mDrawThread = null;
+        }
+    }
+    
+    protected Looper getLooper(int type){
+        if (mDrawThread != null) {
+            mDrawThread.quit();
+            mDrawThread = null;
+        }
+        int priority = Thread.NORM_PRIORITY;
+        String threadName = "DFM Drawing thread";
+        switch (type) {
+            case THREAD_TYPE_MAIN_THREAD: {                
+                return Looper.getMainLooper();
+            }
+            case THREAD_TYPE_HIGH_PRIORITY: {
+                priority = Thread.MAX_PRIORITY;
+                threadName += Thread.MAX_PRIORITY;
+            }
+                break;
+            case THREAD_TYPE_NORMAL_PRIORITY: {
+                priority = Thread.NORM_PRIORITY;
+                threadName += Thread.NORM_PRIORITY;
+            }
+                break;
+            case THREAD_TYPE_LOW_PRIORITY: {
+                priority = Thread.MIN_PRIORITY;
+                threadName += Thread.MIN_PRIORITY;
+            }
+                break;
+        }
+        
+        mDrawThread = new HandlerThread(threadName, priority);
+        mDrawThread.start();
+        return mDrawThread.getLooper();
+    }
+
+    private void prepare() {
+        if (handler == null)
+            handler = new DrawHandler(getLooper(mDrawingThreadType), this, mDanmakuVisibile);
+    }
+
+    @Override
+    public void prepare(BaseDanmakuParser parser) {
+        prepare();
+        handler.setParser(parser);
+        handler.setCallback(mCallback);
+        handler.prepare();
+    }
+
+    @Override
+    public boolean isPrepared() {
+        return handler != null && handler.isPrepared();
+    }
+
+    @Override
+    public void showFPS(boolean show) {
+        mShowFps = show;
+    }
+
+    @Override
+    public synchronized long drawDanmakus() {
+        if (!isSurfaceCreated)
+            return 0;
+        long stime = System.currentTimeMillis();
+        if (!isShown())
+            return -1;
+        long dtime = 0;
+        Canvas canvas = lockCanvas();
+        if (canvas != null) {
+            if (handler != null) {
+                handler.draw(canvas);
+                if (mShowFps) {
+                    dtime = System.currentTimeMillis() - stime;
+                    String fps = String.format(Locale.getDefault(), "%02d MS, fps %.2f", dtime,
+                            1000 / (float) dtime);
+                    DrawHelper.drawFPS(canvas, fps);
+                }
+            }
+            if (isSurfaceCreated)
+                unlockCanvasAndPost(canvas);
+        }
+        dtime = System.currentTimeMillis() - stime;
+        return dtime;
+    }
+
+    public void toggle() {
+        if (isSurfaceCreated) {
+            if (handler == null)
+                start();
+            else if (handler.isStop()) {
+                resume();
+            } else
+                pause();
+        }
+    }
+
+    @Override
+    public void pause() {
+        if (handler != null)
+            handler.pause();
+    }
+
+    @Override
+    public void resume() {
+        if (handler != null && mDrawThread != null && handler.isPrepared())
+            handler.resume();
+        else {
+            restart();
+        }
+    }
+
+    public void restart() {
+        stop();
+        start();
+    }
+
+    @Override
+    public void start() {
+        start(0);
+    }
+
+    @Override
+    public void start(long postion) {
+        if (handler == null) {
+            prepare();
+        } else {
+            handler.removeCallbacksAndMessages(null);
+        }
+        handler.obtainMessage(DrawHandler.START, postion).sendToTarget();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (mOnClickListener != null) {
+            mOnClickListener.onClick(view);
+        }
+    }
+
+    public void seekTo(Long ms) {
+        if (handler != null) {
+            handler.seekTo(ms);
+        }
+    }
+
+    public void enableDanmakuDrawingCache(boolean enable) {
+        mEnableDanmakuDrwaingCache = enable;
+    }
+
+    @Override
+    public boolean isDanmakuDrawingCacheEnabled() {
+        return mEnableDanmakuDrwaingCache;
+    }
+
+    @Override
+    public boolean isViewReady() {
+        return isSurfaceCreated;
+    }
+
+    @Override
+    public View getView() {
+        return this;
+    }
+
+    @Override
+    public void show() {
+        showAndResumeDrawTask(null);
+    }
+    
+    @Override
+    public void showAndResumeDrawTask(Long position) {
+        if (handler == null) {
+            return;
+        }
+        handler.showDanmakus(position);
+        mDanmakuVisibile = true;
+    }
+
+    @Override
+    public void hide() {
+        if (handler == null) {
+            return;
+        }
+        handler.hideDanmakus(false);
+        mDanmakuVisibile = false;
+    }
+    
+    @Override
+    public long hideAndPauseDrawTask() {
+        if (handler == null) {
+            return 0;
+        }
+        long position = handler.hideDanmakus(true);
+        mDanmakuVisibile = false;
+        return position;
+    }
+
+    @Override
+    public synchronized void clear() {
+        if (!isViewReady()) {
+            return;
+        }        
+        Canvas canvas = lockCanvas();
+        if (canvas != null) {
+            DrawHelper.clearCanvas(canvas);
+            unlockCanvasAndPost(canvas);
+        }
+
+    }
+
+    @Override
+    public boolean isShown() {
+        if (handler == null || !isViewReady()) {
+            return false;
+        }
+        return handler.getVisibility();
+    }
+
+    @Override
+    public void setDrawingThreadType(int type) {
+        mDrawingThreadType = type;
+    }
+
+}

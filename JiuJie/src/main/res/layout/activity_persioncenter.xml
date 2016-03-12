@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dip">
+        <ImageView
+            android:id="@+id/person_photo"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"/>
+        <ImageView
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/feb_headset_choice"/>
+        <ImageView
+            android:id="@+id/perosn_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_alignBottom="@id/person_photo"
+            android:layout_alignRight="@id/person_photo"
+            android:layout_marginRight="8dip"
+            />
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/count_jiujie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/select_card_color"
+        android:text="30"/>
+    <TextView
+        android:id="@+id/count_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/light_grey"
+        android:text="30"/>
+    <TextView
+        android:id="@+id/count_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/light_grey"
+        android:text="30"/>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_jiujie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="top|center"
+            android:textSize="12sp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/select_card_text_color"
+            android:background="@drawable/select_card_bkg"
+            android:text="@string/select_card_jiujie" />
+
+        <RadioButton
+            android:id="@+id/radio_reply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="top|center"
+            android:textSize="12sp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/select_card_text_color"
+            android:background="@drawable/select_card_bkg"
+            android:text="@string/select_card_answer" />
+
+        <RadioButton
+            android:id="@+id/radio_collection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="top|center"
+            android:textSize="12sp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/select_card_text_color"
+            android:background="@drawable/select_card_bkg"
+            android:text="@string/select_card_collect" />
+    </RadioGroup>
+
+    <com.jiujie8.choice.myjiujie.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/colors"
+        android:layout_below="@+id/tabs" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/default_bdg_img"/>
+    <item>
+        <bitmap
+            android:antialias="true"
+            android:filter="true"
+            android:gravity="center"
+            android:src="@drawable/bdg_defaultimg_sd" />
+    </item>
+</shape>

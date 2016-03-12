@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/follow_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/loading_layout" />
+
+    <ViewStub
+        android:id="@+id/loading_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/loading_failed_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="4dip"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/personal_attention_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            ptr:ptrHeaderTextColor="@color/background"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrShowIndicator="false"
+            ptr:ptrMode="disabled"
+            ptr:ptrSubHeaderTextAppearance="@string/app_name"
+            ptr:ptrHeaderBackground="@color/background"
+            ptr:ptrDrawable="@drawable/transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_my_follow_item_bg"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="12dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxWidth="160dip"
+            android:singleLine="true"
+            android:textColor="@color/kk_app_color_black"
+            android:textSize="@dimen/kk_text_normal_size" />
+
+        <Button
+            android:id="@+id/song_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/kk_task_get_money_bt"
+            android:paddingLeft="14dip"
+            android:paddingRight="14dip"
+            android:text="@string/kk_song_choice"
+            android:textColor="@color/kk_background_white" />
+
+        <TextView
+            android:id="@+id/song_singer"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/song_operate"
+            android:layout_marginRight="24dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/kk_app_color_dark_gray" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/last_view"
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:background="@color/transparent" />
+
+</LinearLayout>

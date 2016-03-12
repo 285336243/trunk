@@ -1,0 +1,116 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId 'com.socialtv'
+        minSdkVersion 8
+        targetSdkVersion 21
+        versionCode 308
+        versionName '3.0.8'
+    }
+    signingConfigs {
+        walaConfig {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        testConfig {
+            storeFile file('test.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.walaConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            signingConfig signingConfigs.testConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+        "35"{}
+    }
+}
+
+dependencies {
+    compile project(':Library:wishlist')
+    //    compile project(':Library:ActionBarSherlock:actionbarsherlock')
+    compile project(':Library:AndroidSDK')
+    compile project(':Library:AndroidSDKComponent')
+    compile project(':Library:PullToRefresh:library')
+    compile project(':Library:SinaWeiboSDK')
+    compile project(':Library:viewpagerindicator')
+    compile project(':Library:Volley')
+//    compile project(':Library:alipay_lib')
+//    compile project(':Library:kKLive')
+//    compile project(':Library:NineOldAndroids')
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile files('libs/guice-3.0-no_aop.jar')
+    compile files('libs/http-request-3.0.jar')
+    compile files('libs/javax.inject-1.jar')
+    compile files('libs/khandroid-httpclient-4.2.3.jar')
+    compile files('libs/roboguice-2.0.jar')
+    compile files('libs/roboguice-sherlock-1.4.jar')
+    compile files('libs/umeng_sdk.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/moodstocks.jar')
+    compile files('libs/alipay.jar')
+    compile files('libs/mid-sdk-2.10.jar')
+    compile files('libs/mta-sdk-2.0.0.jar')
+    compile files('libs/wup-1.0.0-SNAPSHOT.jar')
+    compile files('libs/Xg_sdk_v2.35.jar')
+    compile 'com.android.support:support-v4:21.0.2'
+    compile 'com.google.code.gson:gson:2.2'
+
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.github.chrisbanes.photoview:library:1.2.2'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+}
+
+//   添加so
+//task nativeLibsToJar(type: Zip, description: 'create a jar archive of the native libs') {
+//    destinationDir file("$buildDir/native-libs")
+//    baseName 'native-libs'
+//    extension 'jar'
+//    from fileTree(dir: 'libs', include: '**/*.so')
+//    into 'lib/'
+//}
+//
+//tasks.withType(Compile) {
+//    compileTask -> compileTask.dependsOn(nativeLibsToJar)
+//}
+android.packagingOptions {
+    android.enforceUniquePackageName = false
+}
+
+android.applicationVariants.all{ variant ->
+    println "${variant.dirName}"
+    variant.outputs.get(0).processManifest.doLast{
+        copy{
+            println "do ${variant.dirName} now"
+            from("src/main/AndroidManifest.xml")
+
+            into("${buildDir}/intermediates/manifests/${variant.dirName}/")
+
+            filter{
+                String line -> line.replaceAll("WALA_CHANNEL_VALUE", "${variant.productFlavors[0].name}")
+            }
+
+            println " name ${variant.productFlavors[0].name} "
+            println "processResources"
+            variant.outputs.get(0).processResources.manifestFile = file("${buildDir}/intermediates/manifests/${variant.dirName}/AndroidManifest.xml")
+        }
+    }
+}

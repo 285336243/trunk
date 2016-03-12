@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageButton
+            android:id="@+id/comment_cancel"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_cancel_sd"
+            android:scaleType="fitXY"   />
+
+        <Button
+            android:id="@+id/comment_send"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="@string/special_publish_title"
+            android:textColor="@color/submit_color" />
+    </RelativeLayout>
+
+    <com.shengzhish.xyj.util.MyEditText
+        android:id="@+id/comment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:focusable="true"
+        android:gravity="top"
+        android:hint="@string/comment_hint"
+        android:textColor="@color/white"
+        android:textColorHint="#70FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#30000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/comment_color_text"
+            android:textColor="#70FFFFFF"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/comment_color_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/color_white"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_list_white_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/color_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_list_yellow_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/color_red"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_list_red_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/color_blue"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_list_blue_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/color_cyan"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_list_cyan_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/color_orange"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_list_orange_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/color_green"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/color_list_green_selector"
+                android:button="@null" />
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

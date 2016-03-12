@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:textSize="14sp" 
+            android:background="@drawable/kk_edittext_bg"
+            android:textColorHint="@color/kk_app_color_edit_hint"
+            android:paddingLeft="60dp" >
+
+        </EditText>
+        <TextView
+            android:id="@+id/labelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+	        android:textColor="@color/kk_app_color_edit_hint"
+            android:paddingLeft="10dp"/>
+        <ImageButton
+		    android:id="@+id/clearBtn"      
+	   		android:layout_width="42dip"
+   			android:layout_height="32dip"
+   			android:background="@color/transparent"
+		    android:layout_marginRight="5dip"
+		    android:layout_gravity="right|center_vertical"
+		    android:src="@drawable/btndelete_selector" 
+		    android:contentDescription="@null"
+		    android:visibility="gone"/>
+ </FrameLayout>

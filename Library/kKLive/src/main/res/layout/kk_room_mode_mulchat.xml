@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kk_room_mulchat_bg"
+    android:clickable="true"
+    android:onClick="onSurfaceClick"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ListView
+        android:id="@+id/chatlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+       
+        android:visibility="gone" >
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/newslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingBottom="10dip" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="38dip"
+            android:layout_height="38dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="3dip"
+            android:padding="2dip" />
+
+        <LinearLayout
+            android:id="@+id/msg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:background="@drawable/kk_room_mulitch_news_item_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kk_room_mulitchat_btn_xmlbg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="@string/kk_dynamic_news_submit"
+                android:textColor="@drawable/kk_room_mulitchat_news_txt_gb"
+                android:textSize="@dimen/kk_text_big_size" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+</RelativeLayout>

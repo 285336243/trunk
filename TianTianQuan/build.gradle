@@ -1,0 +1,119 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 19
+    }
+
+    signingConfigs {
+        TianTianQuanConfig {
+            storeFile file('tiantianquan.keystore')
+            storePassword 'tiantianquan'
+            keyAlias 'ttq'
+            keyPassword 'tiantianquan'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.TianTianQuanConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    productFlavors {
+//        "01" {}
+//        "02" {}
+//        "03" {}
+//        "04" {}
+//        "05" {}
+//        "06" {}
+//        "10" {}
+//        "11" {}
+//        "13" {}
+//		"14" {}
+//        "15" {}
+//        "16" {}
+//        "17" {}
+//        "18" {}
+//        "19" {}
+//        "20" {}
+//        "21" {}
+//        "22" {}
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src/java'
+            }
+            resources {
+                srcDir 'src/resources'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.github.chrisbanes.photoview:library:1.2.2'
+    //
+    compile project(':Library:wishlist')
+    //    compile project(':Library:ActionBarSherlock:actionbarsherlock')
+    compile project(':Library:AndroidSDK')
+    compile project(':Library:AndroidSDKComponent')
+    compile project(':Library:PullToRefresh:library')
+    compile project(':Library:WeiboSDK')
+    compile project(':Library:Library-ListViewAnimations')
+    compile project(':Library:viewpagerindicator')
+    compile project(':Library:Volley')
+    //    compile files('libs/android-support-v4.jar')
+    compile files('libs/http-request-3.0.jar')
+    compile files('libs/javax.inject-1.jar')
+    compile files('libs/jpush-sdk-release1.5.6.jar')
+    compile files('libs/khandroid-httpclient-4.2.3.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/roboguice-2.0.jar')
+    compile files('libs/roboguice-sherlock-1.4.jar')
+    compile files('libs/umeng_sdk.jar')
+    //    compile files('libs/guice-4.0-beta.jar')
+    compile files('libs/guice-4.0-beta4-no_aop.jar')
+    compile files('libs/guice-3.0-no_aop.jar')
+    compile files('libs/moodstocks.jar')
+}
+
+android.packagingOptions {
+    android.enforceUniquePackageName = false
+//    android.packageBuildConfig = false
+}
+
+//android.applicationVariants.all{ variant ->
+//    println "${variant.dirName}"
+//    variant.processManifest.doLast{
+//        copy{
+//            println "do ${variant.dirName} now"
+//            from("src/main/AndroidManifest.xml")
+//
+//            into("${buildDir}/intermediates/manifests/${variant.dirName}/")
+//
+//            filter{
+//                String line -> line.replaceAll("TIANTIANQUAN_CHANNEL_VALUE", "${variant.productFlavors[0].name}")
+//            }
+//
+//            println "processResources"
+//            variant.processResources.manifestFile = file("${buildDir}/intermediates/manifests/${variant.dirName}/AndroidManifest.xml")
+//        }
+//    }
+//}

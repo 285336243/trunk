@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e454c">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    <ImageButton
+        android:id="@+id/love_exponent_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/btn_back_tj"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/love_exponent_afresh_once_text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/afresh_once"
+        android:gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/love_exponent" android:id="@+id/love_exponent"/>
+
+        <include layout="@layout/compute_love_exponent" android:id="@+id/compute_love_exonent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

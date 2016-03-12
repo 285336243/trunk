@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e454c">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/answer_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_tj"
+                android:contentDescription="@string/create_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/answer"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/answer_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bdg_question_tj"
+            android:layoutAnimation="@anim/list_view_translate">
+
+            <TextView
+                android:id="@+id/answer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp"
+                android:layout_margin="8dp" />
+        </RelativeLayout>
+
+        <com.mzs.guaji.view.ScaleImageView
+            android:id="@+id/answer_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp" />
+
+        <LinearLayout
+            android:id="@+id/answer_bottom_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bdg_questiontime_tj"
+            android:layoutAnimation="@anim/list_view_translate">
+
+            <RelativeLayout
+                android:id="@+id/answer_time_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:layout_marginTop="8dip">
+
+                <TextView
+                    android:id="@+id/answer_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingBottom="2.5dp"
+                    android:paddingTop="2.5dp"
+                    android:typeface="monospace"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/answer_progress"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progressDrawable="@drawable/progress_drawable"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_weight="2.0"
+                android:layout_marginTop="16dip" />
+
+            <TextView
+                android:id="@+id/answer_progress_text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_text_color"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dip" />
+
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/answer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:layoutAnimation="@anim/list_view_translate"
+        android:cacheColorHint="#00000000" />
+
+
+</LinearLayout>

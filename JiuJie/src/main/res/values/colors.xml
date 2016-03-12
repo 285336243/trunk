@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="actionbar_background">#F2F6F6F6</color>
+    <color name="red">#FE4830</color>
+    <color name="light_grey">#6F6A64</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="blue">#50D1FF</color>
+    <color name="light_red">#FF7373</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#A5A5A5</color>
+    <color name="ligth_grey_8d">#D8D8D8</color>
+    <color name="pie_bkg">#4CFFFFFF</color>
+    <color name="white_6E">#EEEEEE</color>
+    <color name="signatu">#AEAEAE</color>
+    <color name="divi_color">#EAE5E1</color>
+    <color name="dialog_color">#99000000</color>
+    <color name="select_card_color">#FF5050</color>
+    <color name="tab_background">#FF4830</color>
+    <color name="black_4c">#4C000000</color>
+    <color name="front_backgroud">#66000000</color>
+</resources>

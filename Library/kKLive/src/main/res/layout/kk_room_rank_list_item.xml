@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_rank_list_item_bg_gray"
+    android:paddingBottom="9dip"
+    android:paddingTop="9dip" >
+
+    <ImageView
+        android:id="@+id/rank_idx"
+        android:layout_width="20dip"
+        android:layout_height="17dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dip"
+        android:layout_marginRight="9dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kk_rank11" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_marginRight="9dip"
+        android:layout_toRightOf="@+id/rank_idx"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kk_default_avatar_small_men" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:layout_toRightOf="@+id/avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="NameNameName"
+        android:textColor="#474747"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/r_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="4dip"
+        android:focusable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_room_lv6" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/luck_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/r_lv"
+        android:drawableLeft="@drawable/kk_icon_perrty"
+        android:text="1234586"
+        android:textColor="#ff6c00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/name"
+        android:layout_marginRight="20dip"
+        android:text="6364814"
+        android:textColor="@color/kk_rank_color_red"
+        android:textSize="14sp" >
+    </TextView>
+
+</RelativeLayout>

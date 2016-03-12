@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/follow_fans_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding" >
+
+        <LinearLayout
+            android:id="@+id/follow_fans_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_tj"
+                android:contentDescription="@string/create_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/attention_fans_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/attention"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/attion_fans_group"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/tvcircle_title_color"
+        android:checkedButton="@+id/main_tab_tv_circle"
+        android:orientation="horizontal"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip" >
+
+        <RadioButton
+            android:id="@+id/attention_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/topic_tab_background_attention_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:textColor="@drawable/text_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/fans_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/topic_tab_background_fans_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/text_selector"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/attentio_fans_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dip" />
+</LinearLayout>

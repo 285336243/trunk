@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="220dip" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="220dip"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/register_text_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:gravity="center_horizontal"
+        android:text="@string/kk_kuaibo_reg_title"
+        android:textColor="@color/kk_text_black"
+        android:textSize="@dimen/kk_text_big_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/register_text_des"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_text_one"
+        android:layout_marginTop="14dip"
+        android:gravity="center_horizontal"
+        android:text="@string/kk_kuaibo_reg_info"
+        android:textColor="@color/kk_text_gray"
+        android:textSize="@dimen/kk_text_normal_size" />
+
+   <LinearLayout
+        android:id="@+id/register_login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_text_des"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip"
+        android:layout_marginTop="30dip"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/quick_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/kk_sign_in_sure_btn"
+            android:gravity="center"
+            android:text="@string/kk_quick_register"
+            android:textColor="@color/kk_text_white"
+            android:textSize="@dimen/kk_text_large_size" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/kk_room_add_flag_cancel"
+            android:gravity="center"
+            android:text="@string/kk_login"
+            android:textColor="@color/kk_text_pink"
+            android:textSize="@dimen/kk_text_large_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

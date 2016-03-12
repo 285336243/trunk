@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/kk_title_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <com.melot.meshow.util.widget.EditDelete
+            android:id="@+id/verify_code_in"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/get_code_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.17"
+            android:background="@drawable/kk_verify_code_btn"
+            android:textColor="@color/kk_color_btn_verify_code"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/kk_register_btn"
+            android:enabled="false"
+            android:text="@string/next"
+            android:textColor="@color/kk_color_btn"
+            android:textSize="@dimen/kk_button_text" />
+    </LinearLayout>
+
+</LinearLayout>

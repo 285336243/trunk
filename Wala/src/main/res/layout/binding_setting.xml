@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/binding_setting_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/binding_setting_mobile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="@color/light_grey"
+            android:text="@string/mobile"
+            android:layout_marginLeft="24dp"/>
+
+        <TextView
+            android:id="@+id/binding_setting_mobile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white_grey"
+            android:layout_toRightOf="@id/binding_setting_mobile_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:maxWidth="160dp"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/binding_setting_mobile_binding_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tab_background"
+            android:text="@string/binding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/binding_setting_sina"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/binding_setting_sina_binding_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sina_weibo"
+            android:textSize="16sp"
+            android:textColor="@color/light_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"/>
+
+        <TextView
+            android:id="@+id/binding_setting_sina_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white_grey"
+            android:layout_toRightOf="@id/binding_setting_sina_binding_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:maxWidth="160dp"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/binding_setting_sina_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tab_background"
+            android:text="@string/binding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/binding_setting_tencent"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/binding_setting_tencent_binding_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tencent_acount"
+            android:textSize="16sp"
+            android:textColor="@color/light_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"/>
+
+        <TextView
+            android:id="@+id/binding_setting_tencent_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white_grey"
+            android:layout_toRightOf="@id/binding_setting_tencent_binding_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:maxWidth="160dp"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/binding_setting_tencent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/tab_background"
+            android:text="@string/binding"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+</LinearLayout>

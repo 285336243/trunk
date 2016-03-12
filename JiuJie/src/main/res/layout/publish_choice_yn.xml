@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/publish_choice_yn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"/>
+
+        <ImageView
+            android:id="@+id/publish_choice_yn_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:id="@+id/publish_choice_yn_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_deleimg_choice"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/transparent"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/publish_choice_yn_yes_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/icon_yesbtn_choice" />
+
+            <ImageButton
+                android:id="@+id/publish_choice_yn_no_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/icon_nobtn_choice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/publish_choice_yn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/btn_selectimg_chioce" />
+
+            <ImageButton
+                android:id="@+id/publish_choice_yn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@color/transparent"
+                android:src="@drawable/btn_selectcamera_choice" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/publish_choice_yn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="@color/transparent"
+        android:textColorHint="#A5A5A5"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:textColor="@color/light_grey"
+        android:hint="@string/publish_choice_tip"/>
+</LinearLayout>

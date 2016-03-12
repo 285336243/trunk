@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/namecard_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kk_background_gray"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="55dip" >
+
+            <RelativeLayout
+                android:id="@+id/top_view"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:background="@drawable/kk_name_card_top_bg" >
+
+                <RelativeLayout
+                    android:id="@+id/live_room_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dip"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/kk_name_live_none" >
+
+                    <ImageView
+                        android:id="@+id/play_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="74dip"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/kk_name_card_play"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/room_play_start"
+                        android:layout_width="74dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="34dip"
+                        android:layout_marginTop="8dip"
+                        android:gravity="center"
+                        android:textColor="@color/kk_rank_color_red"
+                        android:textSize="@dimen/kk_text_10_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/kk_background_white" >
+
+                    <LinearLayout
+                        android:id="@+id/fans_follows_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="80dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/follows_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="onMyFollowsClick"
+                            android:textColor="@color/yyssdk_gray"
+                            android:textSize="@dimen/kk_text_dialog_size" />
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="30dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@color/kk_app_color_light_gray" />
+
+                        <TextView
+                            android:id="@+id/fans_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="OnViewFans"
+                            android:textColor="@color/yyssdk_gray"
+                            android:textSize="@dimen/kk_text_dialog_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/follow_btn_layout"
+                        android:layout_width="74dip"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dip"
+                        android:background="@color/transparent"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/attention_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/kk_name_edit" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="80dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="54dip"
+                        android:background="@color/kk_app_color_light_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/avatar_layout"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="8dip"
+                    android:background="@color/kk_background_white" >
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kk_guest_avatar" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_view"
+                android:background="@color/kk_background_white" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="10dip"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="160dip"
+                    android:paddingRight="4dip"
+                    android:singleLine="true"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <TextView
+                    android:id="@+id/sex_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/name"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginTop="9dip"
+                    android:layout_toRightOf="@+id/name"
+                    android:textColor="#898888"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <TextView
+                    android:id="@+id/family_medal_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_toRightOf="@+id/sex_icon"
+                    android:layout_alignBottom="@+id/name"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/kk_medal"
+                    android:textSize="@dimen/kk_text_normal_size" />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:textColor="#898888"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_toRightOf="@+id/id"
+                    android:textColor="#898888"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <RelativeLayout
+                    android:id="@+id/money_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/money_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/kk_rank_color_red"
+                        android:textSize="@dimen/kk_text_big_size" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dip"
+                        android:background="@drawable/kk_name_card_bt"
+                        android:text="@string/kk_give_money"
+                        android:textColor="@color/kk_rank_color_red" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/user_actor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/money_view"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/kk_name_card_actor"
+                    android:textColor="#898888"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <ImageView
+                    android:id="@+id/actor_image_start"
+                    android:layout_width="54dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/money_view"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_toRightOf="@+id/user_actor"
+                    android:baselineAlignBottom="@+id/user_actor"
+                    android:scaleType="fitStart" />
+
+                <ProgressBar
+                    android:id="@+id/actor_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="134dip"
+                    android:layout_height="11dip"
+                    android:layout_below="@+id/money_view"
+                    android:layout_marginTop="14dip"
+                    android:layout_toRightOf="@+id/actor_image_start"
+                    android:baselineAlignBottom="@+id/user_actor"
+                    android:max="100"
+                    android:progressDrawable="@drawable/kk_progressbar_style" >
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/actor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_actor"
+                    android:layout_marginLeft="60dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_toRightOf="@+id/user_actor"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#898888"
+                    android:textSize="@dimen/kk_text_small_size" />
+
+                <ImageView
+                    android:id="@+id/actor_image_end"
+                    android:layout_width="54dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/money_view"
+                    android:layout_marginTop="12dip"
+                    android:layout_toRightOf="@+id/actor_progress"
+                    android:baselineAlignBottom="@+id/user_actor"
+                    android:scaleType="fitEnd" />
+
+                <TextView
+                    android:id="@+id/user_rich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actor_text"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="3dip"
+                    android:text="@string/kk_name_card_rich"
+                    android:textColor="#898888"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <ImageView
+                    android:id="@+id/rich_image_start"
+                    android:layout_width="54dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actor_text"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginTop="7dip"
+                    android:layout_toRightOf="@+id/user_rich"
+                    android:baselineAlignBottom="@+id/user_rich"
+                    android:scaleType="fitStart" />
+
+                <ProgressBar
+                    android:id="@+id/rich_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="134dip"
+                    android:layout_height="11dip"
+                    android:layout_below="@+id/actor_text"
+                    android:layout_marginTop="9dip"
+                    android:layout_toRightOf="@+id/rich_image_start"
+                    android:baselineAlignBottom="@+id/user_rich"
+                    android:max="100"
+                    android:progressDrawable="@drawable/kk_progressbar_style" >
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/rich_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_below="@+id/user_rich"
+                    android:layout_marginLeft="60dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_toRightOf="@+id/user_rich"
+                    android:ellipsize="end"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:textColor="#898888"
+                    android:textSize="@dimen/kk_text_small_size" />
+
+                <ImageView
+                    android:id="@+id/rich_image_end"
+                    android:layout_width="54dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actor_text"
+                    android:layout_marginTop="7dip"
+                    android:layout_toRightOf="@+id/rich_progress"
+                    android:baselineAlignBottom="@+id/user_rich"
+                    android:scaleType="fitEnd" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/kk_app_color_light_gray" />
+            </RelativeLayout>
+            <!-- 相册 -->
+
+            <RelativeLayout
+                android:id="@+id/pthto_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userinfo"
+                android:layout_marginTop="10dip"
+                android:background="@color/kk_background_white" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/kk_app_color_light_gray" />
+
+                <TextView
+                    android:id="@+id/photo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/kk_name_card_photos_show"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <include
+                    android:id="@+id/photo_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photo_text"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginTop="8dip"
+                    layout="@layout/kk_namecard_photo" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/kk_app_color_light_gray" />
+            </RelativeLayout>
+
+            <!-- 动态 -->
+
+            <RelativeLayout
+                android:id="@+id/dynamic_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pthto_layout"
+                android:layout_marginTop="10dip"
+                android:background="@color/kk_background_white" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/kk_app_color_light_gray" />
+
+                <TextView
+                    android:id="@+id/messagetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/kk_name_card_messages"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <ImageView
+                    android:id="@+id/dataimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/kk_statuses_detail_time"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/dynamic_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toLeftOf="@+id/dynamic_arrow"
+                    android:text="昨天更新"
+                    android:textColor="@color/kk_room_text_gray"
+                    android:textSize="@dimen/kk_text_large_size" />
+
+                <ImageView
+                    android:id="@+id/dynamic_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="12dip"
+                    android:src="@drawable/kk_arrow_narmal" />
+
+                <View
+                    android:id="@+id/divbelowtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/messagetitle"
+                    android:layout_margin="8dip"
+                    android:background="@color/kk_app_color_light_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/dynamicbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divbelowtitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp" >
+
+                    <ImageView
+                        android:id="@+id/messagephoto"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="6dip"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/image_play"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:layout_marginRight="6dip"
+                        android:background="#80ff8ee0"
+                        android:scaleType="center"
+                        android:src="@drawable/kk_room_chat_video_icon"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:id="@+id/titlelayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/messagephoto"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dynamic_content"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:maxLines="3"
+                            android:textColor="@color/kk_room_text_gray"
+                            android:textSize="@dimen/kk_text_large_size" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divbelowdynamicbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/dynamicbut"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@color/kk_app_color_light_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/item_operation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divbelowdynamicbut"
+                    android:layout_marginRight="8dip" >
+
+                    <RelativeLayout
+                        android:id="@+id/media"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dip" >
+
+                        <ImageView
+                            android:id="@+id/media_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dip"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/kk_dynamic_comment_video_player" />
+
+                        <TextView
+                            android:id="@+id/media_length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/media_icon"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="36&apos;&apos;"
+                            android:textColor="@color/kk_app_tips_text"
+                            android:textSize="@dimen/kk_text_normal_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/comment"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/reward"
+                        android:paddingBottom="8dip"
+                        android:paddingLeft="8dip"
+                        android:paddingRight="3dip"
+                        android:paddingTop="8dip" >
+
+                        <ImageView
+                            android:id="@+id/commentimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dip"
+                            android:layout_toLeftOf="@+id/dynamic_comment"
+                            android:src="@drawable/kk_dynamic_comment" />
+
+                        <TextView
+                            android:id="@+id/dynamic_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/kk_app_tips_text"
+                            android:textSize="@dimen/kk_text_big_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dip"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:paddingTop="8dip" >
+
+                        <ImageView
+                            android:id="@+id/rewardimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/kk_dynamic_reward" />
+
+                        <TextView
+                            android:id="@+id/dynamic_reward"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/rewardimg"
+                            android:text="0"
+                            android:textColor="@color/kk_app_tips_text"
+                            android:textSize="@dimen/kk_text_big_size" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/kk_app_color_light_gray" />
+            </RelativeLayout>
+
+            <!-- 道具 -->
+
+            <RelativeLayout
+                android:id="@+id/props_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dynamic_view"
+                android:layout_marginTop="10dip"
+                android:background="@color/kk_background_white" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/kk_app_color_light_gray" />
+
+                <TextView
+                    android:id="@+id/props"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/kk_name_card_props"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <com.melot.meshow.util.CustomGridView
+                    android:id="@+id/props_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/props"
+                    android:gravity="center"
+                    android:horizontalSpacing="4dip"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="4dip"
+                    android:visibility="invisible" >
+                </com.melot.meshow.util.CustomGridView>
+
+                <ProgressBar
+                    android:id="@+id/car_progress_bar"
+                    style="@android:style/Widget.ProgressBar.Inverse"
+                    android:layout_width="34dip"
+                    android:layout_height="34dip"
+                    android:layout_below="@+id/props"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="3dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/kk_app_color_light_gray" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_room_top_bar_bg" >
+
+        <ImageView
+            android:id="@+id/left_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dip"
+            android:src="@drawable/kk_room_back_btn_grey" />
+
+        <ImageView
+            android:id="@+id/namecard_readflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/kk_news_bg_flag"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/kk_personal_namecard"
+            android:textColor="#80807f"
+            android:textSize="@dimen/kk_text_big_size" />
+
+        <ImageView
+            android:id="@+id/moreme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/opreation_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/kk_namecard_edit_btn" />
+    </RelativeLayout>
+
+    <!-- 名片更多 -->
+
+    <LinearLayout
+        android:id="@+id/namecard_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/kk_namecard_toolbar_bg"
+        android:visibility="gone" >
+
+        <include layout="@layout/kk_namecard_toolbar" />
+    </LinearLayout>
+
+</RelativeLayout>

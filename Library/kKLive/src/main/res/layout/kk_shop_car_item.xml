@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_white"
+    android:gravity="center"
+    android:paddingBottom="7dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="8dip" >
+
+    <ImageView
+        android:id="@+id/car_thumb"
+        android:layout_width="93dip"
+        android:layout_height="61dip"
+        android:background="@color/transparent"
+        android:focusable="false"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/discount_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_alignBottom="@+id/car_thumb"
+        android:layout_alignRight="@+id/car_thumb"
+        android:background="@color/transparent"
+        android:focusable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_promotion_icon" />
+
+    <ImageView
+        android:id="@+id/car_icon"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_below="@+id/car_thumb"
+        android:layout_marginTop="3dip"
+        android:background="@color/transparent"
+        android:scaleType="centerInside" />
+
+    <com.melot.meshow.widget.ScrollingTextView
+        android:id="@+id/car_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/car_thumb"
+        android:layout_below="@+id/car_thumb"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/car_icon"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:lines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="奇瑞扣扣啊"
+        android:textColor="#4F4F4F" />
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/car_thumb"
+        android:layout_alignRight="@+id/car_thumb"
+        android:layout_below="@+id/car_name"
+        android:gravity="center"
+        android:lines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="10000秀币"
+        android:textColor="#FF5095" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_price"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kk_shop_buy_car_btn"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="2dip"
+        android:text="@string/kk_buy"
+        android:textColor="#AD5B12"
+        android:textSize="12sp" />
+
+</RelativeLayout>

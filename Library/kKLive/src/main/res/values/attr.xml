@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="media_state">
+        <attr name="state_playing" format="boolean" />
+        <attr name="state_stoped" format="boolean" />
+        <attr name="state_volume" format="integer" />
+        
+    </declare-styleable>
+    <integer name="volume1">1</integer>
+    <integer name="volume2">2</integer>
+    <integer name="volume3">3</integer>
+</resources>

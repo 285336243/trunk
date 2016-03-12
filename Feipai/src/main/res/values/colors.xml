@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="tab_selected">#B01125</drawable>
+    <drawable name="screen_shot_title">#2F2C2C</drawable>
+
+    <color name="window_color">#F8F4F0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#9D968D</color>
+    <color name="tab_background">#FF4830</color>
+    <color name="sina">#FF6526</color>
+    <color name="qq">#56D0FF</color>
+    <color name="loginbutton">#FE4830</color>
+    <color name="hintcolor">#9D968C</color>
+    <color name="view_color">#EDE9E3</color>
+    <color name="price_color">#20000000</color>
+    <color name="textcolor">#FE4830</color>
+    <color name="name_color">#6f6a64</color>
+    <color name="description_color">#9D968D</color>
+    <color name="ling_color">#EAE5E1</color>
+    <color name="submit_background">#95000000</color>
+    <color name="pername_color">#6F6A64</color>
+    <color name="signatu">#AEAEAE</color>
+    <color name="divi_color">#EAE5E1</color>
+    <color name="edit_color">#9D968C</color>
+    <color name="red">#FE4830</color>
+    <color name="baby_white">#FAFAFA</color>
+    <color name="light_grey">#444444</color>
+    <color name="white_grey">#aeaeae</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="black_6">#60000000</color>
+    <color name="cambridge_blue">#57EBFF</color>
+    <color name="transparent_95">#00000000</color>
+    <color name="list_divider_top">#ebe7e7</color>
+    <color name="income_color">#e9e9e9</color>
+    <color name="number_color">#eaff00</color>
+    <color name="dan_clor">#8b8b8b</color>
+    <color name="person_name_color">#f1fbd9</color>
+    <color name="number2_color">#fd9100</color>
+    <color name="white_6E">#EEEEEE</color>
+    <color name="titile_color">#177CB0</color>
+    <color name="item_color">#505050</color>
+    <color name="search_tab_color">#aeaeae</color>
+    <color name="tvcircle_grid_item_text_color">#5f5f5f</color>
+    <color name="black">#000000</color>
+    <color name="no_order_color"> #a0a1a0</color>
+    <color name="address_color">#7f7f7f</color>
+    <color name="address_title_color">#444444</color>
+    <color name="number_order_color">#f1fbd9</color>
+    <color name="time_color">#eeeeef</color>
+    <color name="verify_code_textcolor">#4c4c4c</color>
+    <color name="virify_color">#fbffcc</color>
+    <color name="senbutton_color">#e2e2e2</color>
+    <color name="time_backgroud_color">#feff65</color>
+    <color name="shen_blue">#00008B</color>
+    <color name="phone_color">#87CEFA</color>
+</resources>

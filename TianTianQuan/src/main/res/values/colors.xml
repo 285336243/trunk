@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="home_title_bakcground">#ff3bdaff</color>
+    <color name="dialog_button_pressed">#FFDDE1E4</color>
+    <color name="dialog_button_default">#FFDFDFDF</color>
+    <color name="tab_text_color">#bdbebe</color>
+    <color name="background">#f3efef</color>
+    <color name="tvcircle_title_color">#1783c7</color>
+    <color name="tvcircle_title_text_color">#aff1ff</color>
+    <color name="search_hint_color">#dcd6d6</color>
+    <color name="tvcircle_grid_item_text_color">#5f5f5f</color>
+    <color name="rvcircle_grid_item_number_text_color">#aeaeae</color>
+    <color name="search_tab_color">#aeaeae</color>
+    <color name="search_tab_selector_color">#7acdff</color>
+    <color name="search_topic_list_item_bottom_color">#f9f9f9</color>
+    <color name="blue">#4CCCFA</color>
+    <color name="pink">#ff7e61</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="question_mall_blue">#1980c1</color>
+    <color name="topic_seletor_color">#40000000</color>
+    <color name="list_divider_top">#ebe7e7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="message_item_selector">#eaf9ff</color>
+    <color name="red">#ff7e61</color>
+    <color name="mask_board">#953EAEF5</color>
+    <color name="title_background">#951783c7</color>
+    <color name="transparent">#00000000</color>
+</resources>

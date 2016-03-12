@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/star_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/dynamic_topics_group"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/dynamic_buuton">
+
+        <RadioButton
+            android:id="@+id/dynamic_buuton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/header_tab_selector"
+            android:layout_weight="1"
+            android:text="@string/dynamic"
+            android:textColor="@color/header_tab_selector_color"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#EAE5E1"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioButton
+            android:id="@+id/topics_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/header_tab_selector"
+            android:layout_weight="1"
+            android:text="@string/topics"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/header_tab_selector_color"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAE5E1"/>
+</LinearLayout>

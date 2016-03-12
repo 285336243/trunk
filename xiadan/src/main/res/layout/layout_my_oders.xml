@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/total_jifen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollHorizontally="true"
+        android:textSize="17sp"
+        android:text="@string/my_order"
+        android:textColor="@color/shen_blue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/no_order_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="26dip"
+        android:drawableTop="@drawable/icon_no_record"
+        android:gravity="center_horizontal"
+        android:paddingTop="80dip"
+        android:text="@string/tem_norecord"
+        android:visibility="gone"
+        android:textSize="20dip" />
+</FrameLayout>
+</LinearLayout>

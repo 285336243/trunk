@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="kk_room_light_color">#ff2c75</color>
+    <color name="kk_shop_item_color">#eb3974</color>
+    <color name="kk_color_black">#FF1C1C1C</color>
+	<color name="kk_btn_color">#c5c5c5</color>
+	<color name="kk_btn_color_pink">#ff5eb1</color>
+	<color name="kk_area_item_defutl_bg">#f0f0f0</color>
+	<color name="kk_area_item_areaadd_more">#ff74e1</color>
+</resources>

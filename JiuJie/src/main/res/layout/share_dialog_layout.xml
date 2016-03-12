@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/share_sina"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="36dip"
+       android:drawableLeft="@drawable/icon_sharesina_choice"
+        android:drawablePadding="24dip"
+        android:text="@string/share_sina_weibo"
+        android:textColor="@color/light_grey"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ligth_grey_8d" />
+    <TextView
+        android:id="@+id/share_weixin_friends"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/icon_sharewq_choice"
+        android:paddingLeft="36dip"
+        android:drawablePadding="24dip"
+        android:text="@string/share_weixin_frinds"
+        android:textColor="@color/light_grey"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ligth_grey_8d" />
+    <TextView
+        android:id="@+id/share_weixin_good_frinds"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/icon_sharewf_choice"
+        android:paddingLeft="36dip"
+        android:drawablePadding="24dip"
+        android:text="@string/share_weixin_good_friend"
+        android:textColor="@color/light_grey"
+        android:textSize="16sp" />
+
+</LinearLayout>

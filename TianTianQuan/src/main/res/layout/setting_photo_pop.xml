@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+        
+        <View android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/search_tab_selector_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/setting_photo_camera"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bdg_btnpop_tj"
+                android:text="@string/take_picture"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/setting_photo_local"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="16dip"
+                android:background="@drawable/bdg_btnpop_tj"
+                android:text="@string/selet_local_picture"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/setting_photo_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="32dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bdg_btnpop_tj"
+                android:text="@string/cancel"
+                android:textColor="@color/search_tab_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dip"
+    android:paddingTop="50dip" >
+
+    <RelativeLayout
+        android:layout_width="217dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_room_gift_star_bg" >
+
+        <TextView
+            android:id="@+id/contr_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜xxx成为上周礼物之星"
+            android:textColor="#F8F5F6"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/gift_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contr_txt" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

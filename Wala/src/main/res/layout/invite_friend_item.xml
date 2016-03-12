@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white" android:paddingBottom="16dp"
+    android:id="@+id/invite_friend_item_root">
+
+    <FrameLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/invite_friend_item_avatar_layout">
+
+        <ImageView
+            android:id="@+id/invite_friend_item_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/headpic"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/feb_topicuserhead_tomato" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/invite_friend_item_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/invite_friend_item_avatar_layout"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="160dp"
+        android:textColor="@color/light_grey"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/invite_friend_item_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invite_friend_item_nickname"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/invite_friend_item_avatar_layout"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#aeaeae"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/invite_friend_item_is_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:button="@null"
+        android:background="@drawable/invite_phone_check" />
+
+</RelativeLayout>

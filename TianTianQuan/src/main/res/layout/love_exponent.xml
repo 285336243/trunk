@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bdg_cardloveb_tj">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/love_man_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bdg_takephoto_tj"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bdg_timescan_tj"
+                android:layout_below="@id/love_man_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_nanlove_tj" />
+
+                <EditText
+                    android:id="@+id/love_man_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16sp"
+                    android:hint="@string/name"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#3f4348" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/love_woman_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bdg_takephoto_tj"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bdg_timescan_tj"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/love_woman_photo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_nvlove_tj" />
+
+                <EditText
+                    android:id="@+id/love_woman_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16sp"
+                    android:hint="@string/name"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/love_exponent_tip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/love_exponent_tip"
+                android:textSize="14sp"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:layout_margin="32dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/love_exponent_start"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bdg_starlove_tj">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/start"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:textColor="#ff7e61" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

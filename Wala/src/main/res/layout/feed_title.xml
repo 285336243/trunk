@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal">
+
+   <RadioGroup
+       android:id="@+id/feed_group"
+       android:layout_width="match_parent"
+       android:layout_height="32dp"
+       android:orientation="horizontal"
+       android:layout_gravity="center_vertical"
+       android:layout_marginLeft="48dp"
+       android:layout_weight="100"
+       android:checkedButton="@+id/feed_newest">
+
+       <RadioButton
+           android:id="@+id/feed_newest"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/feed_left_selector"
+           android:layout_weight="1"
+           android:text="@string/newest"
+           android:gravity="center"
+           android:textSize="16sp"
+           android:textColor="@color/feed_selector_color"
+           android:button="@null"/>
+
+       <RadioButton
+           android:id="@+id/feed_hot"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/feed_right_selector"
+           android:layout_weight="1"
+           android:text="@string/hot"
+           android:gravity="center"
+           android:textSize="16sp"
+           android:textColor="@color/feed_selector_color"
+           android:button="@null"/>
+   </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/feed_refresh"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/btn_lightrefresh_tomato"/>
+
+</LinearLayout>

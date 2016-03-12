@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 公用 -->
+    <string name="quit_again_toast">"再按一次退出kk唱响"</string>
+    <string name="welcom_in_kk">进入大厅</string>
+    <string name="company_name">杭州米络科技有限公司</string>
+    <string name="activity_notify">"活动详情"</string>
+    <string name="login_dialog_hint">"您尚未登录，不能完成该操作"</string>
+    <string name="image_description">kktv</string>
+
+    <!-- 主页分类 -->
+    <string name="kk_tab_home">首页</string>
+    <string name="kk_tab_liveroom">大厅</string>
+    <string name="kk_tab_popularity">人气</string>
+    <string name="kk_tab_rookie">新秀</string>
+    <string name="kk_tab_viewed">看过</string>
+    <string name="kk_get_hall_list_fail_tips">获取频道列表失败</string>
+    <string name="kk_get_hall_list_info_tips">啊哦~该频道没有主播</string>
+    <string name="kk_get_hall_history_list_tips">您是怎么找到这里的？\n赶紧去其它地方看看吧</string>
+    <string name="kk_clear_viewed_history_dialog">您确定要清空记录吗？</string>
+    <string name="kk_clear_viewed_history">清空</string>
+    
+    
+    <!-- 同城 -->
+    <string name="areaselecttitle">地区选择</string>
+    <string name="areaselectfail">获取地区信息失败</string>
+    <string name="areaelectnone">啊哦~没有地区信息</string>
+    <string name="areaadd">本月新增<xliff:g>%s</xliff:g>人</string>
+    <string name="areacount"><xliff:g>%s</xliff:g>人</string>
+
+    <!-- 大厅主界面 -->
+    <string name="no_sdcard_tips">未检测到SD卡，图片将不能正常浏览。</string>
+    <string name="tab_title_live_room">首页</string>
+    <string name="tab_title_rank">排行</string>
+    <string name="tab_title_stars">星级</string>
+    <string name="tab_title_startop">明星TOP15</string>
+    <string name="tab_title_richtop">富豪TOP15</string>
+    <string name="tab_title_weekstar">每周礼物明星榜</string>
+    <string name="tab_title_weekrich">每周礼物富豪榜</string>
+    <string name="userinfo_money">秀币:</string>
+    <string name="main_login">登录</string>
+    <string name="room_node_tag">room_node_tag</string>
+    <string name="tab_ttile_mystage">我的舞台</string>
+    <string name="tab_pop_zhubo">人气星天地</string>
+    <string name="tutorial_video_play_failed">该视频播放失败！</string>
+
+    <!-- 星级 -->
+    <string name="starlevel">星级</string>
+    <string name="starlevel_type_supercrown">超冠</string>
+    <string name="starlevel_type_crown">皇冠</string>
+    <string name="starlevel_type_bigcrown">巨钻</string>
+    <string name="starlevel_type_badge">红心</string>
+    
+    <!-- 家族 -->
+    <string name="title_family_leader">族长</string>
+    <string name="title_family_fleader">副族长</string>
+    <string name="tab_title_family_startop">家族明星TOP10</string>
+    <string name="tab_title_family_richtop">家族富豪TOP10</string>
+    <string name="title_family_honor">家族荣誉</string>
+    <string name="family_honor_norank">暂无排名</string>
+    <string name="family_honor_type_consume">家族消费</string>
+    <string name="family_honor_type_pop">家族人气</string>
+    <string name="family_honor_type_medal">勋章成员</string>
+    <string name="family_honor_type_time">直播时长</string>
+    <string name="family_honor_type_crown">超冠主播</string>
+    <string name="family_honor_type_bigcrown">巨钻主播</string>
+    <string name="family_honor_character">第<xliff:g>%s</xliff:g>名</string>
+
+    <!-- 充值 -->
+    <string name="fill_tips">重要提示:</string>
+    <string name="fill_tips_content1">1. 请务必选择与您手中充值卡一样的面值</string>
+    <string name="fill_tips_content2">2. 充值提交后需要1到2分钟的处理，请耐心等待</string>
+    <string name="fill_tips_content3">3. 如遇问题请联系客服 QQ: 2322590867</string>
+    <string name="to_account_str">充值帐号:</string>
+    <string name="account_from_str">充值渠道:</string>
+    <string name="left_money_str">财富余额:</string>
+    <string name="set_fill_money">请选择充值金额 (1元=1000秀币):</string>
+    <string name="set_fill_money_unicom">请选择充值金额 (1元=600秀币):</string>
+    <string name="set_card_type">请选择充值卡类型及面值 (1元=1000秀币):</string>
+    <string name="next">下一步</string>
+    <string name="set_money_else_hint">请选择充值金额</string>
+    <string name="set_money_no_card_selected">请选择充值卡面值</string>
+    <string name="rmb">元</string>
+    <string name="card_money">充值卡实际面额:</string>
+    <string name="card_account">请输入充值卡序列号</string>
+    <string name="card_pwd">请输入充值卡密码</string>
+    <string name="card_money_not_enough">充值金额大于充值卡面额</string>
+    <string name="pay_money">充值金额:</string>
+    <string name="paying">正在充值，请等待&#8230;</string>
+    <string name="select_payment_type">请选择您的充值方式：</string>
+    <string name="select_payment_cup">银联手机支付</string>
+    <string name="select_payment_shenzhoufu">手机充值卡充值</string>
+    <string name="select_payment_chinaunicom">中国联通充值</string>
+    <string name="unicom_tips">重要提示:</string>
+    <string name="unicom_tops_content1">1. 本业务支持中国联通手机话费支付。</string>
+    <!-- string name="unicom_tops_content2">2. 充值资费说明：话费充值采用溢价的方式，如果用户充值10元，运营商直接收取4元，用户帐号得到6元等值秀币。</string -->
+    <string name="unicom_tops_content3">2. 首次使用，会自动发送短信给运营商来确定用户身份，运营商可能会收取短信费用。</string>
+    <string name="unicom_tops_content4">3. 如您在正常操作的情况下充值未到帐，请拨打KK唱响客服热线：4008269186。</string>
+    <string name="payment_unionpay">网银充值</string>
+    <string name="fill_money_alipay">支付宝充值</string>
+    <string name="fill_money_payeco">易联充值</string>
+    <string name="fill_money_wechat">微信支付</string>
+    <string name="fill_money_chinaunicom">联通手机话费支付</string>
+    <string name="fill_money_chinamobile">移动手机话费支付</string>
+    <string name="fill_money_get">充值<xliff:g>%s</xliff:g>元可获得<xliff:g>%s</xliff:g>秀币</string>
+    <string name="fill_money_else">其他充值金额</string>
+    <string name="get_promotion_failed">获取优惠信息失败，您可以继续支付</string>
+    <string name="fill_money_alipay_plugin_check">正在检测是否安装支付宝插件</string>
+    <string name="alipay_plugin_confirm_download_hint">"下载提示"</string>
+    <string name="alipay_plugin_confirm_download">"为保证您的交易安全，请下载安装支付宝安全支付服务后进行付款。\n\n点击确定，立即下载。"</string>
+    <string name="alipay_plugin_confirm_update_hint">"更新提示"</string>
+    <string name="alipay_plugin_confirm_update">"您的支付宝安全支付服务有更新。\n\n点击确定，立即下载。"</string>
+    <string name="alipay_plugin_confirm_downloading">"正在下载"</string>
+    <string name="alipay_plugin_confirm_install_hint">"安装提示"</string>
+    <string name="alipay_plugin_confirm_install">"为保证您的交易安全，请安装支付宝安全支付服务后进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="alipay_plugin_check_failed">"支付宝插件检测失败"</string>
+    <string name="alipay_plugin_download_failed">"网络不稳定，下载插件失败"</string>
+    <string name="alipay_subject">"购买秀币"</string>
+    <string name="unicom_pay_props">秀币</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+    <string name="alipay_remote_server_failed">支付服务正在进行升级操作。</string>
+    <string name="alipay_is_paying">正在支付</string>
+    <string name="alipay_is_success_get_meshow_money">支付成功，正在更新秀币</string>
+    <string name="unionpay_limit_tips">银联手机支付单卡当日累计交易限额为500元</string>
+    <string name="unionpay_need_plugin">完成购买需要安装最新版银联支付控件，是否马上安装？</string>
+    <string name="unionpay_is_success_get_meshow_money">支付成功，正在更新秀币</string>
+    <string name="unionpay_is_success_get_meshow_money_refresh">更新秀币</string>
+    <string name="unionpay_is_success_get_meshow_money_failed">您的充值已经成功，但由于网络原因，秀币还没有到帐，请稍后重新登录查看。如果问题仍然存在，请联系客服。</string>
+    <string name="wechat_title_tip">提示</string>
+    <string name="wechat_not_install">您尚未安装微信，是否现在下载安装呢？</string>
+    <string name="wechat_update_install">您安装的微信版本过低，是否现在下载更新呢？</string>
+    <string name="wechat_confirm">是</string>
+    <string name="wechat_donfirm">否</string>
+
+    <!-- 支付模块通用提示 -->
+    <string name="payment_getting_promotion">获取优惠信息&#8230;</string>
+    <string name="payment_getting_order">正在生成订单，请稍候&#8230;</string>
+    <string name="payment_get_order_failed">生成订单失败，请稍后重试或联系客服</string>
+    <string name="payment_get_order_failed_limit_amount">单笔充值上限为<xliff:g>%s</xliff:g>元，请重新填写充值金额。</string>
+    <string name="payment_get_order_failed_limit_actor">很抱歉，主播暂无充值权限~</string>
+    <string name="payment_get_order_failed_network">连接网络失败，请检查网络</string>
+    <string name="payment_req_timeout_network">网络请求超时，请重试</string>
+    <string name="payment_unknown_error">支付失败</string>
+
+    <!-- QQ会员特权说明 -->
+    <string name="qq_info_title">QQ会员特权说明</string>
+    <string name="qq_info_content_title">&#160;QQ会员特权&#160;</string>
+    <string name="qq_info_content">1.&#160;观众列表的昵称显红\n2.&#160;昵称后显示QQ会员标识\n3.&#160;拥有部分QQ会员专属礼物\n4.&#160;官方充值额外赠送5%秀币</string>
+    <string name="qq_info_login">登录授权</string>
+    <string name="qq_info_fill_info">1.&#160;&#160;请通过腾讯网站开通QQ会员，然后重新登录KK唱响即可获得特权\n2.&#160;&#160;如果您已经开通了QQ会员，请重新登录授权\n3.&#160;&#160;请务必使用登录KK唱响的QQ号码开通QQ会员，否则特权无法生效</string>
+    <string name="qq_get_vip_ing">正在获取Vip信息&#8230;</string>
+    <string name="qq_get_vip_failed">获取Vip信息失败</string>
+    <string name="qq_get_vip_none">您不是QQ会员</string>
+    <string name="qq_get_vip_success">恭喜您，可以使用QQ会员特权啦！</string>
+    <string name="qq_get_vip_across">请使用登录的QQ号码授权，或使用新QQ号注册新账号</string>
+    <string name="qq_get_vip_other">QQ号已经注册了其他账号，请直接登录</string>
+    <string name="qq_bind_account">正在绑定QQ帐号&#8230;</string>
+    <string name="qq_vip_fill_discount">正在绑定QQ帐号&#8230;</string>
+    <string name="payment_fail_to_pay">&#160;&#160;QQ会员充值额外赠送5%秀币</string>
+
+    <!-- 任务 -->
+    <string name="menu_task_text">任务</string>
+    <string name="task_title">做任务，赢秀币</string>
+    <string name="task_content">任务描述</string>
+    <string name="task_gold">奖励</string>
+    <string name="task_get_money">领取秀币</string>
+    <string name="task_already_get_money">已领取</string>
+    <string name="task_complete">已完成</string>
+    <string name="task_todo">未完成</string>
+    <string name="task_loading">正在获取任务列表&#8230;</string>
+    <string name="task_wait">该版本不支持，请先升级&#8230;</string>
+    <string name="task_wait_register">请先注册或登录</string>
+    <string name="task_complete_hint">任务完成，领取秀币吧</string>
+    <string name="task_name_diferent">您修改的昵称和原来相同，请重新修改！</string>
+    <string name="task_follow_none">您已经关注所有主播，请取消几个主播再做任务</string>
+    <string name="task_bind_phone">手机号码绑定</string>
+    <string name="task_phone_china">中国</string>
+    <string name="task_china_code">+86</string>
+    <string name="task_phone_hint">请输入您的手机号码</string>
+    <string name="task_phone_err">请输入正确的手机号码</string>
+    <string name="task_vevify_input">输入验证码</string>
+    <string name="task_vevify_hint_short">请输入您收到的验证码</string>
+    <string name="task_vevify_hint_long">如果60秒内没有收到，您可以点击重新验证来重新获取验证码</string>
+    <string name="task_re_verify">重新验证</string>
+    <string name="task_verify_complete">完成</string>
+    <string name="task_verify_request_send">验证码已发送</string>
+    <string name="task_verify_ing">正在验证&#8230;</string>
+    <string name="task_verify_code_error">请您输入正确的验证码</string>
+    <string name="task_verify_hint_pre">已向</string>
+    <string name="task_verify_hint_end">发送了验证信息，请查收</string>
+    <string name="task_shop_none">对不起，您的手机未安装应用市场</string>
+    <string name="task_must_get">领取</string>
+    <string name="task_must_fillmoney">去充值</string>
+    <string name="task_get_present_ing">正在获取任务奖励&#8230;</string>
+
+    <!-- 房间搜索 -->
+    <string name="search_title">搜索</string>
+    <string name="search">搜索房间</string>
+    <string name="searching">正在搜索&#8230;</string>
+    <string name="no_room_finded">未能找到房间</string>
+    <string name="search_edit_hint">输入房间、找人（昵称或ID）</string>
+
+    
+    
+    
+
+    <!-- 关注 -->
+    <string name="my_attention">关注</string>
+    <string name="my_attention_follow">我关注的</string>
+    <string name="my_attention_manage">我管理的</string>
+
+      <!-- 联系人 -->
+    <string name="kk_contacts">联系人</string>
+    <string name="kk_contacts_friend">好友</string>
+    <string name="kk_contacts_attention">关注</string>
+    <string name="kk_contacts_fans">粉丝</string>
+    <string name="kk_contacts_group">群组</string>
+    
+    <!-- 找回密码 -->
+    <string name="forget">找回密码</string>
+    <string name="forget_pw">忘记密码?</string>
+    <string name="enter_phone">请输入手机号</string>
+    <string name="forget_help">找回密码仅支持已绑定手机的帐号，如果您未绑定手机号，请联系客服人工找回。\n客服QQ: 2322590867, 2036199246</string>
+    <string name="reset_password_suc">重置密码成功。</string>
+    <string name="serviceHotline">服务热线：</string>
+    <string name="s_phone_number">4008&#8211;269&#8211;186</string>
+    <string name="verify_code6">请输入6位验证码</string>
+    <string name="no_verify_code">没收到验证码？</string>
+    <string name="again_verify_code">秒后重新获取</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="get_verify_code_ret">发送验证码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="tips_new_password">新密码，6&#8211;16位字符</string>
+    <string name="show_password">显示密码</string>
+    <string name="new_old_password_same">新密码和旧密码相同，请重新填写</string>
+    <string name="show_pwd">abc</string>
+    <string name="hide_pwd">● ● ●</string>
+    <string name="get_failed">获取失败</string>
+    <string name="forget_phone_failed">找回密码失败</string>
+    <string name="bind_phone_failed">绑定失败</string>
+    <string name="bind_phone_count_limit">啊哦~您的手机号达到本日获取绑定手机号的验证码上限了，明天再来试试吧!</string>
+    <string name="forget_phone_count_limit">啊哦~您的手机号达到本日获取找回密码的验证码上限了，明天再来试试吧!</string>
+    <string name="forget_baL">+86</string>
+    <string name="verify_code_error">校验码输入错误，请重新填写</string>
+    <string name="verify_code_submit">正在提交，请稍后……</string>
+    <string name="get_verify_code_fail">正在提交，请稍后……</string>
+    <!-- 注册成功 -->
+    <string name="register_success_title">注册成功</string>
+    <string name="your_account">您的帐号:</string>
+    <string name="your_pwd">您的密码:</string>
+    <string name="login_now">立即进入</string>
+    <string name="your_nickname">您的昵称:</string>
+    <string name="your_invitation_code">邀&#160;&#160;请&#160;&#160;码:</string>
+    <string name="your_sex">性&#160;&#160;&#160;&#160;别:</string>
+    <string name="your_id">您的ID号:</string>
+    <string name="follow_room_pos_tag">follow_room_pos_tag</string>
+    <string name="get_user_info_failed">同步用户信息失败</string>
+
+    <!-- 绑定 -->
+    <string name="kk_geting_bindaccount">正在获取帐号绑定信息&#8230;</string>
+    <string name="kk_get_bindaccount_failed">啊哦~获取帐号绑定信息失败</string>
+
+    <!-- 直播大间 -->
+    <string name="getting_rooms">正在获取列表&#8230;</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放刷新</string>
+    <string name="last_update">上次更新  <xliff:g>%s</xliff:g></string>
+
+    <!-- 我的名片 -->
+    <string name="setting_title">我的KK</string>
+    <string name="edit">编辑</string>
+    <string name="myfans">我的粉丝</string>
+    <string name="mymoney">我的秀币</string>
+    <string name="myfollow">我的关注</string>
+    <string name="more_setting">更多设置</string>
+    <string name="rich_">秀币:</string>
+    <string name="person">人</string>
+    <string name="tab_title_my_attention">我的关注</string>
+
+    <!-- 大厅分类 -->
+    <string name="online_count_pre">在线人数:</string>
+    <string name="liveroom_category_all">全部</string>
+    <string name="liveroom_category_title">频道</string>
+
+    <!-- 排行榜 -->
+    <string name="star_top">明星TOP15</string>
+    <string name="rich_top">富豪TOP15</string>
+    <string name="rank_today">日榜</string>
+    <string name="rank_all">超级榜</string>
+    <string name="rank_gift">礼物之星</string>
+    <string name="rank_pre_gift">上周</string>
+    <string name="rank_now_gift">本周</string>
+
+    <!-- 更多设置 -->
+    <string name="menu_setting_text">设置</string>
+    <string name="more_setting_title">更多设置</string>
+    <string name="more_setting_notify">推送提醒</string>
+    <string name="more_setting_notify_hint">接受推送提醒</string>
+    <string name="more_setting_notify_voice">声音</string>
+    <string name="more_setting_notify_vibrate">震动</string>
+    <string name="more_setting_notify_time_set">免打扰设置</string>
+    <string name="more_setting_notify_time_set_hint">免打扰时间内将不进行任何提醒。</string>
+    <string name="more_setting_notify_time_start">开始时间</string>
+    <string name="more_setting_notify_time_end">结束时间</string>
+    <string name="more_setting_notify_enable">关闭推送提醒，将收不到任何订阅、好友、系统消息提醒。</string>
+    <string name="more_setting_notify_tag">免打扰时间</string>
+    <string name="more_setting_notify_time"><xliff:g>%s</xliff:g>:<xliff:g>%s</xliff:g>-<xliff:g>%s</xliff:g>:<xliff:g>%s</xliff:g></string>
+    <string name="more_setting_notify_time_all">全天推送</string>
+    <string name="more_setting_notify_time_never">从不推送</string>
+    <string name="more_setting_feedback">意见反馈</string>
+    <string name="more_setting_soft_check">检查更新</string>
+    <string name="more_setting_about">关于本软件</string>
+    <string name="more_setting_about_worker">"客服电话：4008269186\n邮箱：kktv@melot.cn"</string>
+    <string name="more_setting_cur_version">当前版本:</string>
+    <string name="more_setting_new_version">有新版本:</string>
+    <string name="more_setting_logout">退出登录</string>
+    <string name="more_setting_logout_ing">正在退出登录&#8230;</string>
+    <string name="more_setting_reset_pwd">修改密码</string>
+    <string name="more_setting_feedback_hint">请输入您的建议</string>
+    <string name="more_setting_feedback_commit">提 交</string>
+    <string name="more_setting_feedback_committing">正在提交</string>
+    <string name="more_setting_feedback_commit_success">提交成功</string>
+    <string name="about_str">版本: <xliff:g>%s</xliff:g>\n米络科技 版权所有\nCopyright © 2012&#8211;2014 Melot.\nAll Rights Reserved.</string>
+    <string name="more_str_setting_fail">推送设置上传失败</string>
+    <string name="more_recommend">应用推荐</string>
+    <string name="more_count_bind">帐号绑定</string>
+    <string name="more_room_anim">房间动画</string>
+    <string name="more_count_bind_qq_account">QQ帐号</string>
+    <string name="more_count_bind_weibo_account">新浪微博</string>
+    <string name="more_newsalert_mode">提醒方式</string>
+    <string name="more_newsalert_timesetting">时间设置</string>
+    <string name="more_newsalert_whisper">私聊提醒</string>
+    <string name="more_newsalert_actor">主播</string>
+    <string name="more_newsalert_user">高级用户</string>
+    <string name="more_newsalert_tishi">紫色VIP且财富等级≥5</string>
+    <string name="more_room_anim_gift">礼物动画</string>
+    <string name="more_room_anim_screen_fly">飞屏动画</string>
+    <string name="more_room_anim_emo">表情动画</string>
+    <string name="more_room_anim_tips">关闭后将不在房间中显示相应动画特效\n可以使直播画面更流畅哦~</string>
+    <string name="more_count_bind_phone_account">手机号</string>
+    <string name="more_count_phone_un_bind_hint">解除手机号绑定后将不能使用相应手机号进行该账号的登录，且无法自动找回密码。</string>
+    <string name="more_count_bind_account_none">未绑定</string>
+    <string name="more_count_bind_success_qq">QQ绑定成功</string>
+    <string name="more_count_bind_success_weibo">微博绑定成功</string>
+    <string name="more_count_bind_success_phone">手机号绑定成功</string>
+    <string name="more_count_un_bind_failed">解绑失败</string>
+    <string name="more_count_un_bind_success">解绑成功</string>
+    <string name="more_count_un_bind_failed_un">未绑定其它帐号，无法解除绑定</string>
+    <string name="more_count_qq_un_bind">解除QQ帐号绑定</string>
+    <string name="more_count_weibo_un_bind">解除微博帐号绑定</string>
+    <string name="more_count_phone_un_bind">解除手机号绑定</string>
+    <string name="more_count_bind_account_useless">已过期</string>
+    <string name="more_count_bind_auth">重新授权</string>
+    <string name="load_webview_failed">"无法打开，未能找到浏览器"</string>
+    <string name="more_count_bind_phone">手机号绑定</string>
+    <string name="bind_phone_tips_act">绑定手机号后，您可以使用手机号进行登录、找回密码。</string>
+    <string name="bind_phone_help">土豪土豪，为了您的帐号资金安全，赶紧绑定手机号吧！</string>
+    <string name="more_count_unbinding">正在解除绑定</string>
+
+    
+
+    <!-- loading -->
+    <string name="loading_check_network">网络监测&#8230;</string>
+    <string name="loading_check_soft">版本检测中&#8230;</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="loading_first_publish">百度应用独家首发</string>
+    <string name="loading_binding_market">安卓市场</string>
+
+    <!-- 软件更新 -->
+    <string name="soft_update_new_version">最新版本:</string>
+    <string name="soft_update_update">马上升级</string>
+    <string name="soft_update_ignore">放弃机会</string>
+    <string name="soft_update_failed_dialog_title">软件更新</string>
+    <string name="soft_check_failed">版本检测失败</string>
+    <string name="soft_check_newest">当前是最新版本</string>
+    <string name="kk_soft_update_downloading">版本下载中&#8230;</string>
+    <string name="kk_soft_update_is_donwnload_cancel">确定要取消下载吗?</string>
+    <string name="kk_soft_update_downloading_go_on">继续</string>
+
+    <!-- 文件下载 -->
+    <string name="load_err_no_url">下载地址获取错误</string>
+    <string name="load_err">下载失败</string>
+
+    
+
+    <!-- 优惠券 -->
+    <string name="coupon_not_list">您当前没有优惠券。</string>
+    <string name="coupon_recharge_string_tips">充值加送  <xliff:g>%s</xliff:g></string>
+    <string name="coupon_valid_string_tips">有效期：<xliff:g>%s</xliff:g>天</string>
+    <string name="coupon_please"> 请选择您的优惠券</string>
+    <string name="coupon_use_not">暂不使用</string>
+    <string name="coupon_recharge_best">充值优惠:&#x0020;&#x0020;充值加送<xliff:g>%s</xliff:g></string>
+    <string name="coupon_recharge_title">充值优惠:</string>
+    <string name="coupon_get_list"> 正在获取您的优惠券列表,请稍后&#8230;</string>
+    <string name="coupon_not_today">有效期：今日到期</string>
+    <string name="coupon_select_payment_type">请选择您的充值方式<xliff:g>%s</xliff:g></string>
+    <string name="card_money_type">充值卡实际面额<xliff:g>%s</xliff:g></string>
+    <string name="coupon_recharge_title_type">充值优惠<xliff:g>%s</xliff:g></string>
+    <string name="coupon_recharge_chong_tips">(充值加送  <xliff:g>%s</xliff:g></string>
+
+    <!-- 比赛报名投票 -->
+    <string name="match_no_start_apply">比赛未开始，点击报名</string>
+    <string name="match_start_apply">比赛进行中，点击报名</string>
+    <string name="match_start_no_apply">比赛进行中</string>
+    <string name="match_stop_no_apply">比赛结束，查看排名</string>
+    <string name="match_title_msg">比赛专区</string>
+    <string name="match_info_tip">啊哦~没有比赛信息</string>
+    <string name="match_info_rank_tip">啊哦~没有排行榜信息</string>
+    <string name="match_info_loading">正在加载，请稍后&#8230;</string>
+    <string name="match_rank_getdata_fail_tips">获取排行榜失败</string>
+    <string name="match_getdata_fail_tips">获取比赛信息失败</string>
+    <string name="match_info_ranklist_seemorerank">查看完整排名</string>
+    <string name="match_rank_title_tips">排名每<xliff:g>%s</xliff:g>更新一次，<xliff:g>%s</xliff:g>截止</string>
+    <string name="match_rank_end_title_tips">本场比赛已于<xliff:g>%s</xliff:g>截止</string>
+    <string name="match_rank_end_title_tips2">本场比赛已于<xliff:g>%s</xliff:g>结束</string>
+    <string name="match_rank_grade">分</string>
+    <string name="match_sign_up">报名</string>
+    <string name="match_signed_up">已报名</string>
+    <string name="kk_room_vote_match_vote_success">投票成功</string>
+
+    <!-- KK唱响服务协议 -->
+    <string name="kk_service_agreement_title">KK唱响服务协议</string>
+
+    <!-- 比赛 -->
+    <string name="kk_menu_match_text">比赛</string>
+    <string name="kk_menu_match_info">比赛详情</string>
+    <string name="kk_match_date">报名截止时间：</string>
+    <string name="kk_match_id">ID号：</string>
+    <string name="kk_match_phone">手机号</string>
+    <string name="kk_match_qq">QQ号</string>
+    <string name="kk_match_age">年龄</string>
+    <string name="kk_match_area">地区</string>
+    <string name="kk_match_btn">报名参赛</string>
+    <string name="kk_match_recover">点击收回</string>
+    <string name="kk_match_romotion_tips">以上<xliff:g>%s</xliff:g>位选手晋级</string>
+    <string name="kk_match_score">分</string>
+    <string name="kk_match_ticket">票</string>
+    <string name="kk_match_ticketnum">票数:</string>
+    <string name="kk_match_gifttnum">礼物:</string>
+    <string name="kk_match_state0">(未开始)</string>
+    <string name="kk_match_state1">(进行中)</string>
+    <string name="kk_match_state2">(已结束)</string>
+    <string name="kk_match_pw">评委:</string>
+    <string name="kk_match_ge">个</string>
+    <string name="kk_match_ing"> 正在报名,请稍后&#8230;</string>
+    <string name="kk_match_title_tag">kk_match_title_tag</string>
+    <string name="kk_match_rank_tag">kk_match_rank_tag</string>
+    <string name="kk_match_rankviewmore_tag">kk_match_rankviewmore_tag</string>
+    <!-- 活动报名 -->
+    <string name="kk_enter_show">进入舞台</string>
+    <string name="kk_match_sucess">恭喜您报名成功！立即进入您的舞台展示您的才艺吧~</string>
+    <string name="kk_match_sucess_title">报名成功</string>
+    <string name="kk_match_phone_tips">请输入正确的手机号~</string>
+    <string name="kk_match_qq_tips">请输入正确的5&#8211;16位QQ号~</string>
+
+    <!-- 活动预告 -->
+    <string name="kk_foreshow_title_str">节目预告</string>
+    <string name="kk_foreshow_no_more_activity">没有更多了</string>
+    <string name="kk_foreshow_go_to_room">进入房间</string>
+    <string name="kk_foreshow_issubed">已订阅</string>
+    <string name="kk_foreshow_sub_success">订阅成功</string>
+    <string name="kk_foreshow_sub_failed">订阅失败，请稍后再试</string>
+    <string name="kk_foreshow_cancel_sub_failed">取消订阅失败，请稍后再试</string>
+    <string name="kk_foreshow_cancel_sub_success">取消订阅成功</string>
+    <string name="kk_foreshow_unsubed">订阅</string>
+    <string name="kk_foreshow_unsubing">正在取消订阅&#8230;</string>
+    <string name="kk_foreshow_subing">正在订阅&#8230;</string>
+    <string name="kk_foreshow_today">今天</string>
+    <string name="kk_foreshow_tomorrow">明天</string>
+	<string name="room_part_tag">room_part_tag</string>
+	<string name="room_acty_tag">room_acty_tag</string>
+	
+	<!-- 书库 -->
+    <string name="kk_kktv_book_title">书库</string>
+    
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/more_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:text="@string/report_content"/>
+
+    <View
+        android:id="@+id/more_dialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ligth_grey_8d"/>
+
+    <TextView
+        android:id="@+id/more_dialog_not_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/not_read_content"
+        android:textColor="@color/light_grey"/>
+</LinearLayout>

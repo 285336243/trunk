@@ -1,0 +1,208 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+    -->
+    <style name="AppBaseTheme" parent="Theme.Sherlock.NoActionBar">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="popupDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/fading_in</item>
+        <item name="android:windowExitAnimation">@anim/fading_out</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/tab_tv_circle_selector</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    
+    <style name="setting_text_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/search_tab_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginTop">12dip</item>
+        <item name="android:layout_marginBottom">4dip</item>
+    </style>
+    
+    <style name="setting_linearlayout">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bdg_tvq_small_tj</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">8dip</item>
+    </style>
+    
+    <style name="setting_relativelayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+    </style>
+
+    <style name="setting_relativelayout_text">
+           <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tvcircle_grid_item_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">18dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="setting_relativelayout_image">
+         <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/icon_nextarrow_tj</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">8dip</item>
+    </style>
+    
+    <style name="setting_line">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#f3efef</item>
+    </style>
+    <style name="apply_linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="apply_linear_text">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/tvcircle_grid_item_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">18dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="apply_linear_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/tvcircle_grid_item_text_color</item>
+    </style>
+
+    <style name="TextIcon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Global">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TabIcon" parent="TextIcon">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginTop">-4dp</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+    <style name="TabText" parent="Global">
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+    <item name="android:textSize">11sp</item>
+    <item name="android:textColor">@drawable/tab_text_colors</item>
+    </style>
+
+    <style name="ListItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="Spinner">
+    <item name="android:indeterminate">true</item>
+    <item name="android:indeterminateDrawable">@drawable/spinner</item>
+    <item name="android:indeterminateDuration">2000</item>
+    <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <style name="SubtitleText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/search_tab_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="ListSubtitleText" parent="SubtitleText"></style>
+
+    <style name="ListView">
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@drawable/list_divider</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+    <style name="ListSpinner" parent="Spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MessageAvatar">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="MessageNickname" parent="TextIcon">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tvcircle_grid_item_text_color</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <style name="CreateTime" parent="TextIcon">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/search_tab_color</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="MessageContent" parent="TextIcon">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/search_tab_color</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+        android:id="@+id/shop_detail_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="96dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="96dip"
+        android:background="@drawable/bdg_shoppop_tj"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/shop_detail_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="160dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/shop_exchange_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#80ff7161" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.0dip"
+                            android:background="#40ffffff" />
+
+                        <TextView
+                            android:id="@+id/shop_detail_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dip"
+                            android:shadowColor="#60ff2e00"
+                            android:shadowDx="0"
+                            android:shadowDy="4"
+                            android:shadowRadius="2"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dip"
+                            android:layout_toRightOf="@id/shop_detail_price"
+                            android:shadowColor="#60ff2e00"
+                            android:shadowDx="0"
+                            android:shadowDy="4"
+                            android:shadowRadius="2"
+                            android:text="@string/price"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/shop_detail_ecchange_layout"
+                            android:layout_width="88dip"
+                            android:layout_height="28dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dip"
+                            android:background="@drawable/shop_ecchange_background" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/ecchange"
+                                android:textColor="#fc957e"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shop_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="16dip"
+                    android:textColor="@color/tvcircle_grid_item_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/shop_detail_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="8dip"
+                    android:textColor="@color/tvcircle_grid_item_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/shop_detail_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/shop_detail_linear"
+        android:layout_alignTop="@+id/shop_detail_linear"
+        android:background="@drawable/btn_closepop_tj" 
+        android:layout_marginRight="-4dip"
+        android:layout_marginTop="-4dip"/>
+    
+</RelativeLayout>

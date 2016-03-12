@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+
+    <FrameLayout
+            android:id="@+id/rootfirst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:foreground="@drawable/kk_view_foreground_bg" >
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            <ImageView
+                    android:id="@+id/pinkline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/kk_pink" />
+
+            <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@+id/pinkline"
+                    android:background="@color/kk_background_white"
+                    android:gravity="center"
+                    android:text="@string/kk_photo_operation_delete"
+                    android:textColor="@color/kk_pink"
+                    android:textSize="@dimen/kk_text_large_size" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/rootsecond"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:foreground="@drawable/kk_view_foreground_bg" >
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            <ImageView
+                    android:id="@+id/lineimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/kk_pick_grey" />
+
+            <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@+id/lineimage"
+                    android:background="@color/kk_background_white"
+                    android:gravity="center"
+                    android:text="@string/kk_cancel"
+                    android:textColor="@color/kk_app_background_gray"
+                    android:textSize="@dimen/kk_text_large_size" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

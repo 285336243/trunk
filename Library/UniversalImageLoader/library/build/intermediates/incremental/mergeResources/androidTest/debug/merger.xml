@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="E:\trunk\Library\UniversalImageLoader\library\build\intermediates\bundles\debug\res"/></dataSet><dataSet config="main"><source path="E:\trunk\Library\UniversalImageLoader\library\src\androidTest\res"/><source path="E:\trunk\Library\UniversalImageLoader\library\build\generated\res\rs\androidTest\debug"/><source path="E:\trunk\Library\UniversalImageLoader\library\build\generated\res\generated\androidTest\debug"/></dataSet><mergedItems/></merger>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/private_letter_detail_left_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="32dp"
+    android:paddingTop="16dp">
+
+    <FrameLayout
+        android:id="@+id/private_letter_detail_left_avatar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/private_letter_detail_left_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/feb_topicuserhead_tomato" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/private_letter_detail_left_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/private_letter_detail_left_avatar_layout"
+        android:lineSpacingExtra="2dp"
+        android:textColor="#6F6A64"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/private_letter_detail_left_create_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_letter_detail_left_message"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/private_letter_detail_left_avatar_layout"
+        android:textColor="#aeaeae"
+        android:textSize="12sp" />
+
+</RelativeLayout>

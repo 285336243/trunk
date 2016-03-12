@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_code_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding" >
+
+        <LinearLayout
+            android:id="@+id/auth_code_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_tj"
+                android:contentDescription="@string/create_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/binging_mobile_number"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:text="@string/auth_code_tip"
+        android:textColor="@color/tvcircle_grid_item_text_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/auth_code"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:background="@drawable/bdg_inp_tj"
+        android:drawableLeft="@android:color/transparent"
+        android:drawablePadding="8dip"
+        android:focusable="true"
+        android:hint="@string/auth_code"
+        android:singleLine="true"
+        android:textColorHint="@color/search_tab_color"
+        android:textSize="14sp"
+        android:textColor="@color/tvcircle_grid_item_text_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/auth_code_afresh_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bdg_btnpop_tj"
+            android:text="@string/afresh_send"
+            android:textColor="@color/search_tab_color"
+            android:textSize="16sp" 
+            android:layout_weight="1"
+            android:layout_marginRight="8dip"/>
+
+        <Button
+            android:id="@+id/auth_code_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_addtopicbtn_tj"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" 
+            android:layout_weight="1"
+            android:layout_marginLeft="8dip"/>
+    </LinearLayout>
+
+</LinearLayout>

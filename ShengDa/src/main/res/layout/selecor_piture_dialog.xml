@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@color/textview_color"
+            android:textColor="@android:color/black"
+            android:text="@string/how_upload" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDE9E3" />
+        <TextView
+            android:id="@+id/taken_camera"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="16sp"
+            android:paddingLeft="18dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textColor="@android:color/black"
+            android:text="@string/choice_camera" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDE9E3" />
+        <TextView
+            android:id="@+id/take_aibum"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="16sp"
+            android:paddingLeft="18dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textColor="@android:color/black"
+            android:text="@string/from_aibum" />
+
+
+    </LinearLayout>
+</FrameLayout>

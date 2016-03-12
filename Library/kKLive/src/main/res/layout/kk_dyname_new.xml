@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/kk_title_menu_bg" >
+
+        <ImageView
+            android:id="@+id/left_bt"
+            android:layout_width="56dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/kk_title_back" />
+
+        <Button
+            android:id="@+id/right_bt"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dip"
+            android:text="@string/kk_dynamic_news_submit"
+            android:textSize="@dimen/kk_fullsize_button"
+            android:background="@drawable/kk_namecard_more_btn"
+            android:scaleType="centerInside"
+            android:textColor="@color/kk_background_white" />
+
+        <TextView
+            android:id="@+id/kk_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/right_bt"
+            android:layout_toRightOf="@+id/left_bt"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/kk_dynamic_news"
+            android:textColor="@color/kk_background_white"
+            android:textSize="@dimen/kk_title_text" />
+    </RelativeLayout>
+
+    <!-- 此布局属性，代码中动态控制-->
+    <RelativeLayout
+        android:id="@+id/newlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_view">
+
+        <RelativeLayout
+            android:id="@+id/photolayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="fill_parent"
+                android:scaleType="centerInside"
+                android:layout_height="fill_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/msgcontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photolayout"
+            android:background="@drawable/kk_news_edittext_bg" >
+
+            <EditText
+                android:id="@+id/dynamicinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@null"
+                android:gravity="top"
+                android:textColorHint="@color/kk_app_color_edit_hint"/>
+
+            <TextView
+                android:id="@+id/prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/kk_news_tishi_bg"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/kk_text_10_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

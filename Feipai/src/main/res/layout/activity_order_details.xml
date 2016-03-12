@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewfinder_mask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dip"
+        android:background="@color/white_6E"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titile_color"
+            android:paddingBottom="10dip">
+
+            <TextView
+                android:id="@+id/order_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colose_imageview"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="好多好多好多"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/colose_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/icon_close" />
+
+            <TextView
+                android:id="@+id/view_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_info"
+                android:layout_centerHorizontal="true"
+                android:background="@color/grey"
+                android:padding="8dip"
+                android:text="@string/look_map"
+                android:textColor="#eaff00"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dip">
+
+            <ScrollView
+                android:id="@+id/stroll_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#CCCCFF"
+                android:padding="8dip">"
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/from_address_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/address_title_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/to_address_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/address_title_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/other_order_infor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/address_title_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/call_button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/corner_button"
+                android:padding="4dip"
+                android:text="@string/call_custom"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/front_bckg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_already_order"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <com.mzs.guaji.view.GuaJiGridView
+        android:id="@+id/rvcircle_list_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2" 
+        android:scrollbars="none"
+        android:verticalSpacing="0.0dip"
+        android:horizontalSpacing="0.0dip"/>
+
+</LinearLayout>

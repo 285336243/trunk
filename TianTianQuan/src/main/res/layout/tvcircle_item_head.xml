@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dip"
+        android:background="@drawable/bdg_search_tj" >
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/inp_search_tj"
+            android:drawableLeft="@drawable/icon_search_tj"
+            android:hint="@string/tvcircle_search_edit_hint"
+            android:maxLines="1"
+            android:focusable="false"
+            android:textColorHint="@color/search_hint_color"
+            android:textSize="14sp"
+            android:textColor="@color/tvcircle_grid_item_text_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dip"
+        android:background="@drawable/bdg_bannerinq_tj" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tvcircle_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tvcircle_item_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="4dip"
+        android:paddingBottom="14dip"
+        android:orientation="horizontal" />
+
+</LinearLayout>

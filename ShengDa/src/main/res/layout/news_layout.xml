@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/news_background_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#60000000" />
+
+            <com.shengzhish.xyj.darrage.ui.widget.DanmakuSurfaceView
+                android:id="@+id/news_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:id="@+id/front_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+            <RelativeLayout
+                android:id="@+id/news_share_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="32dp"
+                    android:paddingTop="32dp">
+
+                    <TextView
+                        android:id="@+id/news_share_sina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dp"
+                        android:drawableTop="@drawable/icon_sina_sd"
+                        android:gravity="center_horizontal"
+                        android:text="@string/sina_text" />
+
+                    <TextView
+                        android:id="@+id/news_share_tencent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dp"
+                        android:drawableTop="@drawable/icon_tencent_sd"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tencent_text" />
+
+
+                    <TextView
+                        android:id="@+id/news_share_weixin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dp"
+                        android:drawableTop="@drawable/icon_wechat_sd"
+                        android:gravity="center_horizontal"
+                        android:text="@string/weixin_text" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_weight="0"
+            android:background="@drawable/bdg_bottombar_sd"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/news_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_selector"
+                android:paddingLeft="8dp"
+                android:paddingRight="24dp"
+                android:src="@drawable/icon_return" />
+
+            <Button
+                android:id="@+id/news_say"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/news_share"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/tab_selector"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/icon_comment"
+                android:gravity="center_horizontal"
+                android:paddingTop="7dp"
+                android:text="@string/comment_barrage"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/news_see"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@id/news_say"
+                android:background="@drawable/tab_selector"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/icon_barrage"
+                android:gravity="center_horizontal"
+                android:paddingTop="7dp"
+                android:text="@string/close"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/news_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/tab_selector"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/icon_share2"
+                android:gravity="center_horizontal"
+                android:paddingTop="7dp"
+                android:text="@string/share_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

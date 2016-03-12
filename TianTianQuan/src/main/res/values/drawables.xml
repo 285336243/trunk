@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="grey">#20000000</item>
+    <item type="drawable" name="ivory">#f9f9f9</item>
+    <item type="drawable" name="pink">@color/search_topic_list_item_bottom_color</item>
+    <item type="drawable" name="list_divider_color">#e4e3e3</item>
+</resources>

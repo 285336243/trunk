@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="274dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kk_room_mem_menu_bg"
+        android:orientation="vertical"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:textColor="@color/kk_text_pink"
+            android:textSize="@dimen/kk_title_text" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:paddingTop="8dip"
+            android:textColor="@color/kk_text_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/positive_button"
+                android:layout_width="100dip"
+                android:layout_height="39dip"
+                android:background="@drawable/kk_sign_in_sure_btn"
+                android:textColor="@color/kk_text_white"
+                android:textSize="@dimen/kk_text_big_size" />
+
+            <Button
+                android:id="@+id/negative_button"
+                android:layout_width="100dip"
+                android:layout_height="39dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/kk_room_add_flag_cancel"
+                android:textColor="@color/kk_text_gray"
+                android:textSize="@dimen/kk_text_big_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

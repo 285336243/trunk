@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="166dip"
+    android:layout_height="166dip"
+    android:background="@color/kk_black_70" >
+
+    <ImageView
+        android:id="@+id/recorder_soundwave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    
+    <TextView
+        android:id="@+id/recorder_time"
+        android:layout_width="166dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="100dip"
+        android:padding="8dip"
+        android:text="0:00"
+        android:visibility="gone"
+        android:textColor="@color/kk_background_white"
+        android:textSize="@dimen/kk_body_text" />
+
+    <TextView
+        android:id="@+id/recorder_txt"
+        android:layout_width="166dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="124dip"
+        android:padding="8dip"
+        android:text="@string/kk_room_record_cancel_detail"
+        android:textColor="@color/kk_background_white"
+        android:textSize="@dimen/kk_body_text" />
+
+</RelativeLayout>

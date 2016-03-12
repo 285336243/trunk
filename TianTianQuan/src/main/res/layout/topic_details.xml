@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/tvcircle_title_color"
+            android:paddingBottom="@dimen/title_padding"
+            android:paddingTop="@dimen/title_padding">
+
+            <TextView
+                android:id="@+id/topic_details_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back_tj"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/topic"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_text_size"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:id="@+id/topic_details_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:drawableRight="@drawable/icon_more_tj"
+                android:gravity="center_vertical"
+                android:text="@string/more"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/topic_details_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:layout_weight="2.0"
+            android:childDivider="#e4e3e3"
+            android:divider="#e4e3e3"
+            android:dividerHeight="1dip"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone"
+            ptr:ptrAnimationStyle="flip" />
+
+        <ProgressBar
+            android:id="@+id/topic_details_loading"
+            style="@style/ListSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_weight="0"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3e454c"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/topic_details_share_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_topicshare_tj"
+                        android:drawablePadding="4dp"
+                        android:text="@string/share"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/topic_details_comment_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_topiccomment_tj"
+                        android:drawablePadding="4dp"
+                        android:text="@string/comment"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/topic_details_link_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/topic_details_like_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/icon_topiclike_tj"
+                        android:drawablePadding="4dp"
+                        android:text="@string/like"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anim_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp" />
+</RelativeLayout>

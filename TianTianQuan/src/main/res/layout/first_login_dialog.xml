@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000">
+
+    <LinearLayout
+        android:id="@+id/first_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bdg_shoppop_tj"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/icon_happy_tj"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/first_login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tvcircle_grid_item_text_color"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/first_login_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/first_login_layout"
+        android:layout_alignTop="@+id/first_login_layout"
+        android:background="@drawable/btn_closepop_tj"
+        android:layout_marginRight="-4dip"
+        android:layout_marginTop="-4dip"/>
+</RelativeLayout>

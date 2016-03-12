@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_rank_list_item_bg_gray"
+    android:orientation="vertical"
+    android:paddingBottom="13dip"
+    android:paddingLeft="13dip"
+    android:paddingTop="13dip" >
+
+    <ImageView
+        android:id="@+id/prop_thumb"
+        android:layout_width="87dip"
+        android:layout_height="46dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_default_img" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="11dip"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/prop_thumb"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/prop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/prop_thumb"
+            android:text="道具名称"
+            android:textColor="@color/kk_custom_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/prop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/prop_thumb"
+            android:text="价格:"
+            android:textColor="#F99D32"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/prop_lefttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余时间:"
+            android:textColor="#ACACAC"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

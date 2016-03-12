@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        applicationId "feipai.qiangdan"
+        minSdkVersion 8
+        targetSdkVersion 20
+        versionCode 100
+        versionName "1.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    //    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile files('libs/core.jar')
+    compile files('libs/guice-3.0-no_aop.jar')
+    compile files('libs/http-request-3.0.jar')
+    compile files('libs/javax.inject-1.jar')
+    compile files('libs/khandroid-httpclient-4.2.3.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/mta-sdk-1.0.0.jar')
+    compile files('libs/open_sdk.jar')
+    compile files('libs/roboguice-2.0.jar')
+    compile files('libs/roboguice-sherlock-1.4.jar')
+    compile files('libs/umeng_sdk.jar')
+    compile project(':Library:PullToRefresh:library')
+    compile project(':Library:UniversalImageLoader:library')
+    compile project(':Library:viewpagerindicator')
+    compile project(':Library:Volley')
+    compile project(':Library:wishlist')
+    compile 'com.android.support:support-v4:19.+'
+    //compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    //compile 'com.nostra13.universalimageloader:universal-image-loader:+'
+    compile files('libs/mta-sdk-1.0.0.jar')
+    compile files('libs/baidumapapi_v3_2_0.jar')
+    compile files('libs/locSDK_3.1.jar')
+    compile files('libs/pushservice-4.3.0.4.jar')
+    compile files('libs/baidumapapi_v2_1_3.jar')
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'com.android.support:support-v4:21.0.2'
+    //    compile files('libs/classes-dex2jar.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile project(':Library:PhotoView')
+}

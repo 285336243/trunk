@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActivityAnim" parent="@android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/kk_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/kk_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/kk_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/kk_activity_close_exit</item>
+    </style>
+
+    <style name="Theme.ActivityAnim" parent="android:Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
+    </style>
+
+    <style name="LoadingAnim" parent="@android:Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_photoview_open_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/kk_activity_close_exit</item>
+    </style>
+
+    <style name="Theme.LoadingAnim" parent="android:Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/LoadingAnim</item>
+    </style>
+    <!-- <item name="android:windowIsFloating">true</item> -->
+
+    <style name="PhotoViewAnim" parent="@android:Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/kk_photoview_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/kk_photoview_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/kk_photoview_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/kk_photoview_close_exit</item>
+    </style>
+
+    <style name="Theme.PhotoViewAnim" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <!-- <item name="android:windowBackground">@android:color/transparent</item> -->
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+        <!-- <item name="android:windowIsFloating">true</item> -->
+        <!-- <item name="android:backgroundDimEnabled">true</item> -->
+        <item name="android:windowAnimationStyle">@style/PhotoViewAnim</item>
+    </style>
+
+    <style name="Theme.PopuLayout" parent="android:Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+        <!-- <item name="android:windowIsFloating">true</item> -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="MatchDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- <item name="android:windowIsFloating">true</item> -->
+    <style name="Theme.newerTutorialDialog" parent="@android:style/Theme">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/kk_app_color_black</item>
+        <item name="android:background">@color/kk_app_color_black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <TextView
+            android:id="@+id/official_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/btn_back_tj"
+            android:gravity="center_vertical"
+            android:text="@string/back"
+            android:textColor="@color/tvcircle_title_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/official_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:drawableRight="@drawable/btn_addq_tj"
+            android:gravity="center_vertical"
+            android:text="@string/add"
+            android:textColor="@color/tvcircle_title_text_color" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/official_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/title_layout"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/official_pic_quan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="136dip">
+
+            <ImageView
+                android:id="@+id/official_pic_quan_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/feb_picquan_tj" />
+
+            <ProgressBar
+                android:id="@+id/official_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="12dip"
+            android:paddingTop="12dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="6dip"
+                android:background="@drawable/tag_qofficer_tj" />
+
+            <TextView
+                android:id="@+id/official_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="非你莫属"
+                android:textColor="@color/tvcircle_grid_item_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dip"
+            android:background="@drawable/shadow_quanbot_tj" />
+
+        <GridView
+            android:id="@+id/official_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="4dip"
+            android:horizontalSpacing="4dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="4dip" />
+    </LinearLayout>
+
+</RelativeLayout>

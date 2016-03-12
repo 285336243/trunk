@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/mask"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:padding="8dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/shen_blue"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/mask"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/kouhao"
+     android:layout_margin="10dp"
+     android:textColor="@color/baby_white"
+     android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jiage"
+        android:layout_margin="10dp"
+        android:textColor="@color/baby_white"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/xia_order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+       android:layout_margin="20dp"
+        android:background="@drawable/xiadan_button"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/xiaorder" />
+</LinearLayout>
+
+<!--    <Button
+        android:id="@+id/order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="order" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/comquestion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comquestion"
+            android:textSize="18sp"
+            android:textColorLink="#FF0066CC"/>
+
+        <TextView
+            android:id="@+id/fei_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/feipai_price"
+            android:textSize="18sp"
+            android:textColorLink="#FF0066CC"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shengzhish.xyj"
+    android:versionCode="3"
+    android:versionName="1.0.3">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19"
+        tools:node="replace" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.ShengDa">
+        <activity
+            android:name=".home.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gallery.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gpscheck.GpsCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.vote.VoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".news.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true" />
+        <activity
+            android:name=".activity.BarrageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".persionalcore.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".persionalcore.ModifyPersonInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".persionalcore.RegisTrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.shaking.ShakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shaking.CountTime"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.shaking.ShakeRezult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".news.DissertationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpecialNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.specialnews.PublishDynamic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.specialnews.DynamicCommendListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.specialnews.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".activity.precioushouse.PreciousHouseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.precioushouse.PreciousActivity"
+            android:screenOrientation="portrait" />
+        <!--android:theme="@android:style/Theme.NoTitleBar.Fullscreen"-->
+        <activity
+            android:name=".activity.precioushouse.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".persionalcore.OpinionFeedBackActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".persionalcore.AboutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".persionalcore.MessageNotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".services.NotificationDownloadService" />
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1101823490" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".activity.AlarmReceiver">
+            <intent-filter>
+                <action android:name="alarm_clock" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="PACKAGE_CHANNEL"
+            android:value="PACKAGE_CHANNEL_VALUE" />
+
+        <service
+            android:name="com.radiusnetworks.ibeacon.service.IBeaconService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="false"
+            android:label="iBeacon"></service>
+        <service
+            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"
+            android:enabled="true">
+            <meta-data
+                android:name="background"
+                android:value="true" />
+
+            <intent-filter android:priority="1">
+                <action android:name="com.radiusnetworks.ibeaconreference.DID_RANGING" />
+                <action android:name="com.radiusnetworks.ibeaconreference.DID_MONITORING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.shengzhish.xyj.activity.precioushouse.ibeancon.BeaconDetactorService"
+            android:enabled="true">
+            <meta-data
+                android:name="background"
+                android:value="true" />
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53fea29bfd98c5807b01bde3" />
+
+    </application>
+
+</manifest>

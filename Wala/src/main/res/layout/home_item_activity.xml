@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingBottom="12dp" android:paddingTop="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/activity_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="6dp"/>
+
+        <TextView
+            android:id="@+id/activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:textSize="18sp"
+            android:textColor="#9D968D"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_more"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FF4830"
+            android:textSize="14sp"
+            android:layout_marginRight="12dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <com.socialtv.view.HeaderGridView
+        xmlns:hgv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        hgv:listSelector="@color/transparent"
+        hgv:cacheColorHint="@color/transparent"
+        hgv:numRows="2"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/titile_color">
+
+        <ImageButton
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_return"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/titile_color"
+            android:gravity="center"
+            android:text="@string/feed_back"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的吐槽，并提交"
+        android:layout_margin="7dp"/>
+    <EditText
+        android:id="@+id/opinion_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="220dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="5dip"
+        android:textColor="@color/address_title_color"
+        android:focusable="true"
+        android:gravity="left"
+        android:background="@color/white"/>
+    <Button
+       android:id="@+id/opinion_feedback_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_button"
+        android:layout_marginTop="38dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="提 交"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:padding="8dip"/>
+
+</LinearLayout>

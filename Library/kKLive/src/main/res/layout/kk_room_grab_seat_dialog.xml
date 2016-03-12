@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_room_grab_bg"
+    android:orientation="vertical"
+    android:paddingBottom="17dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="14dip" >
+
+    <TextView
+        android:id="@+id/sofa_min_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kk_room_sofa_min_price"
+        android:textColor="#ABABAB" />
+
+    <TextView
+        android:id="@+id/num_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sofa_min_price"
+        android:layout_below="@+id/sofa_min_price"
+        android:layout_marginTop="14dip"
+        android:text="@string/kk_room_sofa_price_str"
+        android:textColor="#7A7A7A"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/num_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="31dip"
+        android:layout_below="@+id/sofa_min_price"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/num_str"
+        android:background="@drawable/kk_room_grab_seat_btn"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minWidth="171dip"
+        android:numeric="integer"
+        android:paddingLeft="9dip"
+        android:text="100秀币"
+        android:textColor="#7A7A7A" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dip"
+        android:layout_below="@+id/num_edit"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/kk_room_grab_cancel_btn"
+        android:minWidth="96dip"
+        android:text="@string/kk_cancel"
+        android:textColor="#5B5B5B" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dip"
+        android:layout_alignTop="@+id/cancel_btn"
+        android:layout_toRightOf="@+id/cancel_btn"
+        android:background="@drawable/kk_room_grab_ok_btn"
+        android:minWidth="96dip"
+        android:layout_marginLeft="12dip"
+        android:text="@string/kk_ok"
+        android:textColor="#AB7000" />
+
+</RelativeLayout>

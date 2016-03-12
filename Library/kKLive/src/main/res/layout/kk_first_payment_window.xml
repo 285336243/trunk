@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="274dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kk_room_mem_menu_bg"
+        android:orientation="vertical"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip" >
+
+        <TextView
+            android:id="@+id/present_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="13dip"
+            android:paddingTop="13dip"
+            android:text="@string/kk_fill_first_no_money"
+            android:textColor="#ff8a00"
+            android:textSize="@dimen/kk_title_text" />
+
+        <RelativeLayout
+            android:id="@+id/present_one"
+            android:layout_width="fill_parent"
+            android:layout_height="64dip"
+            android:layout_marginBottom="9dip" >
+
+            <ImageView
+                android:id="@+id/present_one_icon"
+                android:layout_width="86dip"
+                android:layout_height="fill_parent"
+                android:background="#dadada"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/present_one_icon"
+                android:background="@drawable/kk_first_fill_item_bg"
+                android:paddingLeft="9dip" >
+
+                <TextView
+                    android:id="@+id/present_one_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/kk_fill_first_title_one"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_big_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/present_one_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/present_one_title"
+                    android:layout_marginTop="2dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#919191"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/present_two"
+            android:layout_width="fill_parent"
+            android:layout_height="64dip"
+            android:layout_marginBottom="9dip" >
+
+            <ImageView
+                android:id="@+id/present_two_icon"
+                android:layout_width="86dip"
+                android:layout_height="fill_parent"
+                android:background="#dadada"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/present_two_icon"
+                android:background="@drawable/kk_first_fill_item_bg"
+                android:paddingLeft="9dip" >
+
+                <TextView
+                    android:id="@+id/present_two_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/kk_fill_first_title_two"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_big_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/present_two_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/present_two_title"
+                    android:layout_marginTop="2dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#919191"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/present_three"
+            android:layout_width="fill_parent"
+            android:layout_height="64dip"
+            android:layout_marginBottom="9dip" >
+
+            <ImageView
+                android:id="@+id/present_three_icon"
+                android:layout_width="86dip"
+                android:layout_height="fill_parent"
+                android:background="#dadada"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/present_three_icon"
+                android:background="@drawable/kk_first_fill_item_bg"
+                android:paddingLeft="9dip" >
+
+                <TextView
+                    android:id="@+id/present_three_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/kk_fill_first_title_three"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_big_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/present_three_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/present_three_title"
+                    android:layout_marginTop="2dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#919191"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/present_btn"
+            android:layout_width="120dip"
+            android:layout_height="39dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/kk_sign_in_sure_btn"
+            android:textColor="@color/kk_background_white"
+            android:textSize="@dimen/kk_text_large_size" />
+    </LinearLayout>
+
+</RelativeLayout>

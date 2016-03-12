@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "com.example.xiadan"
+        minSdkVersion 8
+        targetSdkVersion 19
+        versionCode 101
+        versionName "1.0.1"
+    }
+    signingConfigs {
+        XiaDanConfig {
+            storeFile file("xiadan.jks")
+            storePassword "android"
+            keyAlias "xiadan"
+            keyPassword "android"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.XiaDanConfig
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+//        debug {
+//            signingConfig signingConfigs.XiaDanConfig
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+//        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile 'com.android.support:support-v4:21.0.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile files('libs/guice-3.0-no_aop.jar')
+    compile files('libs/roboguice-2.0.jar')
+    compile files('libs/roboguice-sherlock-1.4.jar')
+    compile project(':Library:wishlist')
+    compile project(':Library:SlidingMenu:library')
+    compile project(':Library:Volley')
+    compile files('libs/baidumapapi_v3_2_0.jar')
+    compile files('libs/http-request-3.0.jar')
+    compile files('libs/javax.inject-1.jar')
+    compile files('libs/khandroid-httpclient-4.2.3.jar')
+}

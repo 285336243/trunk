@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/refresh_list"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="?attr/actionBarSize"
+             android:cacheColorHint="@color/transparent"
+             android:divider="@android:color/transparent"
+             android:fadingEdge="none"
+             android:footerDividersEnabled="false"
+             android:headerDividersEnabled="false"
+             android:listSelector="@color/transparent"
+             android:scrollbars="none"
+             android:visibility="gone"
+             ptr:ptrAnimationStyle="flip"
+             ptr:ptrDrawable="@drawable/default_ptr_flip"
+             ptr:ptrHeaderBackground="@color/transparent"
+             ptr:ptrHeaderTextColor="@color/white"
+             ptr:ptrShowIndicator="false" />
+
+    <TextView
+             android:id="@android:id/empty"
+             style="@style/ListSubtitleText"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:visibility="gone" />
+
+    <ProgressBar
+             android:id="@+id/pb_loading"
+             style="@style/ListSpinner"
+             android:layout_centerInParent="true" />
+
+    <com.socialtv.view.TranslateView
+        android:id="@+id/activity_header_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/activity_header_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/participation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/activity_header_button"
+            android:paddingBottom="2dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="2dp"
+            android:text="@string/participation"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </com.socialtv.view.TranslateView>
+
+
+    <ImageButton
+        android:id="@+id/activity_start_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_groupedit_tomato"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/topic_like_anim_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/like_anim_full"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/topic_un_like_anim_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/topic_like_anim_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/like_anim_broke_left"/>
+
+        <ImageView
+            android:id="@+id/topic_like_anim_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/like_anim_broke_right"/>
+    </LinearLayout>
+</RelativeLayout>

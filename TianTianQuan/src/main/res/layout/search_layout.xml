@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bdg_search_tj"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dip"
+            android:layout_weight="1" >
+
+            <AutoCompleteTextView
+                android:id="@+id/search_auto_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:background="@drawable/bdg_searchinp_tj"
+                android:drawableLeft="@drawable/icon_search_tj"
+                android:ems="10"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/search_hint_color"
+                android:textSize="14sp"
+                android:textColor="@color/tvcircle_grid_item_text_color">
+            </AutoCompleteTextView>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/search_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dip"
+            android:layout_weight="0"
+            android:background="@drawable/btn_canlsearch_tj" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/search_circle_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bdg_tabactive_center_tj"
+            android:gravity="center"
+            android:text="@string/circle"
+            android:textColor="@color/search_tab_selector_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/search_toppic_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bdg_tab_center_tj"
+            android:gravity="center"
+            android:text="@string/topic"
+            android:textColor="@color/search_tab_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/search_user_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bdg_tab_center_tj"
+            android:gravity="center"
+            android:text="@string/user"
+            android:textColor="@color/search_tab_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <fragment
+            android:id="@+id/search_label_fragment"
+            android:name="com.mzs.guaji.fragment.SearchLabelFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/search_circle_fragment"
+            android:name="com.mzs.guaji.fragment.SearchCircleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/search_topic_fragment"
+            android:name="com.mzs.guaji.fragment.SearchToPicFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/search_user_fragment"
+            android:name="com.mzs.guaji.fragment.SearchUserFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

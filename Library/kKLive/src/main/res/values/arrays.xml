@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pay_money_mobile_list">
+        <item>"10"</item>
+        <item>"20"</item>
+        <item>"30"</item>
+        <item>"50"</item>
+        <item>"100"</item>
+        <item>"300"</item>
+        <item>"500"</item>
+        <item>"-1"</item>
+    </string-array>
+    <string-array name="pay_money_unicon_list">
+        <item>"20"</item>
+        <item>"30"</item>
+        <item>"50"</item>
+        <item>"100"</item>
+        <item>"300"</item>
+        <item>"500"</item>
+        <item>"-1"</item>
+    </string-array>
+    <string-array name="pay_money_telecom_list">
+        <item>"20"</item>
+        <item>"30"</item>
+        <item>"50"</item>
+        <item>"100"</item>
+        <item>"-1"</item>
+    </string-array>
+    <string-array name="pay_money_unicon">
+        <item>中国联通充值卡</item>
+    </string-array>
+    <string-array name="pay_money_unionpay_list">
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>"-1"</item>
+    </string-array>
+    <string-array name="alipay_pay_money_list">
+        <item>充值50元可获得50000秀币</item>
+        <item>充值100元可获得100000秀币</item>
+        <item>充值300元可获得300000秀币</item>
+        <item>充值500元可获得500000秀币</item>
+        <item>充值1000元可获得1000000秀币</item>
+        <item>充值其他金额</item>
+    </string-array>
+    <string-array name="chinaunicom_pay_money_list">
+        <item>充值1元可获得600秀币</item>
+        <item>充值2元可获得1200秀币</item>
+        <item>充值5元可获得3000秀币</item>
+        <item>充值10元可获得6000秀币</item>
+        <item>充值20元可获得12000秀币</item>
+        <item>充值30元可获得18000秀币</item>
+    </string-array>
+    <string-array name="chinaunicom_pay_money_list_int">
+        <item>600</item>
+        <item>1200</item>
+        <item>3000</item>
+        <item>6000</item>
+        <item>12000</item>
+        <item>18000</item>
+    </string-array>
+    <string-array name="alipay_pay_money_list_int">
+        <item>50000</item>
+        <item>100000</item>
+        <item>300000</item>
+        <item>500000</item>
+        <item>1000000</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="kk_rank_list_string">
+        <item>明星TOP15</item>
+        <item>富豪TOP15</item>
+        <item>每周礼物明星榜 </item>
+        <item>每周礼物富豪榜</item>
+    </string-array>
+    <string-array name="kk_familyrank_list_string">
+        <item>家族明星TOP10</item>
+        <item>家族富豪TOP10</item>
+    </string-array>
+    
+    <!-- 消息推送通知栏表情数组  -->
+    <string-array name="emoOriginal">
+       <item>\\[x_01good\\]</item>
+        <item>\\[x_02up\\]</item>
+        <item>\\[x_03kiss\\]</item>
+        <item>\\[x_04fil\\]</item>
+        <item>\\[x_05trick\\]</item>
+        <item>\\[x_06revel\\]</item>
+        <item>\\[x_07excited\\]</item>
+        <item>\\[x_08laugh\\]</item>
+        <item>\\[x_09indecent\\]</item>
+        <item>\\[x_10badluck\\]</item>
+        <item>\\[x_11drop\\]</item>
+        <item>\\[x_12grief\\]</item>
+        <item>\\[x_13grimace\\]</item>
+        <item>\\[x_14laughing\\]</item>
+        <item>\\[x_15lovely\\]</item>
+        <item>\\[x_16rage\\]</item>
+		<item>\\[x_17scare\\]</item>
+		<item>\\[x_18sleep\\]</item>
+		<item>\\[x_19bye\\]</item>
+		<item>\\[x_20moving\\]</item>
+		<item>\\[x_21dizzy\\]</item>
+		<item>\\[x_22awesome\\]</item>
+		<item>\\[x_23jiong\\]</item>
+		<item>\\[x_24snicker\\]</item>
+		<item>\\[x_25doubt\\]</item>
+		<item>\\[x_26guise\\]</item>
+		<item>\\[x_27sorry\\]</item>
+		<item>\\[x_28nosebleed\\]</item>
+    </string-array>
+
+    <string-array name="emoNew">
+        <item>[鼓掌]</item>
+        <item>[冒泡]</item>
+        <item>[亲吻]</item>
+        <item>[来电]</item>
+        <item>[贱笑]</item>
+        <item>[陶醉]</item>
+        <item>[兴奋]</item>
+        <item>[偷笑]</item>
+        <item>[挖鼻孔]</item>
+        <item>[衰]</item>
+        <item>[流汗]</item>
+        <item>[伤心]</item>
+        <item>[鬼脸]</item>
+        <item>[狂笑]</item>
+        <item>[可怜]</item>
+        <item>[气愤]</item>
+		<item>[惊吓]</item>
+		<item>[困了]</item>
+		<item>[再见]</item>
+		<item>[感动]</item>
+		<item>[晕]</item>
+		<item>[给力]</item>
+		<item>[囧]</item>
+		<item>[窃笑]</item>
+		<item>[疑问]</item>
+		<item>[装逼]</item>
+		<item>[抱歉]</item>
+		<item>[鼻血]</item>
+    </string-array>
+
+</resources>

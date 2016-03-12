@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/titile_color">
+
+        <ImageButton
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_return"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/titile_color"
+            android:gravity="center"
+            android:text="@string/offine_map"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:visibility="gone"
+        android:layout_marginLeft="5dip"
+        android:text="输入下载城市："
+        />
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/corner_edit"
+        android:textSize="18sp"
+        android:textColor="@color/address_title_color"
+        android:padding="5dip"
+        android:layout_margin="5dp"
+        android:text="上海" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:onClick="start"
+            android:padding="8dip"
+            android:text="开始"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:onClick="stop"
+            android:padding="8dip"
+            android:text="停止"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:padding="8dip"
+            android:onClick="remove"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="fill_parent"
+            android:layout_height="55sp"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb01"
+                android:layout_width="wrap_content"
+                android:layout_height="55sp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bkg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/city_list"
+                android:textColor="@color/select_card_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb02"
+                android:layout_width="wrap_content"
+                android:layout_height="55sp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_bkg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/download"
+                android:textColor="@color/select_card_text_color" />
+        </RadioGroup>
+
+        <ViewFlipper
+            android:id="@+id/vf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:layout_weight="1">
+
+            <include
+                android:id="@+id/layout01"
+                layout="@layout/city_list" />
+
+            <include
+                android:id="@+id/layout02"
+                layout="@layout/down_load" />
+        </ViewFlipper>
+
+
+</LinearLayout>

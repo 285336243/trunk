@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_room_grab_bg"
+    android:paddingBottom="17dip"
+    android:paddingLeft="18dip"
+    android:paddingRight="18dip"
+    android:paddingTop="23dip" >
+
+    <ImageView
+        android:id="@+id/car_icon"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/car_icon"
+        android:scaleType="centerInside"
+        android:textColor="@color/kk_custom_black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_icon"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/car_icon"
+        android:scaleType="centerInside"
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dip"
+        android:layout_below="@+id/car_price"
+        android:layout_marginTop="16dip"
+        android:layout_weight="1"
+        android:background="@drawable/kk_room_grab_cancel_btn"
+        android:minWidth="96dip"
+        android:text="@string/kk_cancel"
+        android:textColor="#5B5B5B" />
+
+    <Button
+        android:id="@+id/view_cars_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dip"
+        android:layout_alignTop="@+id/cancel_btn"
+        android:layout_marginLeft="13dip"
+        android:layout_toRightOf="@+id/cancel_btn"
+        android:layout_weight="1"
+        android:background="@drawable/kk_room_grab_ok_btn"
+        android:minWidth="96dip"
+        android:text="@string/kk_room_grab_park_view_cars"
+        android:textColor="#5B5B5B" />
+
+</RelativeLayout>

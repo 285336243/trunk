@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_rank_list_item_bg_gray"
+    android:gravity="center" >
+
+    <include
+        android:id="@+id/room_mem_userview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/kk_room_mem_item_user" />
+
+    <include
+        android:id="@+id/room_mem_loadmoreview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/kk_room_mem_item_loadmore" />
+
+    <include
+        android:id="@+id/room_mem_guestview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/kk_room_mem_item_guest" />
+
+</RelativeLayout>

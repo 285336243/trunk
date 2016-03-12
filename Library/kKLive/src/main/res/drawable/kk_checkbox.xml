@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/kk_sex_press" android:state_checked="true"/>
+ <!-- checked -->
+
+    <item android:drawable="@drawable/kk_sex_normol" android:state_checked="false"/>
+ <!-- default -->
+
+</selector>

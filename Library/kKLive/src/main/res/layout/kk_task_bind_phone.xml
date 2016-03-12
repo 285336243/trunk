@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_gray" >
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_title_menu_bg"
+        android:gravity="center"
+        android:text="@string/task_bind_phone"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/kk_title_text" />
+
+    <TextView
+        android:id="@+id/country_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_below="@+id/title_view"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/kk_task_geted"
+        android:clickable="true"
+        android:drawableRight="@drawable/kk_arrow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="14dip"
+        android:paddingRight="14dip"
+        android:text="@string/task_phone_china"
+        android:textColor="@color/kk_app_color_dark_gray"
+        android:textSize="@dimen/kk_body_text" />
+
+    <EditText
+        android:id="@+id/country_code_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_selector"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="16dip"
+        android:background="@drawable/kk_edittext_bg"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:hint="@string/task_china_code"
+        android:textColorHint="@color/kk_app_color_edit_hint"
+        android:paddingBottom="10dip"
+        android:paddingLeft="2dip"
+        android:paddingTop="10dip" />
+
+    <EditText
+        android:id="@+id/phone_number_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_selector"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="14dip"
+        android:layout_marginTop="16dip"
+        android:layout_toRightOf="@+id/country_code_edit"
+        android:background="@drawable/kk_edittext_bg"
+        android:gravity="left"
+        android:hint="@string/task_phone_hint"
+        android:textColorHint="@color/kk_app_color_edit_hint"
+        android:numeric="integer"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_number_edit"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:layout_marginTop="20dip"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:background="@drawable/kk_register_btn"
+        android:onClick="nextClick"
+        android:text="@string/next"
+        android:textColor="@color/kk_background_white"
+        android:textSize="@dimen/kk_button_text" />
+
+</RelativeLayout>

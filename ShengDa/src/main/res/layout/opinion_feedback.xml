@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bdg_titbar_sd">
+
+        <ImageButton
+            android:id="@+id/opinion_feedback_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_return"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="@string/opinion_feedback"/>
+
+        <ImageButton
+            android:id="@+id/opinion_feedback_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_send_sd" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/opinion_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:hint="@string/comment_hint"
+        android:textColorHint="#70FFFFFF"
+        android:gravity="top"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#70000000">
+    
+    <Button android:id="@+id/delete_photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/review_bg_gray"
+        android:text="@string/delete"
+        android:textSize="16sp"
+        android:textColor="@color/tvcircle_grid_item_text_color"
+        android:layout_marginLeft="32dip"
+        android:layout_marginRight="32dip"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

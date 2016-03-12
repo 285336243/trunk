@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\trunk\Feipai\libs\javax.inject-1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\javax.inject-1-85dfd83ee59bd50720c8a6b3c77b72a9a08a6090.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library\PhotoView\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="36f717c6d94b8eb6aa2199a8e5c0b67a5681a780">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-c9fe044e7be73ec9c19dd634b39588fea0c6600e.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-b15666ed0bb5ea21db080e8554f95915fcad2e6f.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\com.actionbarsherlock\actionbarsherlock\4.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\classes-ea6631d8e3a15b3efd73af9695326a8fd07e4fb3.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\com.astuetz\pagerslidingtabstrip\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-5d98ee2497b5990d2166502742263846d0091661.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\trunk.Library\Volley\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="abd227f092a535d4fa762cb2e9a3bebbbef6a68e">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\classes-aaba08124e5dc831eac7262693708f4563b20338.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\http-request-3.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d5dbffbb1ae19adb5d3b2a2580f8f9d68d38956c">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\http-request-3.0-5bf46938fb04084efce34f34687ce0fd136c7121.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\umeng_sdk.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="802c0ce4e6c5a3f1e446835823768df7a2a851c5">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\umeng_sdk-6e8138b0efe8c0375c4d6cff1cd9e72499f05454.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\guice-3.0-no_aop.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="28586dc97c525501329d9a242fc3402041e3572d">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\guice-3.0-no_aop-53cd95517f72c6e7258beaef7fcbcd85f6a278cf.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\gson-2.2.4-9a127535bb9d6922e5806200b1048d98a12d3efc.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library\viewpagerindicator\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="86315b4f760cab059d624361b604776b3213f025">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-b271a8284859517a1c21ed5b3c352c9f3bb11dfa.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\libs\javax.inject-1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\javax.inject-1-ffecc0754df69ccb3d4d431f79117b09a4d2e030.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\trunk.Library.SlidingMenu\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="446bc6ce79aafdbf18903c835e694965e4f0e3cc">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\classes-a7e148b7e9f0ab3341fefb0867b101c93d74329c.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\khandroid-httpclient-4.2.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="833efd491363b9391340d073bff8d95c85ff7733">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\khandroid-httpclient-4.2.3-351b695e66c85f9764a7d271606ef286c1baa260.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-2d7d408a88556f08edfc6b39d3ee55773e71519e.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\libammsdk.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a5f20a9010df32cb73db28ec33964ed8b4c503cc">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\libammsdk-56c6921edd2a179cf68a9d858ded980507305725.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library\Volley\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="abd227f092a535d4fa762cb2e9a3bebbbef6a68e">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-1ecca81ea3abdb54a8765c5fa8be5dc2de8c502e.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\trunk.Library\wishlist\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="39c545ceb05eb458ed86f5d10701cf8e89e1cfc2">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\classes-fc3a1701e7aa67dc187693badf34dd36fe584274.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\locSDK_3.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="09224a1883da8b5bd37e766f4fab80570d879898">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\locSDK_3.1-158e7db7fb0273bfbbb631f7be5d19ef7114608b.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-87f5a75e1de9f212162c85b163eaa9811670bbdf.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\pushservice-4.3.0.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2249ba8027ae126b1d2742e0b50eb76148ffc8ba">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\pushservice-4.3.0.4-c4d6a0db8ee087293ca5e32a7413a84af487f1b4.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library.UniversalImageLoader\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="459aee34b1ceabd1bf755bfe1906d1de7a4ce19c">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-35eb6bc68dd7df44e5c8a73e6114ba1d36d69bbb.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\httpmime-4.1.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\httpmime-4.1.2-21646285d866008fe88a44c747a2e19cf9b47a48.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\libs\http-request-3.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d5dbffbb1ae19adb5d3b2a2580f8f9d68d38956c">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\http-request-3.0-f4ca8f69c45a3036ffbdb3c77ee00f66aaac236e.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library\wishlist\unspecified\jars\libs\robolectric-1.2-8.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="44918bea1e665ae1e393932f5e7cd1392ce8fb57">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\robolectric-1.2-8-9774eeba1897e83c8be45ff7164e2fe700621436.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library\wishlist\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="39c545ceb05eb458ed86f5d10701cf8e89e1cfc2">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-2cf02d2e2902e8674ea18f4e2be3123da939815f.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\libs\baidumapapi_v3_2_0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="46ca4c3c74e1ddc60b45c490485e5df05babe6a5">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\baidumapapi_v3_2_0-1661ddab9652e8380d01591fcdb0080781aace06.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library\wishlist\unspecified\jars\libs\junit-4.8.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c94f54227b08100974c36170dcb53329435fe5ad">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\junit-4.8.2-34b14e023a2e91d7c908a06e46a2af0e358eb702.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\com.actionbarsherlock\actionbarsherlock\4.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-e31ea8cb458ed31ec7787aba29c7657317a72041.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\trunk.Library\wishlist\unspecified\jars\libs\robolectric-1.2-8.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="44918bea1e665ae1e393932f5e7cd1392ce8fb57">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\robolectric-1.2-8-c79f453d134a26e165e19bfab11d36b1a1cf9f6f.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\open_sdk.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="73915005d14af2994f235034b9f9832d666a6ec9">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\open_sdk-028abbe5022afca8263e3a27f62f8449607d7e51.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\classes-c65cb7bf49ae221a75817c6594e55cc26eb0776e.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\roboguice-sherlock-1.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="04254a65664ba4472afcde863ecb2147f9752fcb">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\roboguice-sherlock-1.4-3f93b5feea3f3f162bcefcfe2e52e3cb6ca4d985.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\libs\roboguice-2.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\roboguice-2.0-60f5ffb0cf66a7414dd762fa4591e21e6e4d94f8.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\trunk.Library.PullToRefresh\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="be2302dd707676fc5cc7022339325901784f90fd">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\classes-a137939809b22c67c1e04a656914b8b67aa7e204.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\libs\roboguice-sherlock-1.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="04254a65664ba4472afcde863ecb2147f9752fcb">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\roboguice-sherlock-1.4-d42f34b6b7a0240d6fc1bc4b24ce0eccc03e4fc4.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\baidumapapi_v3_2_0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="46ca4c3c74e1ddc60b45c490485e5df05babe6a5">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\baidumapapi_v3_2_0-e643f97129f8b46fc2b6cc11d1cc83fd009b4843.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\libs\khandroid-httpclient-4.2.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="833efd491363b9391340d073bff8d95c85ff7733">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\khandroid-httpclient-4.2.3-cd30c31f52ebe80a56a0129d482c6793eff500dd.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-78382acd94b2a94353270b790654b260d7d14e0d.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\libs\guice-3.0-no_aop.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="28586dc97c525501329d9a242fc3402041e3572d">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\guice-3.0-no_aop-cd4413e7bf0268ab45eea93c1840d490bb152280.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\core.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="42fd0eaeee98eb9e1c8cfbcef742a34b54522c4c">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\core-292572228c2f21495b3d06b15c6a2af4edb28f09.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\roboguice-2.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\roboguice-2.0-82a86edb13c6172f57bb529d7d48a12980050676.jar" />
+    </item>
+    <item
+        jar="E:\trunk\xiadan\build\intermediates\exploded-aar\trunk.Library\wishlist\unspecified\jars\libs\junit-4.8.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c94f54227b08100974c36170dcb53329435fe5ad">
+        <dex dex="E:\trunk\xiadan\build\intermediates\pre-dexed\debug\junit-4.8.2-e7c0bcf265954b54db4fb04f6220117addf3ae28.jar" />
+    </item>
+    <item
+        jar="E:\trunk\Feipai\libs\mta-sdk-1.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1d1a215c3acd13ef011b8391cab495f7760c2a1d">
+        <dex dex="E:\trunk\Feipai\build\intermediates\pre-dexed\debug\mta-sdk-1.0.0-14199a06ae0c35bf0e824ec8e26638b841b421cc.jar" />
+    </item>
+
+</items>

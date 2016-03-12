@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:background="@color/white"
+    android:id="@+id/private_letter_list_parent">
+
+    <RelativeLayout
+        android:layout_width="62dp"
+        android:layout_height="62dp">
+
+        <ImageView
+            android:id="@+id/private_letter_avatar"
+            style="@style/MessageAvatar"/>
+
+        <ImageView
+            android:id="@+id/iv_private_letter_list_item_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_msgnotice_tj"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/private_letter_nickname"
+            style="@style/MessageNickname" />
+
+        <TextView
+            android:id="@+id/private_letter_content"
+            android:layout_below="@id/private_letter_nickname"
+            style="@style/MessageContent"/>
+
+        <TextView
+            android:id="@+id/private_letter_create_time"
+            style="@style/CreateTime"/>
+    </RelativeLayout>
+</LinearLayout>

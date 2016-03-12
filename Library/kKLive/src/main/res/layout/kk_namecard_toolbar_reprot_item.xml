@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="79dip"
+    android:layout_height="76dip"
+    android:background="@drawable/kk_namecard_toolbar_report_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/namecard_toolbar_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="@string/kk_namecard_toolbar_report"	
+        android:textColor="@color/kk_background_white"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_rank_list_item_bg_gray"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/kk_rank_list_item_bg_gray" -->
+
+    <LinearLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="4dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kk_default_avatar_small_men" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/identity_icon"
+        android:layout_width="17dip"
+        android:layout_height="17dip"
+        android:layout_marginTop="6dip"
+        android:layout_toRightOf="@+id/avatar_layout"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_identity_icon_offial" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="6dip"
+        android:layout_toRightOf="@+id/identity_icon"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:maxWidth="150dip"
+        android:singleLine="true"
+        android:text="Name"
+        android:textColor="@color/kk_custom_black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/platform_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignTop="@+id/name"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@+id/name"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_client_icon_android" />
+     <ImageView
+        android:id="@+id/wala_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignTop="@+id/name"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@+id/platform_icon"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_client_icon_wala" />
+
+    <ImageView
+        android:id="@+id/vip_icon"
+        android:layout_width="13dip"
+        android:layout_height="13dip"
+        android:layout_alignBottom="@+id/avatar_layout"
+        android:layout_alignRight="@+id/avatar_layout"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="5dip"
+        android:focusable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_common_vip_icon" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/lv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avatar_layout"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/avatar_layout"
+        android:paddingBottom="5dip" >
+
+        <ImageView
+            android:id="@+id/a_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:src="@drawable/kk_room_lv31"
+            android:visibility="gone" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/r_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_lv"
+            android:focusable="false"
+            android:src="@drawable/kk_v1" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@+id/r_lv"
+            android:clickable="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:text="id:123456"
+            android:textColor="#A4A4A4"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/family_medal_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/userid"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textColor="@color/kk_medal"
+            android:textSize="@dimen/kk_text_small_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/arrow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:clickable="false"
+        android:duplicateParentState="false"
+        android:focusable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_room_mem_arrow_normal" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/mem_action_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrow_icon"
+        android:layout_marginTop="7dip"
+        android:layout_weight="1"
+        android:background="@drawable/kk_room_mem_action_bg"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="6dip"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/user_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kk_room_mem_info_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_room_mem_list_user_info"
+                    android:textColor="#696969"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gift_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kk_room_mem_gift_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_room_mem_list_send_gift"
+                    android:textColor="#696969"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kk_room_mem_chat_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_room_mem_list_chat_with"
+                    android:textColor="#696969"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kickout_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kk_room_mem_kickout_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_room_mem_list_kick_out"
+                    android:textColor="#696969"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dip"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/shutup_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kk_room_mem_shutup_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_room_mem_list_no_speak"
+                    android:textColor="#696969"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/report_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kk_room_mem_report_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_room_mem_list_report"
+                    android:textColor="#696969"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

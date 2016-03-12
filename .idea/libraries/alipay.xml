@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="alipay">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Wala/libs/alipay.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

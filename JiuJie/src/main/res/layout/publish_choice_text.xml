@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/publish_choice_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/publish_choice_text_bkg_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="16dp"
+            android:background="#D38CF8"
+            android:lineSpacingExtra="2dp"/>
+
+        <TextView
+            android:id="@+id/publish_choice_text_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="@string/publish_choice_text_tip"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/publish_choice_text_tip_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/publish_choice_text_yes_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/icon_yesbtn_choice" />
+
+            <ImageButton
+                android:id="@+id/publish_choice_text_no_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/icon_nobtn_choice" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/publish_choice_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="@color/transparent"
+        android:textColorHint="#A5A5A5"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:textColor="@color/light_grey"
+        android:hint="@string/publish_choice_tip"/>
+</LinearLayout>

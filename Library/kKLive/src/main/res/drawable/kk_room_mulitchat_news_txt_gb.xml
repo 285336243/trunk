@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:color="@color/kk_room_text_gray" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>
+    <item android:color="@color/kk_room_mulitchat_news" android:state_focused="true"/>
+    <item android:color="@color/kk_room_mulitchat_news" android:state_selected="true"/>
+    <item android:color="@color/kk_room_mulitchat_news" android:state_pressed="true"/>
+
+</selector>

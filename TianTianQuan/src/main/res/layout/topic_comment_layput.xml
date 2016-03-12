@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/opinion_feedback_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <ImageView
+            android:id="@+id/topic_comment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_cancel_tj"
+            android:layout_marginLeft="4dip"
+            android:contentDescription="@string/create_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/comment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageView
+            android:id="@+id/topic_comment_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/icon_sure_tj" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/topic_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/opinion_feedback_tip"
+        android:gravity="top"
+        android:textSize="16sp"
+        android:drawableTop="@android:color/transparent"
+        android:drawableLeft="@android:color/transparent"
+        android:drawableRight="@android:color/transparent"
+        android:drawablePadding="16dip"
+        android:textColor="@color/tvcircle_grid_item_text_color"
+        android:background="@android:color/transparent" />
+</LinearLayout>

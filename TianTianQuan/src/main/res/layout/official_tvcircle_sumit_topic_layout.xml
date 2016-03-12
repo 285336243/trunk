@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/official_tvcircle_submit_topic_root_layout">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <TextView
+            android:id="@+id/official_tvcircle_submit_topic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/btn_back_tj"
+            android:gravity="center_vertical"
+            android:text="@string/back"
+            android:textColor="@color/tvcircle_title_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sub_topic"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/official_tvcircle_submit_topic_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:drawableRight="@drawable/icon_sure_tj"
+            android:gravity="center_vertical"
+            android:text="@string/release"
+            android:textColor="@color/tvcircle_title_text_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/publish_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:text="@string/circle"
+            android:textColor="@color/search_tab_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/official_tvcircle_submit_topic_from"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:textColor="@color/search_tab_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e3e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bdg_tvq_small_tj"
+        android:orientation="vertical"
+        android:layout_weight="1.0"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:id="@+id/official_tvcircle_submit_topic_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/official_submit_topic_title_hint"
+            android:textColorHint="@color/tvcircle_grid_item_text_color"
+            android:textColor="@color/tvcircle_grid_item_text_color"
+            android:textSize="16sp"
+            android:paddingLeft="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3" />
+
+        <EditText
+            android:id="@+id/official_tvcircle_submit_topic_edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/official_submit_topic_content_hint"
+            android:textColorHint="@color/tvcircle_grid_item_text_color"
+            android:textColor="@color/tvcircle_grid_item_text_color"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:gravity="top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="vertical"
+        android:layout_weight="0.0">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:id="@+id/official_tvcircle_submit_camera"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_cameratopic_tj" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/official_tvcircle_submit_photo"
+                android:layout_width="48dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_phototopic_tj" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/official_tvcircle_submit_share_image"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="#e4e3e3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_marginRight="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_tab_color"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/tongbudao" />
+
+                <RelativeLayout
+                    android:id="@+id/official_tvcircle_submit_sina_layout"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp">
+
+                    <ImageView
+                        android:id="@+id/official_tvcircle_submit_sina_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_snysina_tj" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/official_tvcircle_submit_qq_layout"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/official_tvcircle_submit_qq_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_snyqq_tj" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

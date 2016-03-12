@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addconponcode"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/youhui_code_edit"
+            android:layout_width="80dp"
+            android:background="@drawable/corner_edit"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/add_request_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:text="@string/addcode"
+            android:padding="8dp"
+            android:background="@drawable/blue_button"/>
+        </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollHorizontally="true"
+    android:layout_margin="5dp"
+    android:textSize="17sp"
+    android:textColor="@color/shen_blue"
+    android:text="您的优惠码如下："/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/no_youhui_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="26dip"
+            android:drawableTop="@drawable/icon_no_record"
+            android:gravity="center_horizontal"
+            android:paddingTop="80dip"
+            android:text="@string/tem_norecord"
+            android:visibility="gone"
+            android:textSize="20dip" />
+    </FrameLayout>
+</LinearLayout>

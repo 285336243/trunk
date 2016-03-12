@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <TextView
+            android:id="@+id/aqbw_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/tvcircle_title_text_color"
+            android:drawableLeft="@drawable/btn_back_tj"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+
+
+        <TextView
+            android:id="@+id/aqbw_info_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp">
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/personal_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bdg_tvq_small_tj"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/aqbw_avatar_layout"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:background="@drawable/bdg_inp_tj">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/icon_camera_tj" />
+
+                        <ImageView
+                            android:id="@+id/aqbw_avatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:padding="1dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dip"
+                        android:text="@string/upload_picture"
+                        android:textColor="@color/search_tab_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/name" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_name"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    style="@style/apply_linear_layout"
+                    android:id="@+id/aqbw_info_birth_data_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/birth_data" />
+
+                    <TextView
+                        android:id="@+id/aqbw_info_edit_birth_data"
+                        style="@style/apply_linear_edit"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2.0"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icon_nextarrow_tj"
+                        android:layout_weight="0.0"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/native_place" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_native_place"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/location" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_location"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/my_height" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_my_height"
+                        android:inputType="phone"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/my_weight" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_my_weight"
+                        android:inputType="phone"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    style="@style/apply_linear_layout"
+                    android:id="@+id/aqbw_info_education_background">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/education_background" />
+
+                    <TextView
+                        android:id="@+id/aqbw_info_edit_education_background"
+                        style="@style/apply_linear_edit"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2.0"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icon_nextarrow_tj"
+                        android:layout_weight="0.0"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/profession" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_profession"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    style="@style/apply_linear_layout"
+                    android:id="@+id/aqbw_info_income_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/income" />
+
+                    <TextView
+                        android:id="@+id/aqbw_info_edit_income"
+                        style="@style/apply_linear_edit"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2.0" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icon_nextarrow_tj"
+                        android:layout_weight="0.0"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/contact_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bdg_tvq_small_tj"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/mobile_number" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_mobile_number"
+                        android:inputType="phone"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/QQ" />
+
+                    <EditText
+                        android:id="@+id/aqbw_info_edit_QQ"
+                        android:inputType="phone"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/aqbw_submit_consent_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/confirm"
+                android:background="@drawable/btn_addtopicbtn_tj"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/kk_pink" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kk_pick_grey"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="@color/kk_text_black"
+                android:textSize="@dimen/kk_text_normal_size" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:textColor="@color/kk_text_black"
+                android:textSize="@dimen/kk_text_normal_size" />
+
+            <Button
+                android:id="@+id/pick_btn"
+                android:layout_width="68dip"
+                android:layout_height="27dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="9dip"
+                android:background="@drawable/kk_activity_preshow_notify_btn"
+                android:textColor="@color/kk_pink"
+                android:textSize="@dimen/kk_text_normal_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.melot.meshow.widget.pick.WheelView
+                android:id="@+id/left_wheelview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.melot.meshow.widget.pick.WheelView
+                android:id="@+id/right_wheelview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/anim1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/anim_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/kk_dynamic_details_rewards_icon" />
+
+            <TextView
+                android:id="@+id/anim_text"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/yyssdk_pink"
+                android:textSize="@dimen/kk_text_large_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anim2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/anim_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/kk_dynamic_details_rewards_icon" />
+
+            <TextView
+                android:id="@+id/anim_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/yyssdk_pink"
+                android:textSize="@dimen/kk_text_large_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anim3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/anim_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/kk_dynamic_details_rewards_icon" />
+
+            <TextView
+                android:id="@+id/anim_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/yyssdk_pink"
+                android:textSize="@dimen/kk_text_large_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

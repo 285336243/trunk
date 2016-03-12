@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="moodstocks">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TianTianQuan/libs/moodstocks.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

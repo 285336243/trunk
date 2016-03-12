@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:id="@+id/setting_root_layout">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <LinearLayout
+            android:id="@+id/setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_tj"
+                android:contentDescription="@string/create_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/personal_setting" />
+
+            <LinearLayout style="@style/setting_linearlayout">
+
+                <RelativeLayout
+                    android:id="@+id/base_info_modification"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/base_info_modification" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+
+                <View style="@style/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/modification_password"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/modification_password" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+
+                <View style="@style/setting_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/setting_contact_address"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/contact_information" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+
+                <View style="@style/setting_line" android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/blcklist"
+                    style="@style/setting_relativelayout" android:visibility="gone">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/blacklist" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/setting_account_binding" />
+
+            <LinearLayout style="@style/setting_linearlayout">
+
+                <RelativeLayout
+                    android:id="@+id/mobile_number_binding"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        android:id="@+id/setting_mobile_number_text"
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/mobile_number" />
+
+                    <TextView
+                        android:id="@+id/setting_mobile_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_toRightOf="@id/setting_mobile_number_text"
+                        android:textColor="@color/search_tab_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/setting_mobile_number_binding"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/binding"
+                        android:gravity="center"
+                        android:textColor="#ff7e61"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/sina_weibo_binding"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        android:id="@+id/setting_sina_text"
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/sina_weibo" />
+
+                    <TextView
+                        android:id="@+id/setting_sina_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_toRightOf="@id/setting_sina_text"
+                        android:textColor="@color/search_tab_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/setting_sina_binding_text"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/binding"
+                        android:gravity="center"
+                        android:textColor="#ff7e61"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/tencent_weibo_binding"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        android:id="@+id/setting_tencent_text"
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/tencent_weibo" />
+
+                    <TextView
+                        android:id="@+id/setting_tencent_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_toRightOf="@id/setting_tencent_text"
+                        android:textColor="@color/search_tab_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/setting_tencent_binding_text"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/binding"
+                        android:gravity="center"
+                        android:textColor="#ff7e61"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/system_correlation" />
+
+            <LinearLayout style="@style/setting_linearlayout">
+
+                <RelativeLayout
+                    android:id="@+id/clear_cache"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/clear_cache" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+
+                <View style="@style/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/check_update"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/check_update" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+
+                <View style="@style/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/about"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/about" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/rest" />
+
+            <LinearLayout style="@style/setting_linearlayout">
+
+                <RelativeLayout
+                    android:id="@+id/opinion_feedback"
+                    style="@style/setting_relativelayout">
+
+                    <TextView
+                        style="@style/setting_relativelayout_text"
+                        android:text="@string/opinion_feedback" />
+
+                    <ImageView style="@style/setting_relativelayout_image" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="16dip"
+                android:background="@drawable/bdg_btnlogout_tj">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/logout"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:layout_height="wrap_content" android:background="@drawable/toolbar_bg">
+
+    <TextView
+        android:id="@+id/comment_publish"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/red"
+        android:text="@string/publish"/>
+
+    <EditText
+        android:id="@+id/comment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="@string/comment_hint"
+        android:textSize="14sp"
+        android:textColor="@color/light_grey"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toLeftOf="@id/comment_publish"
+        android:textColorHint="#D0D0D0"
+        android:drawableLeft="@drawable/transparent"
+        android:drawablePadding="8dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/comment_bg"/>
+
+</RelativeLayout>

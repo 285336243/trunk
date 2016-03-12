@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/namecard_toolbar_whisper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/namecard_whisper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/kk_namecard_toolbar_whisper"
+            android:textColor="@color/kk_background_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_namecard_toolbar_line" />
+
+    <LinearLayout
+        android:id="@+id/namecard_toolbar_attention"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/namecard_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/kk_attention"
+            android:textColor="@color/kk_background_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_namecard_toolbar_line" />
+
+    <LinearLayout
+        android:id="@+id/namecard_toolbar_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/namecard_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/kk_namecard_toolbar_more"
+            android:textColor="@color/kk_background_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

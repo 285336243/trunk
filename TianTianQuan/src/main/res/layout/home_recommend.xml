@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#80000000">
+
+    <RelativeLayout
+        android:id="@+id/home_recommend_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bdg_shoppop_tj"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/home_recommend_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignBottom="@id/home_recommend_image">
+
+            <Button
+                android:id="@+id/home_recommend_skip_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bdg_tjpopbtnwit_tj"
+                android:layout_weight="1.0"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginRight="8dp"
+                android:text="@string/skip"/>
+
+            <Button
+                android:id="@+id/home_recommend_see_details_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/bdg_tjpopbtnred_tj"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/see_details"/>
+            </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>

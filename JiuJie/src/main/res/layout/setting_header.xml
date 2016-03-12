@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/person_infor_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/user_header"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/feb_headset_choice"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/user_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_header"
+        android:layout_alignRight="@+id/user_header"
+        android:layout_marginRight="8dp"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="34dp"
+        android:layout_toRightOf="@+id/user_header"
+        android:textColor="@color/light_grey"
+        android:singleLine="true"
+        android:maxEms="6"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView style="@style/ArrowView" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/bound_wrap"
+        android:layout_width="91dip"
+        android:layout_height="87dip"
+        android:background="#9ACA00"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="87dip"
+            android:layout_height="83dip"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:id="@+id/car_thumb"
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/car_thumb"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/car_icon"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/car_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="3dip"
+                    android:textColor="@color/kk_custom_black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

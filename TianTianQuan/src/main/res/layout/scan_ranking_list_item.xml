@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dip">
+
+    <ImageView
+        android:id="@+id/rank_no_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_nofir_tj"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/rank_no_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/search_tab_color"
+        android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/rank_user_avatar"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/rank_user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/tvcircle_grid_item_text_color"
+        android:layout_gravity="center_vertical"
+        android:text="name"/>
+
+    <TextView
+        android:id="@+id/rank_coins"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#f98d75"
+        android:text="2311231"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:layout_marginRight="16dip"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

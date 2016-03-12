@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/kk_notify_itme_bg2" >
+
+        <ImageView
+            android:id="@+id/guestphoto"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="12dip"
+            android:src="@drawable/kk_default_avatar_small_men" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/reply"
+            android:layout_toRightOf="@+id/guestphoto" >
+
+            <TextView
+                android:id="@+id/guestname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="150dip"
+                android:paddingTop="9dip"
+                android:textColor="@color/kk_dynamic_font_color_title"
+                android:textSize="@dimen/kk_text_big_size" />
+
+            <ImageView
+                android:id="@+id/qlgradeitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/guestname"
+                android:layout_marginLeft="4dip"
+                android:layout_toRightOf="@+id/guestname"
+                android:paddingBottom="2dip" />
+
+            <TextView
+                android:id="@+id/replycontext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guestname"
+                android:paddingBottom="9dip"
+                android:textColor="@color/kk_dynamic_fontcolor_context"
+                android:textSize="@dimen/kk_text_normal_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:paddingTop="15dip"
+            android:paddingBottom="20dip"
+            android:src="@drawable/kk_dynamic_write_comment" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_more_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kk_background_white"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/loading_more_progress"
+            android:layout_width="@dimen/kk_progress_size_in_list_item"
+            android:layout_height="20dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loading_more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="@string/kk_load_more"
+            android:textColor="#646F77"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:paddingBottom="@dimen/title_padding"
+            android:paddingTop="@dimen/title_padding"
+            android:background="@drawable/bdg_titbar_sd">
+
+            <ImageView
+                android:id="@+id/back_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:background="@drawable/icon_return"
+                android:contentDescription="@string/back_icon" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/shengda_comment"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_text_size" />
+        </RelativeLayout>
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:fadingEdge="none"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:divider="@color/divider_color"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+
+            ptr:ptrShowIndicator="false"
+            ptr:ptrHeaderBackground="@color/transparent"
+            ptr:ptrHeaderTextColor="@color/white"
+            ptr:ptrDrawable="@drawable/default_ptr_flip"
+            ptr:ptrAnimationStyle="flip"/>
+
+        <TextView
+            android:id="@android:id/empty"
+            style="@style/ListSubtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/send_comment_backg">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/comment_editview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:minHeight="40dp"
+                android:layout_gravity="center"
+                android:paddingLeft="8dp"
+                android:hint="@string/add_comment"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textColorHint="@color/yawhite"
+                android:background="@drawable/corner_addcomment_editview"/>
+            </ScrollView>
+            <Button
+                android:id="@+id/send_button"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="@string/send"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/send_color"
+                android:background="@drawable/corner_addcomment_editview"
+                />
+            </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="@style/ListSpinner"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/list_empty_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/list_empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#aeaeae"/>
+
+    </LinearLayout>
+</FrameLayout>

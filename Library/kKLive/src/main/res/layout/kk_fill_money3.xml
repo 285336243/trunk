@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_gray"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/kk_title_layout" />
+    </LinearLayout>
+     <TextView
+        android:id="@+id/card_moeny_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="5dip"
+        android:visibility="gone"
+        android:text="@string/card_money"
+        android:textSize="@dimen/kktv_activity_textsize"
+        android:textColor="#848383" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/kk_fill_money_info_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="18dip"
+            android:paddingLeft="18dip"
+            android:paddingTop="18dip" >
+
+            <TextView
+                android:id="@+id/account_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_account_str"
+                android:textColor="#848383" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/account_str"
+                android:text="名字"
+                android:textColor="@color/kk_custom_black" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/kk_fill_money_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="18dip"
+            android:paddingLeft="18dip"
+            android:paddingTop="18dip" >
+
+            <TextView
+                android:id="@+id/account_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_money"
+                android:textColor="#848383" />
+
+            <TextView
+                android:id="@+id/pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/account_str"
+                android:text="名字"
+                android:textColor="@color/kk_custom_black" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/kk_fill_money_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="18dip"
+            android:paddingLeft="18dip"
+            android:paddingTop="18dip" >
+
+            <TextView
+                android:id="@+id/account_from_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_from_str"
+                android:textColor="#848383" />
+
+            <TextView
+                android:id="@+id/account_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="@string/account_from_str"
+                android:layout_toRightOf="@+id/account_from_str"
+                android:textColor="@color/kk_custom_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

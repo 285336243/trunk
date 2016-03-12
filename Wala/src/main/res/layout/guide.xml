@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f0ed">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.viewpagerindicator.CirclePageIndicator xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/guide_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            app:fillColor="#808080"
+            app:pageColor="#d5d1cd"
+            app:strokeColor="#d5d1cd" />
+
+        <LinearLayout
+            android:id="@+id/guide_register_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/guide_register"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/guide_register"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:id="@+id/guide_skip"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="@string/skip"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/guide_skip"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

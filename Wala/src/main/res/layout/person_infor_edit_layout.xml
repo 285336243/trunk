@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/person_photo"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/feb_topicuserhead_tomato"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/personal_user_header_backgroud"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/person_photo"
+                android:text="@string/change_head_photo"
+                android:textColor="@color/signatu"
+                android:textSize="14sp" />
+
+            <ImageView style="@style/ArrowView" />
+
+        </RelativeLayout>
+
+        <View style="@style/HaLineView" />
+
+        <RelativeLayout
+            android:id="@+id/change_fengmian"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/feng_mian"
+                style="@style/TextEdit"
+                android:text="@string/my_fenmian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/feng_mian"
+                android:text="@string/cheng_face"
+                android:textColor="@color/signatu"
+                android:textSize="14sp" />
+
+            <ImageView style="@style/ArrowView" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divi_color" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/TextEdit"
+                android:text="@string/my_nickname" />
+
+            <EditText
+                android:id="@+id/person_nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/name"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/setingnickname"
+                android:singleLine="true"
+                android:textColor="@color/pername_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divi_color" />
+
+        <RelativeLayout
+            android:id="@+id/person_gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/sengen"
+                style="@style/TextEdit"
+                android:text="@string/my_gender" />
+
+            <TextView
+                android:id="@+id/person_genderss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/sengen"
+                android:text="@string/choice_gender"
+                android:textColor="@color/signatu"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View style="@style/HaLineView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/my_signation"
+                android:textColor="@color/edit_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/person_signatusss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/signature"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/signature"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:hint="@string/signa_hint"
+                android:maxLines="10"
+                android:minHeight="58dp"
+                android:minWidth="190dp"
+                android:textColor="@color/signatu"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

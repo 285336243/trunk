@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+<script src="http://webapi.amap.com/maps?v=1.3&key=69bb7f282eebe0ae4800a7cfb54045f4"></script>
+<script type="text/javascript" >
+	//起、终点
+	var start_xy = null;
+	var end_xy = null;
+	//start:开始地址;end:结束地址
+	function geocoder(start,end) {
+	document.getElementById("countent").innerHTML =
+                 start+" "+end;
+    javascript:diatanced.showToast(start);
+	alert(start,end);
+	    var MGeocoder;
+	    //加载地理编码插件
+	    AMap.service(["AMap.Geocoder"], function() {        
+	        MGeocoder = new AMap.Geocoder({ 
+	            city:"021", //城市，默认：“全国”
+	            radius:1000 //范围，默认：500
+	        });
+	        //返回地理编码结果  
+	        //地理编码
+	        MGeocoder.getLocation(start, function(status, result){
+	        	if(status === 'complete' && result.info === 'OK'){
+	        		geocoder_CallBack1(result);
+					
+				MGeocoder.getLocation(end, function(status, result){
+					if(status === 'complete' && result.info === 'OK'){
+						geocoder_CallBack2(result);
+					}
+				});
+	        	}
+	        });
+	        //返回地理编码结果  
+	        //地理编码
+
+	    });
+	}  
+	function geocoder_CallBack1(data){
+	    var resultStr="";
+	    //地理编码结果数组
+	    var geocode = new Array();
+	    geocode = data.geocodes;  
+		start_xy = new AMap.LngLat(geocode[0].location.getLng(),geocode[0].location.getLat());
+	}  
+	function geocoder_CallBack2(data){
+	    var resultStr="";
+	    //地理编码结果数组
+	    var geocode = new Array();
+	    geocode = data.geocodes;  
+		end_xy = new AMap.LngLat(geocode[0].location.getLng(),geocode[0].location.getLat());
+		driving_route();
+	}  
+
+
+	//驾车导航
+	function driving_route() {
+		var MDrive;
+		AMap.service(["AMap.Driving"], function() {
+			var DrivingOption = {
+				//驾车策略，包括 LEAST_TIME，LEAST_FEE, LEAST_DISTANCE,REAL_TRAFFIC
+				policy: AMap.DrivingPolicy.LEAST_TIME 
+			};        
+	        MDrive = new AMap.Driving(DrivingOption); //构造驾车导航类 
+	        //根据起终点坐标规划驾车路线
+	        MDrive.search(start_xy, end_xy, function(status, result){
+	        	if(status === 'complete' && result.info === 'OK'){
+	        		driving_routeCallBack(result);
+	        	}else{
+	        		//alert(result);
+	        	}
+	        }); 
+	    });
+	}
+	//导航结果展示
+	function driving_routeCallBack(data) {
+		var routeS = data.routes;
+		if (routeS.length <= 0) {
+			alert("未查找到任何结果!建议：1.请确保所有字词拼写正确。2.尝试不同的关键字。3.尝试更宽泛的关键字。");
+		} 
+		else{ 
+			var distance = routeS[0].distance;
+			//调用定义的方法，传入距离
+			javascript:diatance.showToast(distance);
+		document.getElementById("result").innerHTML =
+                 distance;
+                 javascript:diatanced.showToast(distance);
+			$("#distance").val(distance);
+			if(distance == 0){
+				alert("地址有误，请按照要求填写试试，谢谢！");
+				return false;
+			}
+			$("#submitButton").html("保存中...");
+			$("#submitButton").css("background-image","url('/public/images/bg-add-user.png')");
+			$("#submitButton").attr("disabled","disabled");
+			$("#form").submit();
+
+		} 	
+	}
+</script>
+</head>
+<body  onload="javascript:diatance.showcontacts()">
+<table align="center">
+    <tr><td>姓名</td><td>电话</td></tr>
+    <tr><td>小明</td><td><a  href="javascript:demo.startPhone(123)">123</a></td></tr>
+    <tr><td>小王</td><td><a  href="javascript:demo.startPhone(456)">456</a></td></tr>
+</table>
+<p id="countent">html原始数据</p>
+<p id="result">搜索结果</p>
+</body>
+</html>

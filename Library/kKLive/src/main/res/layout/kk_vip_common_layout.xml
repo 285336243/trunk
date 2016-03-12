@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/read_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/kk_shop_item_color"
+            android:textSize="@dimen/kk_text_normal_size" />
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/read_text"
+            android:textColor="@color/kk_app_color_dark_gray"
+            android:textSize="@dimen/kk_text_10_size" />
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dip"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dip"
+            android:layout_toLeftOf="@+id/right_image"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/rigt_text"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dip"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="@color/kk_app_color_dark_gray"
+            android:textSize="@dimen/kk_text_10_size" />
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:layout_toLeftOf="@+id/rigt_text"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="@color/kk_app_color_dark_gray"
+            android:textSize="@dimen/kk_text_10_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

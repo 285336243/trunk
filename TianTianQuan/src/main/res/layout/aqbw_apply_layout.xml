@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <TextView
+            android:id="@+id/aqbw_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/tvcircle_title_text_color"
+            android:drawableLeft="@drawable/btn_back_tj"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/collect"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/aqbw_clause_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7f000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.0"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/aqbw_clause_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="16sp" />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/aqbw_consent_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/consent"
+                android:background="@drawable/btn_addtopicbtn_tj"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/search_tab_selector_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/setting_text_title"
+        android:text="@string/base_information" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bdg_tvq_small_tj"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+        <RelativeLayout
+            android:id="@+id/aqbw_man_information"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/man_information"
+                android:textColor="@color/tvcircle_grid_item_text_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_nextarrow_tj"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View style="@style/setting_line" />
+
+        <RelativeLayout
+            android:id="@+id/aqbw_woman_information"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/woman_information"
+                android:textColor="@color/tvcircle_grid_item_text_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_nextarrow_tj"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/setting_text_title"
+        android:text="@string/primary_contradiction" />
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/aqbw_primary_contradiction"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/bdg_tvq_small_tj"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="top"
+        android:textColor="@color/tvcircle_grid_item_text_color"/>
+
+    <TextView
+        style="@style/setting_text_title"
+        android:text="@string/program_aspiration" />
+
+    <RelativeLayout
+        android:id="@+id/aqbw_program_aspiration"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/bdg_tvq_small_tj"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+        <TextView
+            android:id="@+id/aqbw_program_aspiration_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/only_man_be_willing"
+            android:textColor="@color/tvcircle_grid_item_text_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_nextarrow_tj"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/aqbw_submit_consent_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/submit"
+        android:background="@drawable/btn_addtopicbtn_tj"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/white" />
+</LinearLayout>

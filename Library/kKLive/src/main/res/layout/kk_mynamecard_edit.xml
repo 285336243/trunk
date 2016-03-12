@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mynamecard_edit_rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kk_background_gray"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/kk_title_layout" />
+    </LinearLayout>
+
+     <ImageView
+         android:id="@+id/myImageView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/kk_newslater_setting_selector_bgall"
+        android:clickable="true"
+        android:onClick="onAvatarClick" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/kk_avatar_bg"
+                android:gravity="center"
+                android:padding="3dip" >
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kk_default_avatar_big_women" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/kk_avatar"
+                android:textColor="#515151"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dip"
+                android:clickable="true"
+                android:duplicateParentState="true"
+                android:src="@drawable/kk_namecard_arrow" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/nick_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="18dip"
+        android:background="@drawable/kk_newslater_setting_selector_bgtop"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onNameClick" >
+
+        <TextView
+            android:id="@+id/name_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="20dip"
+            android:text="@string/kk_nick_name"
+            android:textColor="#515151"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nick_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/arrow_image"
+            android:layout_toRightOf="@+id/name_lable"
+            android:ellipsize="marquee"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/kk_custom_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/arrow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dip"
+            android:src="@drawable/kk_namecard_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sex_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/kk_newslater_setting_selector_bgcenter"
+        android:clickable="true"
+        android:onClick="onSexClick" >
+
+        <TextView
+            android:id="@+id/sex_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="20dip"
+            android:text="@string/kk_sex"
+            android:textColor="#515151"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sex_lable"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kk_sex_icon_man" />
+        
+        <TextView
+            android:id="@+id/sex_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sex"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/kk_custom_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dip"
+            android:src="@drawable/kk_namecard_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/city_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/kk_newslater_setting_selector_bgbottom"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onCityClick" >
+
+        <TextView
+            android:id="@+id/city_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dip"
+            android:paddingRight="20dip"
+            android:text="@string/kk_city"
+            android:textColor="#515151"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/city_lable"
+            android:textColor="@color/kk_custom_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dip"
+            android:src="@drawable/kk_namecard_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

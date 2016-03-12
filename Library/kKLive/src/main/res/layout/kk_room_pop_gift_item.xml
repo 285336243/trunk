@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dip"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <com.melot.meshow.room.poplayout.SelectableImageView
+        android:id="@+id/gift_thumb"
+        android:layout_width="46dip"
+        android:layout_height="46dip"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:padding="3dip"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/gift_thumb_mask"
+        android:layout_width="49dip"
+        android:layout_height="49dip"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/kk_room_gift_belong_mask" />
+
+    <TextView
+        android:id="@+id/gift_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_thumb"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/gift_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_name"
+        android:gravity="center"
+        android:lines="1"
+        android:text="price"
+        android:textColor="@color/kk_text_orange"
+        android:textSize="12sp" />
+
+</RelativeLayout>

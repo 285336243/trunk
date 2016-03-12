@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.jiujie8.choice.choice.TouchImageView
+        android:id="@+id/crop_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000">
+
+        <TextView
+            android:id="@+id/crop_image_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/cancel"/>
+
+        <TextView
+            android:id="@+id/crop_image_designate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="@string/designate"/>
+    </FrameLayout>
+</RelativeLayout>

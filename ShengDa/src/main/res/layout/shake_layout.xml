@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding"
+        android:background="@drawable/bdg_titbar_sd">
+
+        <ImageView
+            android:id="@+id/back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/icon_return"
+            android:contentDescription="@string/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/shake_activity_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/shke_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/shake_icon"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-22dp"
+        android:layout_below="@id/shke_icon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:text="@string/shake_hint"
+            android:textColor="@color/shake_hint_color"
+            android:background="@drawable/corner_shake_hint_textview"
+            android:gravity="center"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

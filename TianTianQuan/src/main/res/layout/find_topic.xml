@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bdg_topicwrap_topic"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="8dip">
+
+        <ImageView
+            android:id="@+id/find_avatar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="8dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/find_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/find_avatar"
+            android:textColor="#929191"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/find_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/find_nickname"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/find_avatar"
+            android:singleLine="true"
+            android:textColor="@color/search_tab_color"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/find_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:textColor="@color/tvcircle_grid_item_text_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/find_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="5"
+        android:textColor="#929191"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/find_image_layout"
+        android:layout_width="160dip"
+        android:layout_height="120dip"
+        android:layout_marginLeft="8dip"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/find_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/find_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_seemore_topic"
+        android:paddingBottom="6dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:text="@string/see_all"
+        android:textColor="@color/search_tab_color"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/bdg_topiclistbot_tj"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/find_createtime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/search_tab_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#F3EFEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/find_post_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="222"
+                    android:textColor="@color/search_tab_color"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/icon_comment_topic"
+                    android:drawablePadding="4dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#F3EFEF" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/find_like_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/search_tab_color"
+                    android:textSize="12sp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/icon_like_topic"
+                    android:drawablePadding="4dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

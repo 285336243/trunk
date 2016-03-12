@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <RelativeLayout
+        android:id="@+id/recommand_dialog_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bdg_shoppop_tj">
+
+        <ImageView
+            android:id="@+id/recommand_dialog_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/recommand_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/recommand_dialog_image_layout"
+        android:layout_alignTop="@id/recommand_dialog_image_layout"
+        android:background="@drawable/btn_closepop_mzs" />
+</RelativeLayout>

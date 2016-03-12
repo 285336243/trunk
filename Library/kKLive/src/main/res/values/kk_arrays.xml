@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pay_money_type">
+        <item>中国移动充值卡</item>
+        <item>中国联通充值卡</item>
+        <item>中国电信充值卡</item>
+    </string-array>
+    
+        <!-- 支付宝界面充值金额 -->
+    <string-array name="pay_alipay_option_string">
+        <item>10元</item>
+        <item>50元</item>
+        <item>100元</item>
+        <item>300元</item>
+        <item>500元</item>
+        <item>1000元</item>
+    </string-array>
+    <string-array name="pay_alipay_option_value">
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+    <!-- 银联界面充值金额 -->
+    <string-array name="pay_unionpay_option_strings">
+        <item>10元</item>
+        <item>50元</item>
+        <item>100元</item>
+        <item>300元</item>
+        <item>500元</item>
+        <item>1000元</item>
+    </string-array>
+    <string-array name="pay_unionpay_option_values">
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+    <!-- 联通界面充值金额 -->
+    <string-array name="pay_unioncom_option_strings">
+        <item>1元</item>
+        <item>2元</item>
+        <item>5元</item>
+        <item>10元</item>
+    </string-array>
+    <string-array name="pay_unioncom_option_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- 充值卡界面充值金额 -->
+
+
+    <!-- 移动 -->
+    <string-array name="pay_card_cmcc_strings">
+        <item>10元</item>
+        <item>20元</item>
+        <item>30元</item>
+        <item>50元</item>
+        <item>100元</item>
+        <item>300元</item>
+        <item>500元</item>
+    </string-array>
+    <string-array name="pay_card_cmcc_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+    </string-array>
+
+    <!-- 联通 -->
+    <string-array name="pay_card_unicom_strings">
+        <item>20元</item>
+        <item>30元</item>
+        <item>50元</item>
+        <item>100元</item>
+        <item>300元</item>
+        <item>500元</item>
+    </string-array>
+    <string-array name="pay_card_unicom_values">
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+    </string-array>
+
+    <!-- 电信 -->
+    <string-array name="pay_card_dianxin_strings">
+        <item>20元</item>
+        <item>30元</item>
+        <item>50元</item>
+        <item>100元</item>
+    </string-array>
+    <string-array name="pay_card_dianxin_values">
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- 易联 -->
+    <string-array name="payeco_card_Strings">
+        <item>10元</item>
+        <item>50元</item>
+        <item>100元</item>
+        <item>300元</item>
+        <item>500元</item>
+        <item>1000元</item>
+    </string-array>
+    <string-array name="payeco_card_values">
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+    
+    <!-- 微信支付 -->
+    <string-array name="wechat_card_Strings">
+        <item>10元</item>
+        <item>50元</item>
+        <item>100元</item>
+        <item>300元</item>
+        <item>500元</item>
+        <item>1000元</item>
+    </string-array>
+    <string-array name="wechat_card_values">
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+    
+    <string-array name="card_money_list">
+        <item>10元</item>
+        <item>20元</item>
+        <item>30元</item>
+        <item>50元</item>
+        <item>100元</item>
+        <item>300元</item>
+        <item>500元</item>
+    </string-array>
+    
+    <declare-styleable name="SlidMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+    
+    <!--loading页捆绑市场渠道号 -->
+    <string-array name="load_page_binding_market">
+        <item>244</item>
+        <item>245</item>
+        <item>246</item>
+        <item>251</item>
+        <item>253</item>
+        <item>254</item>
+        <item>255</item>
+        <item>256</item>
+        <item>257</item>
+        <item>258</item>
+        <item>259</item>
+        <item>260</item>
+        <item>261</item>
+        <item>262</item>
+        <item>264</item>
+        <item>265</item>
+        <item>271</item>
+        <item>272</item>
+        <item>273</item>
+        <item>277</item>
+        <item>278</item>
+        <item>279</item>
+        <item>280</item>
+        <item>281</item>
+        <item>282</item>
+        <item>283</item>
+        <item>284</item>
+        <item>286</item>
+        <item>287</item>
+        <item>289</item>
+        <item>290</item>
+        <item>291</item>
+        <item>293</item>
+        <item>298</item>
+        <item>299</item>
+        <item>300</item>
+        <item>301</item>
+        <item>70030</item>
+        <item>70031</item>
+        <item>70032</item>
+        <item>70033</item>
+        <item>70034</item>
+        <item>70035</item>
+        <item>70036</item>
+        <item>70037</item>
+        <item>70038</item>
+        <item>70039</item>
+        <item>70041</item>
+        <item>70042</item>
+        <item>70043</item>
+        <item>70047</item>
+        <item>70048</item>
+        <item>70051</item>
+        <item>70052</item>
+        <item>70053</item>
+        <item>70054</item>
+        <item>70055</item>
+        <item>70056</item>
+        <item>70057</item>
+        <item>70058</item>
+        <item>70059</item>
+        <item>70060</item>
+        <item>70061</item>
+        <item>70062</item>
+        <item>70065</item>
+        <item>70066</item>
+        <item>70067</item>
+        <item>70068</item>
+        <item>70069</item>
+        <item>70070</item>
+        <item>70071</item>
+        <item>70072</item>
+        <item>70073</item>
+        <item>70074</item>
+        <item>70075</item>
+        <item>70076</item>
+        <item>70077</item>
+        <item>70078</item>
+        <item>70080</item>
+        <item>70081</item>
+        <item>70082</item>
+        <item>70085</item>
+        <item>70086</item>
+        <item>70087</item>
+        <item>70088</item>
+        <item>70089</item>
+        <item>70091</item>
+        <item>70092</item>
+        <item>70093</item>
+        <item>70094</item>
+        <item>70095</item>
+        <item>70096</item>
+        <item>70097</item>
+        <item>70098</item>
+        <item>70099</item>
+        <item>70100</item>
+        <item>70101</item>
+        <item>70102</item>
+        <item>70103</item>
+        <item>70104</item>
+        <item>70106</item>
+        <item>70107</item>
+        <item>70108</item>
+        <item>70109</item>
+        <item>70112</item>
+        <item>70113</item>
+        <item>70114</item>
+        <item>70115</item>
+        <item>70116</item>
+        <item>70117</item>
+        <item>70120</item>
+        <item>70121</item>
+        <item>70122</item>
+        <item>70123</item>
+        <item>70124</item>
+        <item>70125</item>
+        <item>70126</item>
+        <item>70148</item>
+    </string-array>
+ 
+</resources>

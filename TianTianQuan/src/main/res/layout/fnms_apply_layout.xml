@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <TextView
+            android:id="@+id/fnms_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/tvcircle_title_text_color"
+            android:drawableLeft="@drawable/btn_back_tj"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/collect"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp">
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/personal_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bdg_tvq_small_tj"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/fnms_avatar_layout"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:background="@drawable/bdg_inp_tj">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/icon_camera_tj" />
+
+                        <ImageView
+                            android:id="@+id/fnms_avatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:padding="1dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dip"
+                        android:text="@string/fnms_uplad_image"
+                        android:textColor="@color/search_tab_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/name" />
+
+                    <EditText
+                        android:id="@+id/fnms_edit_name"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    style="@style/apply_linear_layout"
+                    android:id="@+id/fnms_sex_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/sex" />
+
+                    <TextView
+                        android:id="@+id/fnms_sex"
+                        style="@style/apply_linear_edit"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2.0" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icon_nextarrow_tj"
+                        android:layout_weight="0.0"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    style="@style/apply_linear_layout"
+                    android:id="@+id/fnms_birth_data_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/birth_data" />
+
+                    <TextView
+                        android:id="@+id/fnms_birth_data"
+                        style="@style/apply_linear_edit"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2.0" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icon_nextarrow_tj"
+                        android:layout_weight="0.0"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/now_location" />
+
+                    <EditText
+                        android:id="@+id/fnms_now_location"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    style="@style/apply_linear_layout"
+                    android:id="@+id/fnms_now_salary_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/now_salary" />
+
+                    <TextView
+                        android:id="@+id/fnms_now_salary_text"
+                        style="@style/apply_linear_edit"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2.0" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icon_nextarrow_tj"
+                        android:layout_weight="0.0"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/physical_condition" />
+
+            <LinearLayout
+                style="@style/apply_linear_layout"
+                android:layout_height="52dp"
+                android:id="@+id/fnms_is_disability_layout"
+                android:background="@drawable/bdg_tvq_small_tj">
+
+                <TextView
+                    style="@style/apply_linear_text"
+                    android:text="@string/is_disability" />
+
+                <TextView
+                    android:id="@+id/fnms_is_disability_text"
+                    style="@style/apply_linear_edit"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2.0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_nextarrow_tj"
+                    android:layout_weight="0.0"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/contact_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bdg_tvq_small_tj"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/mobile_number" />
+
+                    <EditText
+                        android:id="@+id/fnms_edit_mobile_number"
+                        android:inputType="phone"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/email" />
+
+                    <EditText
+                        android:id="@+id/fnms_edit_email"
+                        android:inputType="textEmailAddress"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/life_special_experience" />
+            <EditText
+                android:id="@+id/fnms_life_special_experience_edit"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="@drawable/bdg_tvq_small_tj"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:gravity="top" />
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/job_special_experience" />
+            <EditText
+                android:id="@+id/fnms_job_special_experience_edit"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="@drawable/bdg_tvq_small_tj"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:gravity="top" />
+            <Button
+                android:id="@+id/fnms_submit_consent_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/submit"
+                android:background="@drawable/btn_addtopicbtn_tj"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

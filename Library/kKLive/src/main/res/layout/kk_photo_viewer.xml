@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.melot.meshow.imageviewer.ScrollLayout
+        android:id="@+id/photoview_scroll"
+        android:background="@color/kk_transparent_half"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.melot.meshow.imageviewer.ScrollLayout>
+
+    <ImageView
+        android:id="@+id/save_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dip"
+        android:src="@drawable/kk_save_photo"
+        android:visibility="gone" />
+
+</RelativeLayout>

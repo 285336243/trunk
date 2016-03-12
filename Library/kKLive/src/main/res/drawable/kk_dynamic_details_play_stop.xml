@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_pause" android:state_focused="false" android:state_pressed="false" android:state_selected="false" app:state_playing="true"/>
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_pause" android:state_focused="true" app:state_playing="true"/>
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_pause" android:state_selected="true" app:state_playing="true"/>
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_pause" android:state_pressed="true" app:state_playing="true"/>
+    
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_play" android:state_focused="false" android:state_pressed="false" android:state_selected="false" app:state_playing="false"/>
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_play" android:state_focused="true" app:state_playing="false"/>
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_play" android:state_selected="true" app:state_playing="false"/>
+    <item android:drawable="@drawable/kk_dynamic_details_shuoshuo_play" android:state_pressed="true" app:state_playing="false"/>
+
+</selector>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/match_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/kk_rank_list_item_bg_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:paddingRight="10dip"
+            android:layout_height="fill_parent" >
+            <TextView
+                android:id="@+id/match_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="MatchName"
+                android:textColor="#474747"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="24dip"
+                android:gravity="center_vertical"
+                android:text="@string/kk_room_vote_dialog_view"
+                android:textColor="#A9A9A9"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/kk_room_vote_dialog_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="9dip"
+        android:layout_marginRight="9dip"
+        android:background="@drawable/kk_room_vote_dialog_dotted_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:paddingTop="8dip" >
+
+        <TextView
+            android:id="@+id/ticket_count_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/kk_room_vote_dialog_vote_counts"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ticket_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ticket_count_str"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/ticket_count_str"
+            android:gravity="bottom"
+            android:textColor="#FF5EB1"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/vote_btn"
+            android:layout_width="73dip"
+            android:layout_height="39dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:background="@drawable/kk_room_vote_dialog_vote_btn"
+            android:text="@string/kk_room_vote_dialog_vote"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ticket_count_str"
+            android:layout_below="@+id/ticket_count_str"
+            android:layout_marginTop="4dip"
+            android:layout_toLeftOf="@+id/vote_btn"
+            android:paddingRight="30dip"
+            android:gravity="center_vertical"
+            android:text="@string/kk_room_vote_dialog_vote_process"
+            android:textColor="#A9A9A9"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/kk_room_vote_dialog_item_line" />
+
+</LinearLayout>

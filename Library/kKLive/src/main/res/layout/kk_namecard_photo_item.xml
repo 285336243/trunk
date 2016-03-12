@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="@color/transparent"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip" >
+
+    <FrameLayout
+        android:id="@+id/photoFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="@color/transparent" >
+
+        <ImageView
+            android:id="@+id/photo_img"
+            android:layout_width="85dip"
+            android:layout_height="64dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kk_default_img" />
+    </FrameLayout>
+
+</LinearLayout>

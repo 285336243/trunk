@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/screen_shot_submit_topic_image"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"/>
+
+        <EditText
+            android:id="@+id/screen_shot_submit_topic_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:drawablePadding="16dp"
+            android:hint="@string/edit_hint"
+            android:gravity="top"
+            android:textColorHint="#aeaeae"
+            android:textColor="#6F6A64"
+            android:textSize="16sp"
+            android:background="@color/transparent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/submit_topic_share_tip"/>
+
+        <CheckBox
+            android:id="@+id/screen_shot_submit_topic_tencent"
+            android:layout_width="48dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:button="@null"
+            android:background="@drawable/sync_tencent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="4dp"/>
+
+        <CheckBox
+            android:id="@+id/screen_shot_submit_topic_sina"
+            android:layout_width="48dp"
+            android:layout_height="52dp"
+            android:button="@null"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/screen_shot_submit_topic_tencent"
+            android:background="@drawable/sync_sina"/>
+    </RelativeLayout>
+</LinearLayout>

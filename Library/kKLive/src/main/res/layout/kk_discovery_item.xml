@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/kk_discover_item_bg" >
+
+        <FrameLayout
+            android:id="@+id/item_userinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:focusable="true"
+            android:foreground="@drawable/kk_view_foreground_bg" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip" >
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="36dip"
+                    android:layout_height="36dip"
+                    android:layout_marginRight="8dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kk_default_avatar_small_men" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/avatar"
+                    android:ellipsize="end"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:text="用户辞呈三分施工工地施工结束"
+                    android:textColor="@color/kk_text_black"
+                    android:textSize="@dimen/kk_text_normal_size" />
+
+                <ImageView
+                    android:id="@+id/a_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/name"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="1dip"
+                    android:focusable="false"
+                    android:src="@drawable/kk_name_actor_lv9" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/r_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/a_lv"
+                    android:focusable="false"
+                    android:src="@drawable/kk_v11" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="2dip"
+                    android:text="2分钟前"
+                    android:textColor="@color/kk_text_gray"
+                    android:textSize="@dimen/kk_text_normal_size" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_userinfo"
+            android:focusable="true"
+            android:foreground="@drawable/kk_view_foreground_bg" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/item_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip" >
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="66dip"
+                        android:layout_height="66dip"
+                        android:layout_marginRight="8dip"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/image_play"
+                        android:layout_width="66dip"
+                        android:layout_height="66dip"
+                        android:layout_marginRight="8dip"
+                        android:background="#80ff8ee0"
+                        android:scaleType="center"
+                        android:src="@drawable/kk_room_chat_video_icon"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/kk_text_black"
+                        android:textSize="@dimen/kk_text_normal_size" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dip"
+                    android:layout_below="@+id/item_message"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:background="@color/kk_app_color_light_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/item_state"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div"
+                    android:layout_marginRight="8dip"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/item_state_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dip"
+                        android:layout_toLeftOf="@+id/item_state_text"
+                        android:src="@drawable/kk_discover_renovate" />
+
+                    <TextView
+                        android:id="@+id/item_state_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/kk_pink"
+                        android:textSize="@dimen/kk_text_big_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_operation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div"
+                    android:layout_marginRight="8dip" >
+
+                    <RelativeLayout
+                        android:id="@+id/media"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dip" >
+
+                        <ImageView
+                            android:id="@+id/media_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dip"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/kk_room_chat_video_play" />
+
+                        <TextView
+                            android:id="@+id/media_length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/media_icon"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="36&apos;&apos;"
+                            android:textColor="@color/kk_custom_black"
+                            android:textSize="@dimen/kk_text_normal_size" />
+
+                        <ImageView
+                            android:id="@+id/media_loading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/kk_dynamic_media_loading"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/comment"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/v_div"
+                        android:paddingBottom="8dip"
+                        android:paddingLeft="8dip"
+                        android:paddingRight="3dip"
+                        android:paddingTop="8dip" >
+
+                        <ImageView
+                            android:id="@+id/comment_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dip"
+                            android:layout_toLeftOf="@+id/comment_num"
+                            android:src="@drawable/kk_statuses_reply_selector" />
+
+                        <TextView
+                            android:id="@+id/comment_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="36"
+                            android:textColor="@color/kk_app_tips_text"
+                            android:textSize="@dimen/kk_text_big_size" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/v_div"
+                        android:layout_width="1dip"
+                        android:layout_height="20dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/reward"
+                        android:background="@color/kk_app_color_light_gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="8dip"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:paddingTop="8dip" >
+
+                        <ImageView
+                            android:id="@+id/reward_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/kk_dynamic_details_rewards_selector" />
+
+                        <TextView
+                            android:id="@+id/reward_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/reward_icon"
+                            android:text="1000"
+                            android:textColor="@color/kk_app_tips_text"
+                            android:textSize="@dimen/kk_text_big_size" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

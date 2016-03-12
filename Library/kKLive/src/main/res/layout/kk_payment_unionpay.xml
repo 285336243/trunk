@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_gray"
+    android:orientation="vertical" >
+
+      <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/kk_title_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/kk_fill_money_info_bg"
+        android:padding="13dip" >
+
+        <TextView
+            android:id="@+id/account_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_account_str"
+            android:textSize="@dimen/kktv_activity_textsize"
+            android:textColor="#848383" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:textSize="@dimen/kktv_activity_textsize"
+            android:layout_toRightOf="@+id/account_str"
+            android:textColor="@color/kk_custom_black" />
+
+        <TextView
+            android:id="@+id/money_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/account_str"
+            android:textSize="@dimen/kktv_activity_textsize"
+            android:layout_below="@+id/account_str"
+            android:layout_marginTop="3dip"
+            android:text="@string/left_money_str"
+            android:textColor="#848383" />
+
+        <TextView
+            android:id="@+id/left_money"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/kktv_activity_textsize"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/money_str"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/money_str"
+            android:textColor="@color/kk_red" />
+        <TextView
+            android:id="@+id/coupon_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/money_str"
+            android:layout_below="@+id/money_str"
+            android:layout_marginTop="3dip"
+            android:text="@string/coupon_recharge_title"
+            android:textSize="@dimen/kktv_activity_textsize"
+            android:textColor="#848383" />
+        <TextView
+            android:id="@+id/left_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/coupon_str"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/coupon_str"
+            android:textSize="@dimen/kktv_activity_textsize"
+            android:textColor="@color/kk_custom_black" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="16dip"
+        android:textSize="@dimen/kktv_activity_textsize"
+        android:text="@string/set_fill_money"
+        android:textColor="#848383" />
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="7dip"
+        android:layout_gravity="center">
+        <GridView
+            android:numColumns="3"
+            android:id="@+id/set_money_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/transparent"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:background="@color/kk_background_gray"
+            android:verticalSpacing="8dp"/>
+
+    </RelativeLayout>
+
+   
+    <LinearLayout
+        android:id="@+id/custom_pay_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="43dip"
+        android:layout_marginLeft="70dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="16dip"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/custom_pay_edit"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/kk_fill_money_edit_bg"
+            android:ellipsize="end"
+            android:hint="@string/set_money_else_hint"
+            android:textColorHint="@color/kk_app_color_edit_hint"
+            android:maxLength="9"
+            android:inputType="number"
+            android:paddingLeft="8dip"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:textSize="@dimen/kktv_activity_textsize"
+            android:text="@string/rmb"
+            android:textColor="@color/kk_custom_black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fill_preferential"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="7dip"
+        android:textSize="@dimen/kktv_activity_textsize"
+        android:textColor="#ff1479" />
+    
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:textSize="@dimen/kktv_activity_textsize"
+        android:layout_marginTop="7dip"
+        android:text="@string/unionpay_limit_tips"
+        android:textColor="@color/kk_custom_black"
+        android:visibility="gone"/>
+
+</LinearLayout>

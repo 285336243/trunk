@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:paddingLeft="30dip"
+    android:paddingRight="22dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="164dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/kk_room_mem_menu_bg" >
+
+        <ImageView
+            android:id="@+id/gold_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/kk_register_complete_money" />
+
+        <TextView
+            android:id="@+id/register_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="22dip"
+            android:layout_toRightOf="@+id/gold_image"
+            android:textColor="@color/kk_app_color_yellow"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/money_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gold_image"
+            android:layout_marginTop="14dip"
+            android:text="@string/kk_task_get_money_register_hint"
+            android:gravity="center"
+            android:textColor="@color/kk_app_color_black"
+            android:textSize="@dimen/kk_body_text" />
+
+        <Button
+            android:id="@+id/get_money_bt"
+            android:layout_width="114dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dip"
+            android:layout_marginBottom="6dip"
+            android:background="@drawable/kk_sign_in_sure_btn"
+            android:text="@string/kk_task_get_money_register_btn_string"
+            android:textColor="@color/kk_background_white" />
+    </RelativeLayout>
+
+</RelativeLayout>

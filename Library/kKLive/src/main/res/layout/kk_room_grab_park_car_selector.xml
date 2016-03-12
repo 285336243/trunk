@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_room_grab_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/car_park_title"
+        android:layout_width="fill_parent"
+        android:layout_height="25dip"
+        android:gravity="center"
+        android:text="@string/kk_room_park_select_car_str"
+        android:textColor="#7A7A7A" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/cars_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="99dip"
+        android:layout_below="@+id/car_park_title"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/idx_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cars_selector"
+        android:layout_marginTop="5dip"
+        android:gravity="center" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="29dip"
+        android:layout_below="@+id/cars_selector"
+        android:layout_marginTop="22dip"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip" >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="83dip"
+            android:layout_height="29dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_room_grab_cancel_btn"
+            android:text="@string/kk_cancel"
+            android:textColor="#5B5B5B" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="83dip"
+            android:layout_height="29dip"
+            android:layout_marginLeft="27dip"
+            android:layout_weight="1"
+            android:background="@drawable/kk_room_grab_ok_btn"
+            android:text="@string/kk_ok"
+            android:textColor="#AB7000" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="14dip"
+        android:layout_below="@+id/btn_layout" />
+
+</RelativeLayout>

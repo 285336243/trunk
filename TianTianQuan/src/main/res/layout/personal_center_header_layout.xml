@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dip">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/personal_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/peb_cover_tj"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_topic_and_circle_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#20ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/personal_sub_topic_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#60000000"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip">
+
+                    <TextView
+                        android:id="@+id/personal_sub_topic_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="15"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/personal_sub_topic_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/sub_topic"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#20ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/personal_add_circle_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#60000000"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip">
+
+                    <TextView
+                        android:id="@+id/personal_add_circle_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="15"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/personal_add_circle_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/add_circle"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#20ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/personal_attention_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#60000000"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip">
+
+                    <TextView
+                        android:id="@+id/personal_attention_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="1515"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/personal_attention_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/attention"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/personal_topic_and_circle_count">
+
+            <FrameLayout
+                android:id="@+id/personal_user_avatar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dip">
+
+                <ImageView
+                    android:id="@+id/personal_user_avatar_image"
+                    android:layout_width="68dip"
+                    android:layout_height="68dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="76dip"
+                    android:layout_height="76dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pre_headpic_tj"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/personal_user_avatar_layout"
+                android:orientation="vertical"
+                android:paddingTop="10dip">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/personal_user_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="0"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/personal_gender_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dip"
+                        android:layout_toRightOf="@id/personal_user_nickname"
+                        android:background="@drawable/icon_man_tj" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/personal_user_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="0"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="0"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:text="@string/integral"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/personal_user_autograph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="0"
+                    android:shadowDy="4"
+                    android:shadowRadius="2"
+                    android:text="@string/defulat_signature"
+                    android:textColor="#e6e6e6"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:orientation="horizontal"
+                android:paddingTop="12dip"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/personal_sina_aouth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_exasina_tj" />
+
+                <ImageButton
+                    android:id="@+id/personal_qq_aouth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:background="@drawable/icon_exaqq_tj" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dip">
+
+        <com.mzs.guaji.view.HorizontalListView
+            android:id="@+id/personal_grallery_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f3efef"
+            android:padding="4dip"
+            widget:dividerWidth="4dip" />
+
+        <LinearLayout
+            android:id="@+id/personal_grallery_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f3efef"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="20dip">
+
+            <TextView
+                android:id="@+id/personal_grallery_empty_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/gallery_empty_1"
+                android:textColor="@color/search_tab_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/gallery_empty_2"
+                android:textColor="@color/search_tab_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcd6d6"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/personal_header_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/personal_dynamic_condition_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dynamic_condition"
+            android:textColor="@color/search_tab_selector_color"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/bdg_tabactive_center_tj"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/personal_circle_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/circle"
+            android:textColor="@color/search_tab_color"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/bdg_tab_center_tj"/>
+        </RadioGroup>
+</LinearLayout>

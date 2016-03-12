@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kk_background_gray"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/kk_title_layout" />
+    </LinearLayout>
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="12dip"
+        android:orientation="horizontal" >
+
+    <com.melot.meshow.util.widget.EditDelete
+        android:id="@+id/reset_password_old"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout> 
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="12dip"
+        android:orientation="horizontal" >
+
+    <com.melot.meshow.widget.EditDeleteButton
+        android:id="@+id/reset_password_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout> 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="14dip"
+        android:background="@drawable/kk_register_btn"
+        android:gravity="center"
+        android:onClick="onCommit"
+        android:paddingBottom="8dip"
+        android:paddingLeft="35dip"
+        android:paddingRight="35dip"
+        android:paddingTop="8dip"
+        android:id="@+id/reset_submit_btn"
+        android:text="@string/more_setting_feedback_commit"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/kk_button_text" />
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <color name="date_color">#80FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_divider_top">#ebe7e7</color>
+    <color name="darker_gray">#e1e1e1</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="defalut_image_color">#efefef</color>
+    <color name="order_color">#80FFFFFF</color>
+    <color name="hint_word_color">#60dfdfdf</color>
+    <color name="nickname_text_color">#ffffff</color>
+    <color name="line_background">#20ffffff</color>
+    <color name="regist_action__background">#30000000</color>
+    <color name="view_color">#30000000</color>
+    <color name="no_selected">#10000000</color>
+
+    <color name="line_color">#06FFFFFF</color>
+    <color name="text_white">#80FFFFFF</color>
+    <color name="shownumber">#70FFFFFF</color>
+
+    <color name="message_background_color">#10FFFFFF</color>
+    <color name="textview_color">#ED4141</color>
+    <color name="yawhite">#80ffffff</color>
+    <color name="send_color">#60FFFFFF</color>
+    <color name="shake_hint_color">#60FFFFFF</color>
+    <color name="divider_color">#10FFFFFF</color>
+    <color name="name_color">#80FFFFFF</color>
+    <color name="submit_color">#95FFFFFF</color>
+    <color name="scanner_hint_color">#dedede</color>
+
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ad2147</color>
+    <color name="viewfinder_laser">#8A2BE2</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="count_textview_color">#ed4141</color>
+    <color name="seconds_textview_color">#aeaeae</color>
+
+    <color name="color1">#a26319</color>
+    <color name="color2">#46d9d9</color>
+    <color name="color3">#53ca4a</color>
+    <color name="color4">#6384e0</color>
+    <color name="color5">#ebcf31</color>
+    <color name="color6">#eb4645</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="tab_selected">#B01125</drawable>
+    <drawable name="screen_shot_title">#2F2C2C</drawable>
+
+    <color name="window_color">#F8F4F0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#9D968D</color>
+    <color name="tab_background">#FF4830</color>
+    <color name="sina">#FF6526</color>
+    <color name="qq">#56D0FF</color>
+    <color name="loginbutton">#FE4830</color>
+    <color name="hintcolor">#9D968C</color>
+    <color name="view_color">#EDE9E3</color>
+    <color name="price_color">#20000000</color>
+    <color name="textcolor">#FE4830</color>
+    <color name="name_color">#6f6a64</color>
+    <color name="description_color">#9D968D</color>
+    <color name="ling_color">#EAE5E1</color>
+    <color name="submit_background">#95000000</color>
+    <color name="pername_color">#6F6A64</color>
+    <color name="signatu">#AEAEAE</color>
+    <color name="divi_color">#EAE5E1</color>
+    <color name="edit_color">#9D968C</color>
+    <color name="red">#FE4830</color>
+    <color name="baby_white">#FAFAFA</color>
+    <color name="light_grey">#6F6A64</color>
+    <color name="white_grey">#aeaeae</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="black_6">#60000000</color>
+    <color name="cambridge_blue">#57EBFF</color>
+    <color name="transparent_95">#00000000</color>
+    <!--广告颜色-->
+    <color name="title_color_start">#2bc3f0</color>
+    <color name="title_color_end">#44cdf5</color>
+    <color name="title_text_color">#fafafa</color>
+    <color name="native_back_color">#e5eaec</color>
+    <color name="native_title_text_color">#646464</color>
+    <color name="native_item_text_color">#ababab</color>
+    <color name="native_item_text_color_clicked">#cfd6d5</color>
+    <color name="bottom_back_color">#e7e7e7</color>
+    <color name="bottom_text_color">#7c7a7b</color>
+</resources>

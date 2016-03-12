@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="actionbar_background">#768DB0</color>
+    <color name="simiple_button_color">#FFF</color>
+    <color name="link_color">#FF0066CC</color>
+    <color name="grey">#9D968D</color>
+    <color name="white_grey">#aeaeae</color>
+    <color name="shen_blue">#00008B</color>
+    <color name="black">#000000</color>
+    <color name="mask">#60000000</color>
+    <color name="baby_white">#FAFAFA</color>
+    <color name="transparent">#00000000</color>
+    <color name="view_color">#EDE9E3</color>
+</resources>

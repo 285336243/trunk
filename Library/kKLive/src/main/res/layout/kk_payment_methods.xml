@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kk_background_gray" >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/kk_title_layout" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_view" >
+
+        <LinearLayout
+            android:id="@+id/pay_methods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/selectPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/select_payment_type"
+                android:textColor="#848383"
+                android:textSize="@dimen/kktv_activity_textsize" />
+
+            <ImageButton
+                android:id="@+id/alipay_btn"
+                android:layout_width="252dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dip"
+                android:background="@drawable/kk_payment_method_btn"
+                android:contentDescription="@string/select_payment_shenzhoufu"
+                android:gravity="center"
+                android:onClick="onAlipayClick"
+                android:src="@drawable/kk_fill_money_alipay_icon" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/shenzhoufu_btn"
+                android:layout_width="252dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dip"
+                android:background="@drawable/kk_payment_method_btn"
+                android:contentDescription="@string/select_payment_shenzhoufu"
+                android:gravity="center"
+                android:onClick="onShenzhoufu"
+                android:src="@drawable/kk_payment_shenzhoufu" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/payeco_btn"
+                android:layout_width="252dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dip"
+                android:background="@drawable/kk_payment_method_btn"
+                android:contentDescription="@string/fill_money_payeco"
+                android:gravity="center"
+                android:onClick="onPayecosClick"
+                android:src="@drawable/kk_payment_payeco" >
+            </ImageButton>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

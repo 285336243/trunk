@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bdg_copy_tj"
+        android:layout_centerVertical="true" android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <TextView
+            android:id="@+id/copy_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/blue"
+            android:textSize="22sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:id="@+id/copy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/copy"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/copy_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#405f5f5f"/>
+
+        <TextView
+            android:id="@+id/copy_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

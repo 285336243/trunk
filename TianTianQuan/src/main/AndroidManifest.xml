@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mzs.guaji"
+    android:versionCode="116"
+    android:versionName="1.1.6" >
+
+    <permission
+        android:name="com.mzs.guaji.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.mzs.guaji.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+
+    <application
+        android:name="com.mzs.guaji.GuaJiApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.NoActionBar" >
+        <activity
+            android:name="com.mzs.guaji.ui.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mzs.guaji.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.mzs.guaji.ui.SearchCircleLabelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".offical.OfficialTvCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.NewsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.NewsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.VideoListingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.WebPlayerVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.PrivateCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.CircleIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ImageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified" />
+        <activity
+            android:name="com.mzs.guaji.ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.PhotoGralleryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.UploadImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.FollowAndFansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.PersonalCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.PersonalTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ModificationBaseInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ModificationPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.BindingMobileNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.BindingMobileNumberNoneSecrityCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.AuthCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.OpinionFeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.mzs.guaji.ui.GSTXApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.OthersInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.OthersPhotoGralleryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ScanLogoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ScanRankingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.AnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.EndAnswerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.TopicCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.mzs.guaji.ui.TopicReplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.mzs.guaji.ui.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".offical.OfficialTvCircleTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".offical.OfficialTvCircleSubmitTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.BindAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.SubmitTopicImageBrowseActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize" />
+        <activity
+            android:name="com.mzs.guaji.ui.AQBWApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.AQBWPersonInfomationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mzs.guaji.ui.FNMSApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mzs.guaji.ui.ForGetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ShakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.ContactAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.LoveExponentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.PrivateLetterDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.wxapi.WXEntryActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.mzs.guaji.ui.StarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.StarCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.TopicHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mzs.guaji.ui.TopicHomeSubmitActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".topic.TopicDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.VoteCommentActivity" android:screenOrientation="portrait" />
+
+        <service android:name="com.mzs.guaji.service.NotificationDownloadService" />
+        <service android:name="com.mzs.guaji.service.NetWorkChangeService" >
+        </service>
+
+        <receiver android:name="com.mzs.guaji.LowMemoryBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.mzs.guaji.lowmemory" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.mzs.guaji" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.mzs.guaji" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="com.mzs.guaji.PushReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+
+                <category android:name="com.mzs.guaji" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="d4743a4b693185e7369ce46b" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52cd0aba56240b18c300062e" />
+        <meta-data
+            android:name="TIANTIANQUAN_CHANNEL"
+            android:value="TIANTIANQUAN_CHANNEL_VALUE" />
+
+        <meta-data
+            android:name="SYNC_LOADING_VIDEO"
+            android:value="1"/>
+
+    </application>
+
+</manifest>

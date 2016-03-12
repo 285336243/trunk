@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/edit_input_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/kk_edittext_bg"
+            android:maxLength="16"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:textColorHint="@color/kk_app_color_edit_hint"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/is_show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/kk_enroll_show_btn"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/btn_delete_pwd"
+            android:layout_width="42dip"
+            android:layout_height="32dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/is_show_password"
+            android:background="@color/transparent"
+            android:src="@drawable/btndelete_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/kk_notify_itme_bg" >
+
+        <RelativeLayout
+            android:id="@+id/userinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+			<ImageView
+                 android:id="@+id/userphoto"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="45dp"
+                 android:layout_height="45dp"
+                 android:layout_margin="3dip"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/kk_default_head_bg" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@+id/qlgrade"
+                android:layout_toRightOf="@+id/userphoto"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/kk_dynamic_font_color_title"
+                android:textSize="@dimen/kk_text_big_size" />
+
+            <ImageView
+                android:id="@+id/qlgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/dwgrade" />
+
+            <ImageView
+                android:id="@+id/dwgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/messagephotolayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:background="@color/kk_app_color_black"
+            android:layout_below="@+id/userinfo" >
+
+            <com.melot.meshow.dynamic.VideoPlayView
+                android:id="@+id/videoplay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/messagephoto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:visibility="invisible"/>
+            
+            <ProgressBar
+                android:id="@+id/color_progressBar"
+                style="@style/ProgressBar_Mini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:max="100"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:visibility="invisible" />
+
+            <FrameLayout
+                android:id="@+id/messagemediacontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_margin="15dip"
+                android:background="@drawable/kk_dynamic_details_voice_bg"
+                android:visibility="invisible" >
+
+                <RelativeLayout
+                    android:id="@+id/messagemedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:layout_marginTop="0.5dip" 
+                    android:layout_gravity="left|center">
+
+                    <FrameLayout
+                        android:id="@+id/messagebgplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_centerVertical="true" >
+
+                        <ImageView
+                            android:id="@+id/mediaplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"                          
+                            android:src="@drawable/kk_dynamic_details_play_stop"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/audioplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dip"
+                            android:src="@drawable/kk_dynamic_details_volume"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/medialength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dip"
+                        android:layout_toRightOf="@+id/messagebgplay"
+                        android:textColor="@color/kk_pink"
+                        android:textSize="@dimen/kk_text_big_size" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/loading"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                	<ImageView
+                        android:id="@+id/media_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/kk_dynamic_media_loading1" />
+                </RelativeLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/messageinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messagephotolayout"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="2dip"
+                android:textColor="@color/kk_dynamic_fontcolor_context"
+                android:textSize="@dimen/kk_body_text" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_below="@+id/content" >
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/kk_text_big_size" />
+
+                <RelativeLayout
+                    android:id="@+id/rewards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="3dip"
+                    android:paddingRight="3dip"
+                    android:paddingTop="8dip" >
+
+                    <ImageView
+                        android:id="@+id/rewardsimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/kk_dynamic_details_rewards_icon" />
+
+                    <TextView
+                        android:id="@+id/rewardsnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/rewardsimg"
+                        android:textColor="@color/kk_app_tips_text"
+                        android:textSize="@dimen/kk_text_big_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rewardsguests"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="false"
+        android:visibility="gone"
+        android:background="@drawable/kk_notify_itme_bg" >
+
+        <include layout="@layout/kk_dynamic_rewardsguests_layout" />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/rewardsguests"
+        android:background="@drawable/kk_notify_itme_bg2"
+        />
+
+</RelativeLayout>

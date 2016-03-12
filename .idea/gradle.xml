@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.7" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Feipai" />
+            <option value="$PROJECT_DIR$/JiuJie" />
+            <option value="$PROJECT_DIR$/Library" />
+            <option value="$PROJECT_DIR$/Library/AndroidSDK" />
+            <option value="$PROJECT_DIR$/Library/AndroidSDKComponent" />
+            <option value="$PROJECT_DIR$/Library/Library-ListViewAnimations" />
+            <option value="$PROJECT_DIR$/Library/PhotoView" />
+            <option value="$PROJECT_DIR$/Library/PullToRefresh" />
+            <option value="$PROJECT_DIR$/Library/PullToRefresh/library" />
+            <option value="$PROJECT_DIR$/Library/SinaWeiboSDK" />
+            <option value="$PROJECT_DIR$/Library/SlidingMenu" />
+            <option value="$PROJECT_DIR$/Library/SlidingMenu/library" />
+            <option value="$PROJECT_DIR$/Library/UniversalImageLoader" />
+            <option value="$PROJECT_DIR$/Library/UniversalImageLoader/library" />
+            <option value="$PROJECT_DIR$/Library/Volley" />
+            <option value="$PROJECT_DIR$/Library/WeiboSDK" />
+            <option value="$PROJECT_DIR$/Library/android-ibeacon-service" />
+            <option value="$PROJECT_DIR$/Library/viewpagerindicator" />
+            <option value="$PROJECT_DIR$/Library/wishlist" />
+            <option value="$PROJECT_DIR$/ShengDa" />
+            <option value="$PROJECT_DIR$/TianTianQuan" />
+            <option value="$PROJECT_DIR$/Wala" />
+            <option value="$PROJECT_DIR$/xiadan" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

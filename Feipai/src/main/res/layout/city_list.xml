@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="热门城市"
+        android:padding="5dip"
+        android:textColor="@color/address_color"/>
+    <ListView
+        android:id="@+id/hotcitylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:background="#CCCCFF"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:text="全国"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@color/address_color"/>
+    <ListView
+        android:id="@+id/city_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider"
+        android:background="#CCCCFF"
+        android:dividerHeight="1dp"
+        android:visibility="gone"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

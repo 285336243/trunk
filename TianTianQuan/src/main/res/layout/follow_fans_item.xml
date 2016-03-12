@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bdg_setlist_tj" >
+
+        <ImageView
+            android:id="@+id/follow_fans_avatar"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="8dip"
+            android:paddingBottom="8dip" />
+
+        <TextView
+            android:id="@+id/follow_fans_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/follow_fans_avatar"
+            android:textColor="@color/tvcircle_grid_item_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/follow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/follow_fans_shadow_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_setlist_tj"
+        android:layout_marginTop="-2dip"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bdg_topicwrap_topic"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginBottom="8dp" >
+
+        <ImageView
+            android:id="@+id/topic_user_pic_avatar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="8dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/topic_user_pic_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/topic_user_pic_avatar"
+            android:textColor="#929191"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/topic_user_pic_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic_user_pic_nickname"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/topic_user_pic_avatar"
+            android:singleLine="true"
+            android:textColor="@color/search_tab_color"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/topic_user_pic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/tvcircle_grid_item_text_color"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/topic_user_pic_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="5"
+        android:textColor="#929191"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:id="@+id/topic_user_voice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bdg_voicepop_tj"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/topic_user_voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:textColor="@color/search_tab_color"
+            android:layout_marginLeft="16dp"/>
+
+        <ImageView
+            android:id="@+id/topic_user_voice_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/topic_user_voice_time"
+            android:src="@drawable/icon_playvoice_star"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/topic_user_pic_post_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bdg_othertopic_topic"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/topic_user_pic_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/tvcircle_grid_item_text_color"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/topic_user_pic_post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:textColor="#929191"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/topic_user_pic_image_layout"
+        android:layout_width="160dip"
+        android:layout_height="120dip"
+        android:layout_marginLeft="8dip"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/topic_user_pic_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/topic_user_pic_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_all"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/search_tab_color"
+        android:background="@drawable/btn_seemore_topic"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/bdg_topiclistbot_tj">
+
+        <TextView
+            android:id="@+id/topic_user_pic_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/search_tab_color"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/topic_user_pic_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/search_tab_color"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</LinearLayout>

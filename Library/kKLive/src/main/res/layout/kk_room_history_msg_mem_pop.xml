@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:background="@drawable/kk_room_mem_menu_bg"
+        android:orientation="vertical"
+        android:paddingBottom="10dip" >
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/kk_text_gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/protfolio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/kk_room_history_mem_item_bg"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/pro_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/kk_room_mem_info_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pro_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text="@string/kk_room_mem_list_user_info"
+                        android:textColor="@color/kk_text_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/send_gift"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/kk_room_history_mem_item_bg"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/send_gift_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/kk_room_mem_gift_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/send_gift_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text="@string/kk_room_mem_list_send_gift"
+                        android:textColor="@color/kk_text_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/chat_with"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/kk_room_history_mem_item_bg"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/chat_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/kk_room_mem_chat_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/chat_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text="@string/kk_room_mem_list_chat_with"
+                        android:textColor="@color/kk_text_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/kick_out"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/kk_room_history_mem_item_bg"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/kick_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/kk_room_mem_kickout_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kick_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text="@string/kk_room_mem_list_kick_out"
+                        android:textColor="@color/kk_text_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/shut_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/kk_room_history_mem_item_bg"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/shutup_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/kk_room_mem_shutup_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shutup_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text="@string/kk_room_mem_list_no_speak"
+                        android:textColor="@color/kk_text_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/report"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/kk_room_history_mem_item_bg"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/pro_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/kk_room_mem_report_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pro_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text="@string/kk_room_mem_list_report"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

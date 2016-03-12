@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gif="http://schemas.android.com/apk/res/com.mzs.guaji"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:id="@+id/setting_root_layout">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvcircle_title_color"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding">
+
+        <LinearLayout
+            android:id="@+id/apply_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_back_tj"
+                android:contentDescription="@string/create_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/tvcircle_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/apply"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/personal_information" />
+
+            <LinearLayout style="@style/setting_linearlayout">
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/name" />
+
+                    <EditText
+                        android:id="@+id/apply_edit_name"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    android:id="@+id/apply_sex_layout"
+                    style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/sex" />
+
+                    <TextView
+                        android:id="@+id/apply_edit_sex"
+                        android:gravity="center_vertical"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    android:id="@+id/apply_birth_data_layout"
+                    style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/birth_data" />
+
+                    <TextView
+                        android:id="@+id/apply_edit_birth_data"
+                        android:gravity="center_vertical"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/native_place" />
+
+                    <EditText
+                        android:id="@+id/apply_edit_native_place"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout style="@style/apply_linear_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/location" />
+
+                    <EditText
+                        android:id="@+id/apply_edit_location"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/contact_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bdg_tvq_small_tj"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/apply_linear_text"
+                    android:text="@string/mobile_number" />
+
+                <EditText
+                    android:id="@+id/apply_edit_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tvcircle_grid_item_text_color"
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/setting_text_title"
+                android:text="@string/performance" />
+
+            <LinearLayout style="@style/setting_linearlayout">
+
+                <LinearLayout style="@style/apply_linear_layout"
+                    android:id="@+id/performance_type_layout">
+
+                    <TextView
+                        style="@style/apply_linear_text"
+                        android:text="@string/performance_type" />
+
+                    <TextView
+                        android:id="@+id/apply_edit_performance_type"
+                        android:gravity="center_vertical"
+                        style="@style/apply_linear_edit" />
+
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/apply_pressed_recode"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dip"
+                        android:background="@drawable/bdg_applybtn_tj"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/apply_recode_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/tvcircle_grid_item_text_color"
+                            android:textSize="16sp"
+                            android:text="@string/pressed_recode"
+                            android:layout_centerInParent="true" />
+
+                        <ImageView
+                            android:id="@+id/apply_play_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/btn_play_tj"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/apply_record_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/tvcircle_grid_item_text_color"
+                            android:textSize="16sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="32dp"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/apply_delete_record"
+                        android:layout_width="100dp"
+                        android:layout_height="48dip"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="16dp"
+                        android:visibility="gone"
+                        android:background="@drawable/bdg_applybtn_tj">
+
+                        <TextView
+                            style="@style/apply_linear_text"
+                            android:text="@string/delete"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/apply_submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="16dip"
+                android:background="@drawable/btn_addtopicbtn_tj">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/submit"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/apply_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:visibility="gone">
+
+        <com.mzs.guaji.view.GifView
+            android:id="@+id/apply_record_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            gif:stop="true"
+            gif:src="@raw/icon_record_tj"
+            gif:delay="1"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

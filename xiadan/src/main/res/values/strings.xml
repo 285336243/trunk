@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">飞 派</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_label_username">帐号</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_signin">登 录</string>
+    <string name="login_status_logging_in">登录中...</string>
+    <string name="login_username_hint">手机号</string>
+    <string name="login_register_link">没有帐号？ <a href="#">注册</a></string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="register_button">注 册</string>
+    <string name="verify_number">请输入你的验证码</string>
+    <string name="acquire_verify_code">获取验证码</string>
+    <string name="secrect">密码</string>
+    <string name="confirm_secrect">确认密码</string>
+    <string name="stay_city">所在城市</string>
+    <string name="ji_info">寄件人信息</string>
+    <string name="name_text">*姓名</string>
+    <string name="hint_name">姓名</string>
+    <string name="phone_number">*手机号</string>
+    <string name="hint_phone">xxxxxxxxx</string>
+    <string name="ji_address">*寄件地址</string>
+    <string name="hint_address">地址</string>
+    <string name="city_text">城市</string>
+    <string name="city">上海</string>
+    <string name="shou_info">收件人信息</string>
+    <string name="next_step">下一步</string>
+    <string name="shou_address">收件地址</string>
+    <string name="goods_hint">物品信息</string>
+    <string name="payment_hint">支付信息</string>
+    <string name="goods_name">名称</string>
+    <string name="goods_des">物品描述</string>
+    <string name="goods_weight">*物品重量</string>
+    <string name="weight_hint">(公斤)</string>
+    <string name="remarks">备注</string>
+    <string name="remarks_hint">备注信息</string>
+    <string name="fdou">本次使用</string>
+    <string name="fd_hint">(飞豆)</string>
+    <string name="take_time">*取件时间</string>
+    <string name="time_hint">yyyy-MM-dd HH:mm</string>
+    <string name="send_time">*送件时间</string>
+    <string name="istake_time">定时取</string>
+    <string name="issend_time">定时送</string>
+    <string name="feidou">飞豆</string>
+    <string name="calculate_cost">算算费用</string>
+    <string name="cutcost">使用优惠券</string>
+    <string name="receipt">我要开发票</string>
+    <string name="company">*公司抬头</string>
+    <string name="telephone">*手机号码</string>
+    <string name="address">*地址</string>
+    <string name="noteinfo">每月25日，统一将发票平邮给客户</string>
+    <string name="paytyper">支付类型：</string>
+    <string name="netpay">网上支付</string>
+    <string name="arrivepay">到付</string>
+    <string name="sendpay">寄付</string>
+    <string name="submit_order">提交订单</string>
+    <string name="sucessmessage">我们会尽快上门取件，请您保管好验证码，作为寄件凭证</string>
+    <string name="onceorder">继续下单</string>
+    <string name="introduce">免费注册会员 \n订单一元积一飞豆 \n可抵扣现金 \n送件全程可跟踪</string>
+    <string name="feed_back">我要吐槽</string>
+    <string name="edit_content_cancel_title">是否放弃编辑该内容?</string>
+    <string name="edit_content_cancel">放弃</string>
+    <string name="edit_content_continue">继续编辑</string>
+    <string name="tem_norecord">暂无记录</string>
+    <string name="activity_loading">正在加载...</string>
+    <string name="addconponcode">添加优惠码：</string>
+    <string name="addcode">添 加</string>
+    <string name="comquestion"><a href="#">常见问题</a></string>
+    <string name="feipai_price"><a href="#">飞派价格</a></string>
+    <string name="my_order">我的订单:</string>
+    <string name="delete_order">删 除</string>
+    <string name="confirm_order">确 认</string>
+    <string name="jperson_info">寄件人信息：</string>
+    <string name="shperson_info">收件人信息：</string>
+    <string name="costsummuy">费用信息：</string>
+    <string name="goodsinfor">物品信息：</string>
+    <string name="otherinfor">其他：</string>
+    <string name="addyouhuijuan">您没有优惠券，赶紧去我的优惠码页面添加吧</string>
+    <string name="pay_note">注：晚上19点到22点加收服务费，20元。晚上22点到次日早上6点加收服务费，30元</string>
+    <string name="order_infor">订单信息</string>
+    <string name="address_note">注：城市-区名-道路-门号-房间号格式输入，例如：上海市浦东新区张扬路501号第一八佰伴10楼</string>
+    <string name="remarks_note">备注栏您可以填写需要注意的事项或特别要提醒的信息。如：易碎请注意、来时请先联系等字样。</string>
+    <string name="qutime_note">提示：取件时间距离当前时间至少30分钟</string>
+    <string name="songtime_note">提示：取件时间 和 送件时间 必须是同一天,送件时间距离取件时间至少90分钟</string>
+    <string name="kouhao">专人直送，所以快！</string>
+    <string name="jiage">45分钟送达，19元起</string>
+    <string name="xiaorder">立即下单</string>
+    <string name="forget_password"><a href="#">忘记密码?</a></string>
+    <string name="submit_button">提 交</string>
+    <string name="newsecrect">新密码</string>
+    <string name="confirmnew_secrect">确认新密码</string>
+    <string name="old_password">现用密码</string>
+    <string name="user_protocol">同意</string>
+    <string name="protocol_content">《<a href="#">飞派服务•用户协议</a>》</string>
+    <string name="submit_protocol_content">点击“提交订单”按钮，即表示您同意《<a href="#">飞派服务•用户协议</a>》</string>
+    <string name="updateinfor">飞派更新信息</string>
+    <string name="update">更新</string>
+    <string name="cancel">取消</string>
+    <string name="company_login"> <a href="#">企业用户登录</a></string>
+    <string name="genetal_login"> <a href="#">普通用户登录</a></string>
+    <string name="company_name">企业名称</string>
+</resources>

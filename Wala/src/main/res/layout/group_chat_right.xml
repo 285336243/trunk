@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_chat_right_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="16dp">
+
+    <FrameLayout
+        android:id="@+id/group_chat_right_avatar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp">
+
+        <ImageView
+            android:id="@+id/group_chat_right_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/feb_topicuserhead_tomato" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/group_chat_nickname_and_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@id/group_chat_right_avatar_layout"
+        android:layout_marginLeft="32dp">
+
+        <LinearLayout
+            android:id="@+id/group_chat_right_badge_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/group_chat_right_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/grey"
+            android:gravity="right"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/group_chat_right_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/group_chat_right_avatar_layout"
+        android:layout_below="@id/group_chat_nickname_and_badge"
+        android:lineSpacingExtra="2dp"
+        android:textColor="#6F6A64"
+        android:layout_marginLeft="32dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/group_chat_right_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_chat_right_message"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/group_chat_right_avatar_layout"
+        android:textColor="#aeaeae"
+        android:textSize="12sp" />
+
+</RelativeLayout>

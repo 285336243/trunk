@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" 
+    android:id="@+id/photo_list_pager_root">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/photo_list_image_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#40ffffff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:padding="8dip" >
+            
+            <TextView android:id="@+id/photo_list_image_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#aeaeae"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"/>
+
+            <TextView
+                android:id="@+id/photo_list_image_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="32dip"
+                android:paddingRight="32dip"
+                android:paddingTop="8dip"
+                android:text="@string/delete"
+                android:layout_alignParentRight="true"
+                android:textColor="#aeaeae"
+                android:background="@drawable/photo_delete_selector"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:listSelector="@drawable/kk_list_click_transparent_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/dura"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dip"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="true"
+        android:text="duration:"
+        android:focusable="false"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dip"
+        android:layout_toRightOf="@+id/dura"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="true"
+        android:focusable="false"
+        android:text="price"
+        android:textColor="#FB4CF3" />
+
+    <ImageView
+        android:id="@+id/promotion_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dip"
+        android:focusable="false"
+        android:layout_marginTop="6dip"
+        android:src="@drawable/kk_promotion_icon" />
+
+</RelativeLayout>

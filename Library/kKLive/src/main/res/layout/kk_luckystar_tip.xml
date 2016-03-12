@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="180dip"
+        android:layout_marginTop="60dip"
+        android:background="@drawable/kk_luckystar_pop"
+        android:maxWidth="250dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="13dip"
+        android:paddingRight="8dip"
+        android:paddingTop="8dip"
+        android:textColor="@color/kk_background_white" />
+
+</RelativeLayout>

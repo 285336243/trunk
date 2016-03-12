@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/login_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding"
+        android:background="@drawable/bdg_titbar_sd">
+
+        <ImageView
+            android:id="@+id/back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/icon_return"
+            android:contentDescription="@string/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/register_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dip"
+            android:layout_marginRight="32dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/register_setting_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dip">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_face_camera" />
+
+                <ImageView
+                    android:id="@+id/user_header_photo"
+                    android:layout_width="96dip"
+                    android:layout_height="96dip"
+                    android:padding="2dip"
+                    android:scaleType="fitXY"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/user_header_backgroud"
+                    android:contentDescription="@string/user_headerphoto" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/user_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@null"
+                android:layout_marginTop="16dip"
+                android:drawableLeft="@drawable/nickname_icon"
+                android:drawablePadding="@dimen/padding_size"
+                android:hint="@string/nike_name"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/hint_word_color"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/nickname_text_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_background" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@null"
+                android:layout_marginTop="16dip"
+                android:drawableLeft="@drawable/icon_email"
+                android:drawablePadding="@dimen/padding_size"
+                android:hint="@string/user_email"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_word_color"
+                android:textSize="@dimen/text_size"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/nickname_text_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_background" />
+
+            <EditText
+                android:id="@+id/user_secret"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@null"
+                android:layout_marginTop="16dip"
+                android:drawableLeft="@drawable/icon_lock"
+                android:drawablePadding="@dimen/padding_size"
+                android:hint="@string/user_secret"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_word_color"
+                android:textSize="@dimen/text_size"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/nickname_text_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_background" />
+
+            <Button
+                android:id="@+id/register_commit"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="16dip"
+                android:layout_marginTop="24dip"
+                android:background="@drawable/icon_registrred"
+                android:text="@string/register_commit"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

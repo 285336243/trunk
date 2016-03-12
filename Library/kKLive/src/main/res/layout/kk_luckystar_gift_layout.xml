@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:minWidth="220dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/kk_room_mem_menu_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:gravity="center"
+            android:text="礼物刷新了~还不赶快抢礼物！"
+            android:textColor="@color/kk_text_black"
+            android:textSize="@dimen/kk_body_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip" >
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:background="@drawable/kk_sign_in_sure_btn"
+                android:minWidth="100dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+           		 android:layout_marginBottom="10dip"
+                android:text="抢礼物"
+                android:textColor="@color/kk_text_white"
+                android:textSize="@dimen/kk_text_normal_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

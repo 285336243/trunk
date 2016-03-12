@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kk_room_grab_bg"
+    android:orientation="vertical"
+    android:paddingBottom="17dip"
+    android:paddingLeft="22dip"
+    android:paddingRight="22dip"
+    android:paddingTop="37dip" >
+
+    <TextView
+        android:id="@+id/buy_car_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kk_room_no_car_and_buy"
+        android:textColor="#757575"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dip"
+        android:layout_below="@+id/buy_car_des"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="27dip"
+        android:layout_weight="1"
+         android:minWidth="96dip"
+        android:background="@drawable/kk_room_grab_cancel_btn"
+        android:text="@string/kk_cancel"
+        android:textColor="#5B5B5B"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_alignTop="@+id/cancel_btn"
+        android:layout_toRightOf="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="29dip"
+        android:layout_marginRight="6dip"
+        android:layout_weight="1"
+         android:minWidth="96dip"
+        android:layout_marginLeft="12dip"
+        android:background="@drawable/kk_room_grab_ok_btn"
+        android:text="@string/kk_ok"
+        android:textColor="#AB7000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

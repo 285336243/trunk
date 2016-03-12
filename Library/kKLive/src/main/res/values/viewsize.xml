@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <dimen name="kk_text_large_size">18sp</dimen> -->
+    <!-- <dimen name="kk_text_big_size">16sp</dimen> -->
+    <!-- <dimen name="kk_text_normal_size">14sp</dimen> -->
+    <!-- <dimen name="kk_text_small_size">12sp</dimen> -->
+    <!-- for activity general -->
+    <!-- <dimen name="kk_title_text">18sp</dimen> -->
+    <!-- <dimen name="kk_title_button_text">14sp</dimen> -->
+    <!-- <dimen name="kk_body_text">16sp</dimen> -->
+    <!-- <dimen name="kk_fullsize_button">16sp</dimen> -->
+    <!-- <dimen name="kk_list_item_text">16sp</dimen> -->
+    <!-- <dimen name="kk_list_item_subhead">14sp</dimen> -->
+
+    <!-- 全屏中的progress大小 -->
+    <dimen name="kk_progress_size_fullscreen">30dip</dimen>
+    <!-- list item的progress大小 -->
+    <dimen name="kk_progress_size_in_list_item">20dip</dimen>
+
+</resources>

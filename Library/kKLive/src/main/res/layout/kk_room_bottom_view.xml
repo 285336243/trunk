@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 第二层 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/chat_2bar"
+        android:layout_width="fill_parent"
+        android:layout_height="88dip" >
+
+        <LinearLayout
+            android:id="@+id/chat_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kk_chat_bar_bg"
+            android:gravity="center_vertical"
+            android:paddingBottom="1dip" >
+
+            <TextView
+                android:id="@+id/chat_to"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/kk_chat_list_bg"
+                android:clickable="true"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxWidth="90dip"
+                android:singleLine="true"
+                android:text="@string/kk_send_to_all"
+                android:textColor="#ababab"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/private_checkbox_layout"
+                android:layout_width="77dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/private_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/kk_uncheck_img"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dip"
+                    android:layout_toRightOf="@+id/private_checkbox"
+                    android:text="@string/kk_private_chat"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="2dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8dip"
+                android:layout_marginBottom="8dip"
+                android:background="@drawable/kk_chat_bar_line" />
+
+            <RelativeLayout
+                android:id="@+id/gift_btn"
+                android:layout_width="77dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/kk_chat_bar_item_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onGiftBtnClick" >
+
+                <View
+                    android:id="@+id/send_gift_icon"
+                    android:layout_width="30dip"
+                    android:layout_height="26dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/kk_gift_icon" />
+
+                <TextView
+                    android:id="@+id/send_gift_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/send_gift_icon"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/kk_gift"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/kk_title_button_text" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_edit_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_bar_layout"
+            android:background="@drawable/kk_chat_edit_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:padding="4dip"
+                android:src="@drawable/kk_add_btn"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/record_view"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent" >
+
+                <ImageView
+                    android:id="@+id/emotion_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="4dip"
+                    android:src="@drawable/kk_emo_btn" />
+
+                <EditText
+                    android:id="@+id/chat_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/emotion_btn"
+                    android:background="@drawable/kk_room_edittext_bg"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionSend"
+                    android:paddingBottom="3dip"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="40dip"
+                    android:paddingTop="3dip"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/record_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/kk_room_record_bg"
+                    android:gravity="center"
+                    android:text="@string/kk_room_record_press"
+                    android:textColor="#606060"
+                    android:textSize="@dimen/kk_body_text"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"                                                        
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/kk_send_btn"
+                android:paddingBottom="1dip"
+                android:text="@string/kk_send"
+                android:textColor="#ababab"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.melot.meshow.room.RoomEmoView
+        android:id="@+id/emo_view"
+        android:layout_width="fill_parent"
+        android:layout_height="136dip"
+        android:layout_below="@+id/chat_2bar"
+        android:background="#ffffff"
+        android:listSelector="@drawable/kk_room_emo_selector"
+        android:numColumns="7"
+        android:padding="8dip"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/moer_view"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:layout_below="@+id/chat_2bar"
+        android:background="@drawable/kk_room_bottom_add_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+	<LinearLayout
+        android:id="@+id/moer_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:background="@drawable/kk_room_bottom_add_bg"
+        android:orientation="horizontal"> 
+        <RelativeLayout
+            android:id="@+id/photo_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/photo_icon"
+                android:layout_width="41dip"
+                android:layout_height="41dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo_icon"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_take_photo_grallery"
+                android:textColor="@color/kk_background_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/take_photo_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/take_photo_icon"
+                android:layout_width="41dip"
+                android:layout_height="41dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_photo_icon"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_take_photo_camera"
+                android:textColor="@color/kk_background_white" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/take_say_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/take_say_icon"
+                android:layout_width="41dip"
+                android:layout_height="41dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_say_icon"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_take_say"
+                android:textColor="@color/kk_background_white" />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/take_ksay_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/take_ksay_icon"
+                android:layout_width="41dip"
+                android:layout_height="41dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_ksay_icon"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_take_ksay"
+                android:textColor="@color/kk_background_white" />
+        </RelativeLayout>
+      </LinearLayout>
+      <LinearLayout
+        android:id="@+id/moer_view2"
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:background="@drawable/kk_room_bottom_add_bg"
+        android:orientation="horizontal"> 
+        <RelativeLayout
+            android:id="@+id/take_mv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/take_mv_icon"
+                android:layout_width="41dip"
+                android:layout_height="41dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_mv_icon"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_take_mv"
+                android:textColor="@color/kk_background_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notify_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/notify_icon"
+                android:layout_width="41dip"
+                android:layout_height="41dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/kk_room_notice_board_icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notify_icon"
+                android:gravity="center"
+                android:paddingTop="14dip"
+                android:text="@string/kk_room_notice_str"
+                android:textColor="@color/kk_background_white" />
+        </RelativeLayout>
+		<View
+            android:id="@+id/todo_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </View>
+        <View
+            android:id="@+id/todo_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+        </View>
+      </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

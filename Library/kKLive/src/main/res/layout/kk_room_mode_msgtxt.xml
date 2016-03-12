@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="3dip" >
+
+    <TextView
+        android:id="@+id/time_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/kk_chat_msg_time_tag_bg"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="38dip"
+        android:layout_height="38dip"
+        android:layout_below="@+id/time_tag"
+        android:layout_marginTop="7dip"
+        android:padding="2dip" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@+id/img"
+        android:background="@drawable/kk_room_chat_msg_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:paddingRight="7dip"
+        android:text="1231231"
+        android:textColor="#5C5C5C" />
+
+    <TextView
+        android:id="@+id/last_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dip"
+        android:background="@drawable/kk_chat_msg_time_tag_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="2dip"
+        android:text="@string/kk_room_chat_last_view_tag"
+        android:textColor="#ffffff"
+        android:textSize="11sp" />
+
+</RelativeLayout>

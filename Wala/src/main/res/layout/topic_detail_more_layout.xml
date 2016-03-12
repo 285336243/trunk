@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000" >
+
+    <TextView
+        android:id="@+id/topic_detail_more_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        android:textColor="#aeaeae"
+        android:gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_round"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_above="@id/topic_detail_more_cancel"
+        android:background="@drawable/white_round">
+
+        <TextView
+            android:id="@+id/topic_detail_more_delete"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/delete_topic"
+            android:textColor="#FE4830"/>
+
+        <View
+            android:id="@+id/topic_detail_more_delete_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F8F4F0"/>
+
+        <TextView
+            android:id="@+id/topic_detail_more_report"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/report"
+            android:textColor="#FE4830"/>
+
+        <View
+            android:id="@+id/topic_detail_more_report_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F8F4F0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_come"
+            android:textSize="12sp"
+            android:textColor="#aeaeae"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/topic_detail_more_share_sina"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/btn_sharesina_tomato"/>
+
+            <ImageButton
+                android:id="@+id/topic_detail_more_share_tencent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/btn_shareqq_tomato"/>
+
+            <ImageButton
+                android:id="@+id/topic_detail_more_share_weixin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/btn_sharewechat_tomato"/>
+
+            <ImageButton
+                android:id="@+id/topic_detail_more_share_weixin_friend"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/icon_sharewx_tomato" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

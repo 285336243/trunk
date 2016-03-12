@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_6E"
+    android:paddingBottom="30dip"
+    android:paddingRight="10dip"
+    android:paddingLeft="10dip"
+    android:paddingTop="20dip">
+
+    <LinearLayout
+        android:id="@+id/trans_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_bike"
+            android:scaleType="centerInside"
+            android:layout_margin="2dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_subway"
+            android:scaleType="centerInside"
+            android:layout_margin="2dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_car"
+            android:scaleType="centerInside"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/choice_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trans_hint"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/btn_0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:button="@drawable/radio_button_select"
+            android:text="@string/trans_bicycle"
+            android:textColor="@color/address_title_color"
+            android:textSize="17.0sp" />
+
+
+        <RadioButton
+            android:id="@+id/btn_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:button="@drawable/radio_button_select"
+            android:text="@string/trans_bus"
+            android:textColor="@color/address_title_color"
+            android:textSize="17.0sp" />
+
+        <RadioButton
+            android:id="@+id/btn_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_button_select"
+            android:layout_margin="2dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/trans_motor"
+            android:textColor="@color/address_title_color"
+            android:textSize="17.0sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_group"
+        android:layout_marginTop="44dip"
+        android:padding="10dip"
+        android:text="@string/trans_hint"
+        android:textColor="@color/address_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/explain"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="40dip"
+        android:background="@drawable/corner_button"
+        android:padding="4dip"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

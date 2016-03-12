@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="slidmenu_offset">54dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">6dp</dimen>
+
+</resources>

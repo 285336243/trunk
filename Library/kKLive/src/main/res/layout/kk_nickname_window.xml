@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="274dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kk_room_mem_menu_bg"
+        android:orientation="vertical"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:textColor="@color/kk_text_pink"
+            android:textSize="@dimen/kk_title_text" />
+
+        <TextView
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:background="@color/kk_app_color_dark_gray" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:paddingTop="8dip"
+            android:textColor="@color/kk_text_gray"
+            android:textSize="@dimen/kk_text_big_size" />
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="match_parent"
+            android:layout_height="39dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/kk_edittext_bg"
+            android:focusable="true"
+            android:hint="@string/kk_register_must_input"
+            android:inputType="textPhonetic"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="10dip">
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kk_register_btn"
+                android:textColor="@color/kk_text_white"
+                android:textSize="@dimen/kk_button_text" />
+
+            <ProgressBar
+                android:id="@+id/loading_progress"
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:layout_width="@dimen/kk_progress_size_fullscreen"
+                android:layout_centerInParent="true"
+                android:layout_height="30dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

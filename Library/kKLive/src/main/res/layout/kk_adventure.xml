@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kk_live_room_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_title_menu_bg" >
+
+        <ImageView
+            android:id="@+id/left_bt"
+            android:layout_width="56dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:onClick="backClick"
+            android:src="@drawable/kk_title_back" />
+
+        <TextView
+            android:id="@+id/kk_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/kk_crazy_adventure_title"
+            android:textColor="@color/kk_background_white"
+            android:textSize="@dimen/kk_title_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kk_task_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/kk_crazy_adventure_item"
+            android:textColor="@color/kk_app_color_dark_gray" />
+
+        <TextView
+            android:id="@+id/song_operate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="27dip"
+            android:text="@string/kk_song_operate"
+            android:textColor="@color/kk_app_color_dark_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/adventure_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/kk_list_divider"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/adventure_info_pre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/kk_black_70"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingBottom="9dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="9dip"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/adventure_info_pre"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:layout_width="@dimen/kk_progress_size_fullscreen"
+                android:layout_height="@dimen/kk_progress_size_fullscreen" />
+
+            <TextView
+                android:id="@+id/error_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dip"
+                android:textColor="@color/kk_app_color_black"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kk_live_room_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/kk_title_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rrl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/kk_room_rank_list_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/rank_tab_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/rank_tab_today"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTodayTabClick"
+                android:text="@string/kk_room_rank_today"
+                android:textColor="@color/kk_room_light_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rank_tab_week"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onWeekTabClick"
+                android:text="@string/kk_room_rank_week"
+                android:textColor="#626262"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rank_tab_month"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onMonthTabClick"
+                android:text="@string/kk_room_rank_month"
+                android:textColor="#626262"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rank_tab_all"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onAllTabClick"
+                android:text="@string/kk_room_rank_all"
+                android:textColor="#626262"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/idx1_layout"
+            android:layout_width="fill_parent"
+            android:layout_alignBottom="@+id/rank_tab_layout"
+            android:layout_height="4dip" >
+
+            <View
+                android:id="@+id/tab_room_idx_view"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:background="@color/kk_room_light_color"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/kk_list_divider"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="28dip"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:layout_width="@dimen/kk_progress_size_fullscreen"
+                android:layout_height="@dimen/kk_progress_size_fullscreen"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/error_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/kk_app_color_black"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

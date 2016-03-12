@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+android:interpolator="@android:anim/accelerate_interpolator">
+
+    <translate
+        android:duration="@integer/kk_room_chat_bar_anim_out_dura"
+        android:fromYDelta="0"
+        android:startOffset="150"
+        android:toYDelta="100%" />
+
+    <alpha
+        android:duration="@integer/kk_room_chat_bar_anim_out_dura"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+</set>

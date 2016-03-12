@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="2dip"
+    android:paddingTop="2dip" >
+
+    <!-- android:background="@drawable/kk_namecard_photo_bound" -->
+
+    <com.melot.meshow.main.mynamecard.PhotoScroller
+        android:id="@+id/photo_list"
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:layout_marginBottom="4dip"
+        android:paddingBottom="3dip"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip"
+        android:paddingTop="3dip"
+        android:scrollbars="none" >
+    </com.melot.meshow.main.mynamecard.PhotoScroller>
+
+</LinearLayout>

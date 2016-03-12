@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding"
+        android:background="@drawable/bdg_titbar_sd">
+
+        <ImageView
+            android:id="@+id/back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/icon_return"
+            android:contentDescription="@string/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/shake_activity_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/show_rezult"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/title_layout"
+        android:background="@drawable/corner_shake_rezult_textview"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"
+        android:padding="50dp"
+        android:textSize="19sp"
+        android:textColor="@android:color/white"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/show_rezult">
+
+        <Button
+            android:id="@+id/once_more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_shake_once_more_button"
+            android:layout_centerInParent="true"
+            android:text="@string/once_more"
+            android:textColor="@android:color/white"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center" />
+    </RelativeLayout>
+</RelativeLayout>

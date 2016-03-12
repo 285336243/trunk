@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/shop_binding_mobile_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bdg_shoppop_tj"
+        android:layout_marginBottom="96dip"
+        android:layout_marginTop="96dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:orientation="vertical">
+
+        <ViewFlipper
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/shop_binding_flipper">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shop_binding_mobile_tips_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="16dip"
+                    android:text="@string/shop_mobile_binding_tip"
+                    android:textColor="@color/tvcircle_grid_item_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/shop_binding_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="16dip"
+                    android:background="@drawable/bdg_inp_tj"
+                    android:drawableLeft="@android:color/transparent"
+                    android:drawablePadding="8dip"
+                    android:hint="@string/mobile_number"
+                    android:singleLine="true"
+                    android:textColorHint="@color/search_tab_color"
+                    android:textSize="14sp"
+                    android:textColor="@color/tvcircle_grid_item_text_color"/>
+
+                <Button
+                    android:id="@+id/shop_binding_mobile_number_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="16dip"
+                    android:background="@drawable/btn_addtopicbtn_tj"
+                    android:text="@string/next"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="16dip"
+                    android:text="@string/auth_code_tip"
+                    android:textColor="@color/tvcircle_grid_item_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/shop_auth_code_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="16dip"
+                    android:background="@drawable/bdg_inp_tj"
+                    android:drawableLeft="@android:color/transparent"
+                    android:drawablePadding="8dip"
+                    android:hint="@string/auth_code"
+                    android:singleLine="true"
+                    android:textColorHint="@color/search_tab_color"
+                    android:textSize="14sp"
+                    android:textColor="@color/tvcircle_grid_item_text_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="16dip"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/shop_uth_code_afresh_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bdg_btnpop_tj"
+                        android:text="@string/afresh_send"
+                        android:textColor="@color/search_tab_color"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/shop_auth_code_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_addtopicbtn_tj"
+                        android:text="@string/next"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ViewFlipper>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/shop_binding_mobile_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/shop_binding_mobile_linear"
+        android:layout_alignTop="@+id/shop_binding_mobile_linear"
+        android:background="@drawable/btn_closepop_tj"
+        android:visibility="gone" />
+
+</RelativeLayout>

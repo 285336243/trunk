@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingBottom="8dp"
+    android:id="@+id/message_list_parent">
+
+    <RelativeLayout
+        android:layout_width="62dp"
+        android:layout_height="62dp">
+
+        <ImageView
+            android:id="@+id/iv_message_item_avatar"
+            style="@style/MessageAvatar" />
+
+        <ImageView
+            android:id="@+id/iv_message_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_msgnotice_tj"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_message_item_nickname"
+                style="@style/MessageNickname"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginRight="32dp"
+                android:textColor="@color/search_tab_color"/>
+
+            <TextView
+                android:id="@+id/tv_message_item_create_time"
+                style="@style/CreateTime"/>
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_message_item_content"
+            style="@style/MessageContent"
+            android:textColor="@color/tvcircle_grid_item_text_color"/>
+
+        <TextView
+            android:id="@+id/tv_message_item_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/search_tab_color"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        </LinearLayout>
+</LinearLayout>

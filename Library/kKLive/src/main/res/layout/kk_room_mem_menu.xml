@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dip"
+    android:layout_height="152dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/room_mem_name"
+        android:layout_width="120dip"
+        android:layout_height="32dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="8dip"
+         android:background="@drawable/kk_room_mem_memu_item_bg"
+        android:textColor="#FF6BB0"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="120dip"
+        android:layout_height="1dip"
+        android:background="#80DADADA" />
+
+    <TextView
+        android:id="@+id/chat_btn"
+        android:layout_width="120dip"
+        android:layout_height="30dip"
+        android:background="@drawable/kk_room_mem_memu_item_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="@string/kk_room_mem_list_chat_with"
+        android:textColor="#464646"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="120dip"
+        android:layout_height="1dip"
+        android:background="#80DADADA" />
+
+    <TextView
+        android:id="@+id/send_gift_btn"
+        android:layout_width="120dip"
+        android:layout_height="30dip"
+        android:background="@drawable/kk_room_mem_memu_item_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="@string/kk_room_mem_list_send_gift"
+        android:textColor="#464646"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="120dip"
+        android:layout_height="1dip"
+        android:background="#80DADADA" />
+
+    <TextView
+        android:id="@+id/shut_up_btn"
+        android:layout_width="120dip"
+        android:layout_height="30dip"
+        android:background="@drawable/kk_room_mem_memu_item_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="@string/kk_room_mem_list_no_speak"
+        android:textColor="#464646"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="120dip"
+        android:layout_height="1dip"
+        android:background="#80DADADA" />
+
+    <TextView
+        android:id="@+id/kick_btn"
+        android:layout_width="120dip"
+        android:layout_height="30dip"
+        android:background="@drawable/kk_room_mem_memu_item_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="@string/kk_room_mem_list_kick_out"
+        android:textColor="#464646"
+        android:textSize="14sp" />
+
+</LinearLayout>

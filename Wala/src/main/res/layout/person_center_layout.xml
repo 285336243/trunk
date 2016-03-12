@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_infor_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/person_photo"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/personal_user_header_backgroud"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/feb_topicuserhead_tomato"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/person_center_nickname_and_badge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/person_photo">
+
+                <TextView
+                    android:id="@+id/person_nikename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:singleLine="true"
+                    android:textColor="@color/pername_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/person_badge_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/person_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/person_photo"
+                android:layout_below="@id/person_center_nickname_and_badge"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/signatu"
+                android:textSize="14sp" />
+
+            <ImageView style="@style/ArrowView" />
+
+        </RelativeLayout>
+
+        <View style="@style/HaLineView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/person_center_follow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/attention_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/pername_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/attention"
+                        android:textColor="@color/signatu"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:id="@+id/person_center_fans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fensi_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/pername_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/fen_si"
+                        android:textColor="@color/signatu"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View style="@style/HaLineView" />
+
+            <RelativeLayout
+                android:id="@+id/person_center_self_score"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    android:id="@+id/person_center_self_score_text"
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_gold_tomato"/>
+
+                <ImageView style="@style/ArrowView"
+                    android:id="@+id/person_center_self_score_image"/>
+
+                <TextView
+                    android:id="@+id/person_center_self_get_score_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/person_center_self_score_image"
+                    android:text="@string/get_score_hint"
+                    android:textColor="@color/signatu"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="58dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/person_center_self_feed"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_myfeed_tomato"
+                    android:text="@string/my_dynamic" />
+
+                <ImageView style="@style/ArrowView" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="58dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/person_center_photo_album"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_myphoto_tomato"
+                    android:text="@string/my_photoabum" />
+
+
+                <ImageView style="@style/ArrowView" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="58dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/join_group"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_mygroup_tomato"
+                    android:text="@string/my_join_organiz" />
+
+                <ImageView style="@style/ArrowView" />
+
+            </RelativeLayout>
+
+            <View style="@style/HaLineView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View style="@style/HaLineView" />
+
+            <RelativeLayout
+                android:id="@+id/person_center_invite_friend"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_findfriend_tomato"
+                    android:text="@string/invite_friend" />
+
+                <ImageView style="@style/ArrowView" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="58dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/person_center_modify_password"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_lock_tomato"
+                    android:text="@string/modify_password" />
+
+                <ImageView style="@style/ArrowView" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="58dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/person_center_binding_setting"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_mylink_tomato"
+                    android:text="@string/binding_setting" />
+
+                <ImageView style="@style/ArrowView" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="58dp"
+                android:background="@color/divi_color" />
+
+            <RelativeLayout
+                android:id="@+id/private_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    style="@style/TextGongffView"
+                    android:drawableLeft="@drawable/icon_lbs_tomato"
+                    android:text="@string/my_self_information" />
+
+                <TextView
+                    android:id="@+id/message_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@+id/message_line_view"
+                    android:text="@string/my_adddress"
+                    android:textColor="@color/signatu"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/message_line_view"
+                    style="@style/ArrowView" />
+
+            </RelativeLayout>
+
+            <View style="@style/HaLineView" />
+        </LinearLayout>
+
+        <View style="@style/HaLineView" />
+
+        <RelativeLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/TextGongffView"
+                android:drawableLeft="@drawable/icon_set_tomato"
+                android:text="@string/my_setting" />
+
+            <ImageView style="@style/ArrowView" />
+        </RelativeLayout>
+
+        <View style="@style/HaLineView" />
+
+    </LinearLayout>
+</ScrollView>
